@@ -38,7 +38,7 @@ def u(s, p, L, D, f):
     
     Lp_batch = L.generate_batch(p, NUM_SAMPLES)
     DLp_batch = D.discriminate_batch(Lp_batch)
-    fLp_batch = f.evaluate_batch(Lp_batch)
+    fLp_batch = f.evaluate_batch(p, Lp_batch)
 
     # synthesize D, f scores
     sum_utility = 0
