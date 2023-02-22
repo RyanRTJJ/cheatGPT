@@ -1,0 +1,3 @@
+[submodule "discriminators/detect-gpt"]
+	path = discriminators/detect-gpt
+	url = https://github.com/eric-mitchell/detect-gpt
