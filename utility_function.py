@@ -33,13 +33,21 @@ defines the utility function in terms of
 - fitness fn
 """
 
-# Lp -> u
-def uLp(s, Lp, D, f):
-    return s(D(Lp), f(Lp))
-
 # p -> u
 def u(s, p, L, D, f):
     
-    Lp_ensemble = L.generate_ensemble(p, NUM_SAMPLES)
-    uLp_ensemble = [uLp(s, Lp, D, f) for Lp in Lp_ensemble]
-    return sum(uLp_ensemble) / len(uLp_ensemble)
+    Lp_batch = L.generate_batch(p, NUM_SAMPLES)
+    DLp_batch = D.discriminate_batch(Lp_batch)
+    fLp_batch = f.evaluate_batch(Lp_batch)
+
+    # synthesize D, f scores
+    sum_utility = 0
+    for i in len(Lp_batch):
+        Di = DLp_batch[i]
+        fi = fLp_batch[i]
+        ui = synthesize(Di, fi)
+
+        # increment score with current utility
+        sum_utility += ui
+
+    return sum_utility / NUM_SAMPLES
