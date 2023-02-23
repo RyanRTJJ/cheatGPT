@@ -12,6 +12,7 @@ I (Jacob) am working in a conda environment named `proj`, which can be created w
 
 ### Option 1: environment.yml
 > conda env create --file environment.yml
+
 ### Option 2: requirements.txt
 > conda create --name proj --file requirements.txt
 
@@ -35,5 +36,7 @@ Replacable components (L, D, f) defined in folders
 - Jacob sees no reason to edit those submodules (if you find one, please lmk!)
 
 To initialize submodules, run the following commands in the cloned repo:
+
 > git submodule init
+
 > git submodule update
