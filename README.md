@@ -1,6 +1,12 @@
 # cheatGPT
 ### Adversarial prompt-generation to test robustness of human/LLM text classifiers
 
+## Bulletin
+- conda env currently nonfunctional
+    - existing env creation works
+    - detect-gpt seems to require CUDA, which is incompatible with macOS
+    - only submodule so far is detect-gpt, so submodule infrastructure is currently unused
+
 ## Requirements
 I (Jacob) am working in a conda environment named `proj`, which can be created with the following commands:
 
@@ -27,3 +33,7 @@ Replacable components (L, D, f) defined in folders
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for external code
 - ex: [detectGPT](https://detectgpt.ericmitchell.ai/)
 - Jacob sees no reason to edit those submodules (if you find one, please lmk!)
+
+To initialize submodules, run the following commands in the cloned repo:
+> git submodule init
+> git submodule update
