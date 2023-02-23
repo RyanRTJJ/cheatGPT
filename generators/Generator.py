@@ -16,5 +16,3 @@ class Generator:
     # default implementation uses python's native vectorization thru list comprehension
     def generate_batch(self, prompt, num_responses):
         return [self.generate(prompt) for _ in range(num_responses)]
-    
-

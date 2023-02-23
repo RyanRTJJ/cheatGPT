@@ -1,0 +1,17 @@
+name: proj
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+dependencies:
+# - nvidia::cudatoolkit
+- torchvision
+- pytorch::pytorch
+- numpy
+- transformers
+- datasets
+- matplotlib
+- tqdm
+- scikit-learn
+- openai

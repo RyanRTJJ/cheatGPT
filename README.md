@@ -2,11 +2,18 @@
 ### Adversarial prompt-generation to test robustness of human/LLM text classifiers
 
 ## Requirements
-Environment requirements for this project are listed in `requirements.txt`. I'm working in a conda environment named `proj`, which can be created with the following command:
+I (Jacob) am working in a conda environment named `proj`, which can be created with the following commands:
+
+### Option 1: environment.yml
+> conda env create --file environment.yml
+### Option 2: requirements.txt
 > conda create --name proj --file requirements.txt
 
+Environment requirements for this project are listed in `environment.yml`. I'm working in a conda environment named `proj`, which can be created with the following command:
+> conda env create --file environment.yml
+
 ## Standards
-- [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model
+- [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model (specifically [HuggingFace](https://huggingface.co/gpt2))
 - The default passage length is 1000 tokens (defined in `generators/Generator.py`)
 - for computing the expectation term in utility, the default number of samples is 10 (defined in `utility_function.py`)
     - For efficiency, all classes operating on samples (L, D, f) should be able to take in a list of samples and return a list of results via a `batch` method (example: `generators`)
