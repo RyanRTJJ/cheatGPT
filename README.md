@@ -9,7 +9,7 @@
 
 ## Requirements
 
-Certain files require being run from the project's root directory (`/[path stuff]/CheatGPT`). For safety, I recommend running all commands from the project's root directory.
+Certain files require being run from the project's root directory (`/[path stuff]/CheatGPT`). For safety, I (Jacob) recommend running all commands from the project's root directory.
 
 I (Jacob) am working in a conda environment named `proj`, which can be created with the following commands:
 
@@ -24,7 +24,7 @@ I (Jacob) am working in a conda environment named `proj`, which can be created w
 
 ## Standards
 - [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model (specifically [HuggingFace](https://huggingface.co/gpt2))
-- The default passage length is 1000 tokens (defined in `generators/Generator.py`)
+- The default passage length is 500 tokens (defined in `generators/Generator.py`)
 - Discriminators predict by default (and output the probability of) whether the given passage is **human**-generated. Thus, adversaries will attempt to maximize the discriminator output DLAp \in [0, 1]
 - for computing the expectation term in utility, the default number of samples is 10 (defined in `utility_function.py`)
     - For efficiency, all classes operating on samples (L, D, f) should be able to take in a list of samples and return a list of results via a `batch` method (example: `generators`)

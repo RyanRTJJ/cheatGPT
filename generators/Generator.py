@@ -6,7 +6,7 @@ equipped with individual and batch generation methods
 class Generator:
 
     # length of passage generated
-    PASSAGE_LENGTH = 10**3
+    PASSAGE_LENGTH = 500
 
     # generates PASSAGE_LENGTH many tokens given prompt
     def generate(self, prompt):
