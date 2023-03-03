@@ -10,6 +10,6 @@ Jacob's transcription of Ryan's todo list (from 2/20 whiteboarding sesh)
     - also need a length constraint? infinite search space seems unstructured
 - Ryan thinks this should be a hypothesis class of valid prompts
 3. Implement utility function
-- Jacob thinks this is in terms of $u = (D, f)(Lp)$
+- [x] Jacob thinks this is in terms of $u = (D, f)(Lp)$
 4. Define adversarial agent A
 - Jacob doesn't wanna do this part
