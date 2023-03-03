@@ -30,6 +30,7 @@ discriminator = BERT()
 # tests discriminator on reference passages
 for filename, passage in passages.items():
     print("\n\t FILENAME: " + filename)
-    print("\n\t PASSAGE: " + passage)
+    # print("\t PASSAGE: " + passage)
+    # print("\t PASSAGE LENGTH: " + str(len(passage)))
     classification = discriminator.discriminate(passage)
-    print("\n\t CLASSIFICATION: " + classification)
+    print("\t CLASSIFICATION: ", classification)

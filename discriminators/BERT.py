@@ -15,8 +15,11 @@ class BERT(Discriminator):
 
     # NOT WORKING
     # changed default passage length to 500 tokens as workaround
-    
+    # might only be defined on <510 tokens
+    # source: https://huggingface.co/roberta-base-openai-detector#how-to-get-started-with-the-model
+
     # max passage length is 1024 > 1000 tokens
+    # default is 512 tokens
     # MAX_PASSAGE_LENGTH = 1024
 
     # initializes HuggingFace infrastructure
