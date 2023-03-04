@@ -18,6 +18,7 @@ class PAFitnessFunction(FitnessFunction):
     def evaluate_batch(self, passages):
         return [self.evaluate(passage) for passage in passages]
     
+    # BROKEN: idt you can overwrite method names?!
     # defaults prompt-specific mehtods to prompt-agnostic ones
     # overrides definitions in FitnessFunction
     def evaluate(self, prompt, passage):
