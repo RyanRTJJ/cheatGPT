@@ -3,6 +3,9 @@ defines the `utility function` to be optimized by RL agents
 objective function in approaches 1, 2
 """
 
+# imports
+import numpy as np
+
 # mapping (D, f) -> u
 # assumes all scores are [0, 1]-valued
 def synthesize(D_score, f_score):
@@ -41,13 +44,14 @@ def u(p, L, D, f, num_samples = NUM_SAMPLES, synthesizer = synthesize):
     fLp_batch = f.evaluate_batch(p, Lp_batch)
 
     # synthesize D, f scores
-    sum_utility = 0
-    for i in len(Lp_batch):
-        Di = DLp_batch[i]
-        fi = fLp_batch[i]
-        ui = synthesizer(Di, fi)
+    utility_batch = np.vectorize(synthesizer)(DLp_batch, fLp_batch)
+    return np.average(utility_batch)
 
-        # increment score with current utility
-        sum_utility += ui
+    # sum_utility = 0
+    # for i in len(Lp_batch):
+    #     Di = DLp_batch[i]
+    #     fi = fLp_batch[i]
+    #     ui = synthesizer(Di, fi)
 
-    return sum_utility / NUM_SAMPLES
+    #     # increment score with current utility
+    #     sum_utility += ui

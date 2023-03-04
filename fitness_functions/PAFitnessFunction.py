@@ -9,20 +9,21 @@ from .FitnessFunction import FitnessFunction
 
 class PAFitnessFunction(FitnessFunction):
 
+    # defines a prompt-agnostic fitness functions
+
+
     # evaluates a single passage
-    def evaluate(self, passage):
+    def PA_evaluate(self, passage):
         raise NotImplementedError
 
     # evaluates a batch of passages
     # default implementation uses python's native vectorization thru list comprehension
-    def evaluate_batch(self, passages):
-        return [self.evaluate(passage) for passage in passages]
+    def PA_evaluate_batch(self, passages):
+        return [self.PA_evaluate(passage) for passage in passages]
     
-    # BROKEN: idt you can overwrite method names?!
     # defaults prompt-specific mehtods to prompt-agnostic ones
-    # overrides definitions in FitnessFunction
     def evaluate(self, prompt, passage):
-        return self.evaluate(passage)
+        return self.PA_evaluate(passage)
     
     def evaluate_batch(self, prompt, passages):
-        return self.evaluate_batch(passages)
+        return self.PA_evaluate_batch(passages)

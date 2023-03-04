@@ -11,5 +11,5 @@ from .PAFitnessFunction import PAFitnessFunction
 class TrivialFitnessFunction(PAFitnessFunction):
 
     # fitness of any passage is 1
-    def evaluate(self, passage):
+    def PA_evaluate(self, passage):
         return 1
