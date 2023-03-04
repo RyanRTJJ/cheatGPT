@@ -11,17 +11,7 @@ import os
 import json
 
 # imports discriminator class
-from BERT import BERT
-
-# imports json of passages as dict
-# WARNING: must be run from base project directory
-proj_path = os.getcwd()
-assert(proj_path.endswith("cheatGPT"))
-
-# defines path to reference_passages
-INPUT_FILE = "reference_passages.json"
-INPUT_PATH = os.path.join(proj_path, INPUT_FILE)
-passages = json.load(open(INPUT_PATH, 'r'))
+from discriminators.BERT import BERT
 
 # initializes discriminator
 discriminator = BERT()

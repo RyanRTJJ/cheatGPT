@@ -1,8 +1,6 @@
-# imports components
-# import .Discriminator
-# import .BERT
+"""
+instantiates discriminators package
+imports components for package use
+"""
 
-# from .BERT import BERT
-
-from . import Discriminator
-from . import BERT
+# from . import BERT
