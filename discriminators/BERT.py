@@ -6,7 +6,7 @@ https://huggingface.co/roberta-base-openai-detector
 """
 
 # imports superclass definition
-from Discriminator import Discriminator
+from .Discriminator import Discriminator
 
 # imports huggingface infrastructure
 from transformers import pipeline 
@@ -32,12 +32,17 @@ class BERT(Discriminator):
 
     # redefines discriminator methods
     # invokes huggingface pipeline thru self.classifier
+
     def discriminate(self, passage):
+        # gets classification
         classification = self.classifier(passage)
 
         # returns Pr[human-generated]
-        return classification[0][1]["score"]
-
+        return classification[0][1]['score']
+    
     def discriminate_batch(self, passages):
+        # gets classifications
         classifications = self.classifier(passages)
-        return [classification[0][1]['score'] for classification in classifications]
+
+        # returns Pr[human-generated]
+        return [classification[1]['score'] for classification in classifications]

@@ -5,7 +5,7 @@ provides prompt-less evaluate and evaluate_batch methods
 """
 
 # imports superclass definition
-from FitnessFunction import FitnessFunction
+from .FitnessFunction import FitnessFunction
 
 class PAFitnessFunction(FitnessFunction):
 

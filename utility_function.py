@@ -34,9 +34,9 @@ defines the utility function in terms of
 """
 
 # p -> u
-def u(s, p, L, D, f):
+def u(p, L, D, f, num_samples = NUM_SAMPLES, synthesizer = synthesize):
     
-    Lp_batch = L.generate_batch(p, NUM_SAMPLES)
+    Lp_batch = L.generate_batch(p, num_samples)
     DLp_batch = D.discriminate_batch(Lp_batch)
     fLp_batch = f.evaluate_batch(p, Lp_batch)
 
@@ -45,7 +45,7 @@ def u(s, p, L, D, f):
     for i in len(Lp_batch):
         Di = DLp_batch[i]
         fi = fLp_batch[i]
-        ui = synthesize(Di, fi)
+        ui = synthesizer(Di, fi)
 
         # increment score with current utility
         sum_utility += ui

@@ -6,7 +6,7 @@ https://huggingface.co/gpt2
 """
 
 # imports superclass definition
-from Generator import Generator
+from .Generator import Generator
 
 # imports huggingface infrastructure
 # from transformers import GPT2Tokenizer, GPT2 LMHeadModel

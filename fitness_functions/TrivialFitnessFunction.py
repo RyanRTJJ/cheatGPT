@@ -6,7 +6,7 @@ used for testing purposes
 """
 
 # imports superclass definition
-from PAFitnessFunction import PAFitnessFunction
+from .PAFitnessFunction import PAFitnessFunction
 
 class TrivialFitnessFunction(PAFitnessFunction):
 

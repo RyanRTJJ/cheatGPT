@@ -26,11 +26,17 @@ passages = json.load(open(INPUT_PATH, 'r'))
 # initializes discriminator
 discriminator = BERT()
 
-# BROKEN
 # tests discriminator on reference passages
+passage_list = []
 for filename, passage in passages.items():
     print("\n\t FILENAME: " + filename)
     # print("\t PASSAGE: " + passage)
     # print("\t PASSAGE LENGTH: " + str(len(passage)))
     classification = discriminator.discriminate(passage)
     print("\t CLASSIFICATION: ", classification)
+
+    # adds passage to list for batch testing
+    passage_list.append(passage)
+
+# tests discriminator on batch of passages
+classifications = discriminator.discriminate_batch(passage_list)
