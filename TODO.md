@@ -11,5 +11,15 @@ Jacob's transcription of Ryan's todo list (from 2/20 whiteboarding sesh)
 - Ryan thinks this should be a hypothesis class of valid prompts
 3. Implement utility function
 - [x] Jacob thinks this is in terms of $u = (D, f)(Lp)$
-4. Define adversarial agent A
+- [ ] Interpretable HUD
+4. Implement search over prompts
+- [ ] Random search?
+- [ ] Enumerate over known prompts
+- [ ] RLHF
+5. Define adversarial agent A
 - Jacob doesn't wanna do this part
+
+## before milestone report
+- [ ] speed up hf infra as possible
+- [ ] implement nontrivial fitness fns
+- [ ] attain >0.1 utility (how?!)
