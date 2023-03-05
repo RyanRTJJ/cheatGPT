@@ -7,7 +7,7 @@ class Distorter:
     'COMMAND_UNEXPECTED_LANGUAGE': 1,
   }
 
-  unexpected_language_commands = {
+  _unexpected_language_commands = {
     'using unusual language,',
     'using surprising language,',
     'using creative license,'
@@ -15,6 +15,11 @@ class Distorter:
   
   def __init__(self):
     return
+  
+  def take_action(self, input_prompt):
+    """
+    @param input_prompt: a string, e.g. "write me a paragraph about how the sky is blue"
+    """
 
 distorter = Distorter()
 print(distorter.actions['COMMAND_STYLISTIC_MODIFIER'])
