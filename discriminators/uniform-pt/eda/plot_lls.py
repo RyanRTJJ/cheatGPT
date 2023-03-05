@@ -15,12 +15,19 @@ def read_pgrid(file_path):
     return np.load(file_path)
 
 def hist_per_segment(storyname, pgrid, ll_og):
+    """
+    @param storyname: [String] a story name (to be used in plot titles)
+    @param pgrid: [np.ndarray] (N_PERTURBS, N_SEGMENTS) matrix
+    @param ll_og: [np.ndarray] (1, N_SEGMENTS) matrix
+    """
     ll_og = ll_og.squeeze()
 
     n_perturbs = pgrid.shape[0]
+    MAX_SEGMENTS = 7
     n_segments = pgrid.shape[1]
+    n_segments = min(MAX_SEGMENTS, n_segments)
     N_BINS_DESIRED = 15
-
+    pgrid = pgrid[:,:n_segments]
     p_min = np.min(pgrid)
     p_max = np.max(pgrid)
     bins = np.linspace(p_min, p_max, N_BINS_DESIRED+1)
@@ -37,9 +44,9 @@ def hist_per_segment(storyname, pgrid, ll_og):
     fig.legend(handles, labels, loc='upper right')
     plt.show()
 
-STORY_NUMBER = 13
-TEST_FILE_OG = f"LLM_results/{STORY_NUMBER}_og.npy"
-TEST_FILE_PERTURBS = f"LLM_results/{STORY_NUMBER}_pgrid.npy"
+STORY_NUMBER = 16
+TEST_FILE_OG = f"human_results/{STORY_NUMBER}_og.npy"
+TEST_FILE_PERTURBS = f"human_results/{STORY_NUMBER}_pgrid.npy"
 
 ll_og = read_og(TEST_FILE_OG)
 pgrid = read_pgrid(TEST_FILE_PERTURBS)

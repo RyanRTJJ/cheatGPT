@@ -387,29 +387,6 @@ perturber = Perturber()
 
 perturb_and_score_dir_of_stories(
     perturber, 
-    dir="eda/LLM_stories", 
-    ll_save_loc="eda/LLM_results", 
-    perturbed_txt_save_loc="eda/LLM_stories_perturbed")
-
-# f = open("short_story.txt", "r")
-# texts = [f.read()]
-# f.close()
-
-
-# segmented_stories = perturber.segment_texts(texts)
-# for segmented_story in segmented_stories:
-#     og_story_grid_ll = perturber.get_ll_of_grid([segmented_story])
-#     print(f"\nog_story_grid_ll:")
-#     print(og_story_grid_ll)
-#     perturb_grid = perturber.perturb_story_n_times(segmented_story)
-#     print(f"\nperturb_grid:")
-#     print_list_nice(perturb_grid)
-
-#     perturbation_grid_ll = perturber.get_ll_of_grid(perturb_grid)
-#     print(f"\ngrid_ll:")
-#     print(perturbation_grid_ll)
-
-# # print("")
-# # print_list_nice(segmented_texts[0])
-# # print(len(segmented_texts[0]))
-# # perturber.perturb(segmented_texts)
+    dir="eda/human_stories", 
+    ll_save_loc="eda/human_results", 
+    perturbed_txt_save_loc="eda/human_stories_perturbed")
