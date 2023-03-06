@@ -47,7 +47,7 @@ To initialize submodules, run the following commands in the cloned repo:
 
 
 # Ryan's Scratchboard
-## Playing with DetectGPT
+## 1. Playing with DetectGPT
 I used this script to run `run.py` (found in `n_perturb.sh`): 
 
 ```zsh
@@ -91,3 +91,79 @@ args = {
   'cache_dir': '~/.cache'
 }
 ```
+
+## 2. What we have done so far
+- Observed empirically that DetectGPT's hypothesis on Z-scores w.r.t perturbations is true.
+- Observed empirically that our variance checking technique is possible 
+
+### 2.1 Terminology
+We have too many mean and variance statistics. Time to introduce some terminology to clean this up.
+- $Z_{Segment, LLM}$: Z-score of likelihood of original text w.r.t to perturbation likelihoods, **for that segment**, for LLM.
+- $Z_{Segment, Human}$ Z-score of likelihood of original text w.r.t to perturbation likelihoods, **for that segment**, for Human.
+
+This means that, for example, we can derive 7 $Z_{Segment, Human}$'s from the plot on the left below, and 6 $Z_{Segment, LLM}$'s from the plot on the right.
+
+<img src = "discriminators/uniform-pt/eda/human_story_7.png" alt="alpha = 0.05" width=300px>
+<img src = "discriminators/uniform-pt/eda/LLM_story_7.png" alt="alpha = 0.05" width=300px>
+<em>Left: Human, Right: LLM</em>
+
+- $\mu_{Story, Z, LLM}, \sigma^2_{Story, Z, LLM}$: The mean and variance of $Z_{Segment, LLM}$'s, over all segments, for that story, for LLM text.
+- $\mu_{Story, Z, Human}, \sigma^2_{Story, Z, Human}$: Same statistics as above, but for humans.
+> Technically, the empirical sample variance we observe here is not $\sigma^2$, but $s^2$, but we can prove that for the purposes of our test, don't need to care because at some point the scalar difference between $\sigma^2$ and $s^2$ cancel out.
+
+What we are aiming to prove is therefore: $\sigma^2_{Story, Z, Human} > \sigma^2_{Story, Z, LLM}$
+
+Later on, we have to reason about the separation between the distributions of $\sigma^2_{Story, Z, Human}$ and $\sigma^2_{Story, Z, LLM}$, so we have to also put this in terms of the variance of these distributions, so we introduce:
+- $\sigma_{\sigma^2, LLM}^2$: The variance of $\sigma^2_{Story, Z, LLM}$, over all the LLM stories.
+- $\sigma_{\sigma^2, Human}^2$: The variance of $\sigma^2_{Story, Z, Human}$, over all the Human stories.
+
+## 3. What we have to do (Experiments)
+### 3.1 Proof Of Concept Experiment (POCE)
+Sort of already did this, but the goal would be to do the "Early Perturbation Experiment" on 50 LLM texts and 50 Human texts, not just 20. If possible, we also need 50 perturbations  per text. 50 is just so that we can approximate this to a Normal Distribution, under Central Limit Theorem. After doing this, we will have:
+
+1. Two distributions of 50 $\mu_{Story, Z, Author}$'s, one for each author type.
+2. Two distributions of 50 $\sigma^2_{Story, Z, Author}$, one for each author type.
+
+We ignore the $\mu_{Story, Z, Author}$ distributions, and focus on the $\sigma^2_{Story, Z, Author}$ ones. The idea is to plot those 2 $\sigma^2$ distributions and we'll get something like this:
+
+<img src = "discriminators/uniform-pt/eda/GDA.png" alt="alpha = 0.05" width=600px>
+
+<em>Blue curve: $\sigma^2_{Story, Z, LLM}$, Orange curve: $\sigma^2_{Story, Z, Human}$ </em>
+
+> Note that I make no statements on the shape of the above distributions. It is not necessarily true that either curve will be narrower / flatter than the other.
+
+We then do Gaussian-Discriminant-Analysis (GDA) and say that any story with a $\sigma^2_{Story, Z}$ that comes on the right of the intersection point between the 2 curves is human-generated, anything on the left is LLM-generated. The blue shaded area corresponds to LLM text misclassified as human, and the orange shaded area corresponds to human text misclassified as LLM. Ideally, they are small.
+
+Because we don't know the shapes of either curve ahead of time, we can't say if we will have high / low true / false positive / negatives. In general, we hope that:
+- $\sigma^2_{\sigma^2, Author}$'s are small so that there is a clear separation and we have good test power. 
+
+We can then calculate, the accuracy of our test, "by definition." I.E., by defining our cut-off this way, and by defining our probability disributions this way, in expectation what our accuracy and error rates will be. In particular, we will calculate:
+
+1. $\hat{\text{Error}_\text{I}} = P(\text{classify as LLM} \mid \text{Human})$
+2. $\hat{\text{Error}_\text{II}} = P(\text{classify as Human} \mid \text{LLM})$
+
+### 3.2 The Baseline Experiment
+How does Detect-GPT perform on non-GPT-2 texts? For this, we refer to the Detect-GPT paper. In doing their benchmarking (e.g. vs Supervised Detectors), they sample 150 test examples from r/WritingPrompts. We hence also sample 150 test examples. We just feed these prompts into {GPT-3, + at least 2 more} and get the Detect-GPT accuracy on those. That's our baseline; we **may** beat this. Detect-GPT performs with 0.98 accuracy on GPT-2. We will **very likely** not beat this.
+
+### 3.3 The Big Experiment
+We do this on the following datasets, **IN THIS ORDER**:
+- w/WritingPrompts
+- XSum (Narayan et al., 2018)
+
+For each dataset, we have: 
+- 500 human texts
+- 125 ChatGPT texts
+- 125 GPT-2 texts
+- 125 GPT-Neo 2.7B texts
+- 125 GPT-J 6B texts
+
+Real use-case of our technique: we don't know what model it is, so we can't do model-specific training / testing. The best experiment will be to do leave-one-out cross-validation (LOO CV), i.e. figure out cut-off using 3 out of 4 of the LLMs vs human, and test on the last LLM vs human. But that's... a lot... or maybe that's ok. So perhaps the procedure is, for one iteration of LOO CV:
+
+1. We figure out cutoff $Z$ score based on the distributions of $\{\text{125 GPT-2}, \text{125 GPT-Neo, \text{125 GPT-J}}\}$ vs $\{\text{375 human}\}$. 
+2. We then test on the remaining 125 human texts vs 125 ChatGPT texts.
+
+### 3.4 The statistics (if have time)
+Prove that (conceptually, our calculations based on sample variance does not underestimate / overestimate the actual, which is based on population variance):
+
+1. $\mathbb{E}[\hat{\text{Error}_\text{I}}] = \text{Error}_\text{I}$
+2. $\mathbb{E}[\hat{\text{Error}_\text{II}}] = \text{Error}_\text{II}$

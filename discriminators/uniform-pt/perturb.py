@@ -59,13 +59,8 @@ class Perturber:
         if buffer_size != None:
             self.BUFFER_SIZE = buffer_size
 
-        # Perturbation Evaluating model
-        # -----------------------------
-        self.tokenizer = GPT2Tokenizer.from_pretrained(self.MODEL_NAME)
-        self.model = GPT2Model.from_pretrained(self.MODEL_NAME)
-
-        # Mask filling model
-        # ------------------
+        # Mask filling / perturbing model
+        # -------------------------------
         int8_kwargs = {}
         half_kwargs = {}
         
@@ -74,9 +69,8 @@ class Perturber:
             int8_kwargs = dict(load_in_8bit=True, device_map='auto', torch_dtype=torch.bfloat16)
         elif self.HALF:
             half_kwargs = dict(torch_dtype=torch.bfloat16)
-
-        # Perturbing model
-        # ----------------
+        
+        # Create the model here
         self.mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(
             self.MASKING_FILLING_MODEL_NAME, 
             **int8_kwargs, 
@@ -91,8 +85,8 @@ class Perturber:
             self.MASKING_FILLING_MODEL_NAME, 
             model_max_length=n_positions, cache_dir=self.CACHE_DIR)
         
-        # Generic Model to score likelihoods
-        # ----------------------------------
+        # Evaluating model
+        # ----------------
         print(f'Loading BASE model {self.BASE_MODEL_NAME}...')
 
         base_model_kwargs = {}
