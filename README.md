@@ -128,7 +128,7 @@ We ignore the $\mu_{Story, Z, Author}$ distributions, and focus on the $\sigma^2
 
 <img src = "discriminators/uniform-pt/eda/GDA.png" alt="alpha = 0.05" width=600px>
 
-<em>Blue curve: $\sigma^2_{Story, Z, LLM}$, Orange curve: $\sigma^2_{Story, Z, Human}$ </em>
+Blue curve: $\sigma^2_{Story, Z, LLM}$, Orange curve: $\sigma^2_{Story, Z, Human}$
 
 > Note that I make no statements on the shape of the above distributions. It is not necessarily true that either curve will be narrower / flatter than the other.
 
@@ -159,7 +159,7 @@ For each dataset, we have:
 
 Real use-case of our technique: we don't know what model it is, so we can't do model-specific training / testing. The best experiment will be to do leave-one-out cross-validation (LOO CV), i.e. figure out cut-off using 3 out of 4 of the LLMs vs human, and test on the last LLM vs human. But that's... a lot... or maybe that's ok. So perhaps the procedure is, for one iteration of LOO CV:
 
-1. We figure out cutoff $Z$ score based on the distributions of $\{\text{125 GPT-2}, \text{125 GPT-Neo, \text{125 GPT-J}}\}$ vs $\{\text{375 human}\}$. 
+1. We figure out cutoff $Z$ score based on the distributions of: {125 GPT-2, 125 GPT-Neo, 125 GPT-J} vs {375 human} texts. 
 2. We then test on the remaining 125 human texts vs 125 ChatGPT texts.
 
 ### 3.4 The statistics (if have time)
