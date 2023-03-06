@@ -22,4 +22,4 @@ Jacob's transcription of Ryan's todo list (from 2/20 whiteboarding sesh)
 ## before milestone report
 - [ ] speed up hf infra as possible
 - [ ] implement nontrivial fitness fns
-- [ ] attain >0.1 utility (how?!)
+- [x] attain >0.1 utility (it's j randomness babey)

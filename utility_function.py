@@ -47,11 +47,21 @@ def u(p, L, D, f, num_samples = NUM_SAMPLES, synthesizer = synthesize):
     utility_batch = np.vectorize(synthesizer)(DLp_batch, fLp_batch)
     return np.average(utility_batch)
 
-    # sum_utility = 0
-    # for i in len(Lp_batch):
-    #     Di = DLp_batch[i]
-    #     fi = fLp_batch[i]
-    #     ui = synthesizer(Di, fi)
+# interpretable utility function
+def u_interpretable(p, L, D, f, num_samples = NUM_SAMPLES, synthesizer = synthesize):
+    
+    Lp_batch = L.generate_batch(p, num_samples)
+    DLp_batch = D.discriminate_batch(Lp_batch)
+    fLp_batch = f.evaluate_batch(p, Lp_batch)
 
-    #     # increment score with current utility
-    #     sum_utility += ui
+    # synthesize D, f scores
+    utility_batch = np.vectorize(synthesizer)(DLp_batch, fLp_batch)
+
+    # returns everything!
+    return {
+        "prompt": p,
+        "Lp_batch": Lp_batch,
+        "DLp_batch": DLp_batch,
+        "fLp_batch": fLp_batch,
+        "utility_batch": utility_batch,
+    }

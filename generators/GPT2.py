@@ -18,7 +18,11 @@ class GPT2(Generator):
     def __init__(self):
         
         # defines underlying huggingface generation pipeline
-        self.generator = pipeline('text-generation', model='gpt2', return_full_text=False)
+        self.generator = pipeline('text-generation',
+                                  model='gpt2',
+                                  return_full_text=False,
+                                #   device=0
+                                  )
 
     # redefines generator methods
     # invokes huggingface pipeline thru self.generator
