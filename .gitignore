@@ -1,3 +1,4 @@
 # Exclude everything in these folders
 discriminators/detect-gpt/tmp_results
 discriminators/data
+discriminators/uniform-pt/~

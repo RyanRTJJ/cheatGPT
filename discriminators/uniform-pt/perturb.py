@@ -42,12 +42,11 @@ class Perturber:
     """
     Different models and what they do
     ---------------------------------
-    - MODEL:                The model that assesses perturbation likelihoods
+    - BASE_MODEL:                The model that assesses perturbation likelihoods
     - MASK_FILLING_MODEL_NAME
     """
 
     MASK_STRING = '<<<mask>>>'                  # Model-dependent
-    MODEL_NAME = 'gpt2'                         # Start with smallest GPT2.
     MASKING_FILLING_MODEL_NAME = 't5-large'     # Is there a reason we don't use same model here?
     BASE_MODEL_NAME = 'gpt2'                    # A 'generic generative model'. Was 'facebook/opt-2.7b' in detect-gpt
 

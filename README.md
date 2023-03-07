@@ -167,3 +167,8 @@ Prove that (conceptually, our calculations based on sample variance does not und
 
 1. $\mathbb{E}[\hat{\text{Error}_\text{I}}] = \text{Error}_\text{I}$
 2. $\mathbb{E}[\hat{\text{Error}_\text{II}}] = \text{Error}_\text{II}$
+
+## 4. Actual TODOs FFS...
+
+1. Write code to:
+  - select 500 prompts
