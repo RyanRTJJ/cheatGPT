@@ -6,3 +6,6 @@ matplotlib
 tqdm
 scikit-learn
 openai
+ipykernel
+jupyterlab
+notebook
