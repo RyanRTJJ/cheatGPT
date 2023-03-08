@@ -12,6 +12,7 @@ dependencies:
 - numpy
 - transformers
 - datasets
+- evaluate
 - matplotlib
 - tqdm
 - scikit-learn

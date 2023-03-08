@@ -14,4 +14,4 @@ class FitnessFunction:
     # evaluates a batch of passages
     # default implementation uses python's native vectorization thru list comprehension
     def evaluate_batch(self, prompt, passages):
-        return [self.evaluate(self, prompt, passage) for passage in passages]
+        return [self.evaluate(prompt, passage) for passage in passages]

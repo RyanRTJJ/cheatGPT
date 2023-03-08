@@ -1,4 +1,4 @@
-Jacob's transcription of Ryan's todo list (from 2/20 whiteboarding sesh)
+# Big TODO
 1. set up prebuilt LLM components
     - [x] generator: [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model (specifically [HuggingFace](https://huggingface.co/gpt2))
     - discriminators
@@ -14,9 +14,9 @@ Jacob's transcription of Ryan's todo list (from 2/20 whiteboarding sesh)
 - [x] Interpretable HUD
 4. Define fitness fns
 - [x] trivial
-- [ ] as described in milestone report
+- [x] as described in milestone report (`fitness_functions/PrGen.py`)
 - [ ] other things?
-    - [ ] MAUVE
+    - [ ] MAUVE (JACOB: MAUVE seems bas)
     - [ ] n-gram
 5. Implement search over prompts
 - [x] Try Things
@@ -47,3 +47,9 @@ Jacob's transcription of Ryan's todo list (from 2/20 whiteboarding sesh)
 - [ ] do discriminators generalize to more expressive LMs?
     - lots of testing w DetectGPT + UPT
     - lots of OpenAI tokens :/
+
+## Potential Codebase Improvements
+- [ ] define prompt, passage class
+    - standardize in terms of tokenized arrays?
+- [ ] be more careful handling/passing around LMs
+    - define LM class of HF models?
