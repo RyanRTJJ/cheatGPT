@@ -3,6 +3,8 @@ discriminators/detect-gpt/tmp_results
 discriminators/data
 discriminators/uniform-pt/~
 
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
