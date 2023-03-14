@@ -1,9 +1,33 @@
-products are covered by an annual security audit, with more than half of that number not being reviewed annually by an independent third party, according to a 2013 report from the SANS Institute. In the past two years, more than half of heart pacemakers have been recalled due to a manufacturing defect, according to the Consumer Product Safety Commission.
+ the jury forewoman.
 
-Surgical implants and heart valve devices were the most vulnerable to attack by hackers, and those attacks typically involved inserting malicious firmware into the operating systems, according to a 2014 security analysis report from a company called Symantec. That report is the first to show hackers targeting specific types of medical devices with the ability to exploit a specific set of vulnerabilities, called zero-day exploits.
+In a statement following the verdict, Ms Ollongren said: "I am still in a state of shock.
 
-The hacks generally used vulnerabilities on the way a medical device communicates with a hospital or doctor to carry out its function. The implants—a pacemaker, for example—could be hacked without a patient's knowledge. If there is a problem with the pacemaker, it could communicate through wires to the hospital that will have to be severed. If the implanter is working properly and the doctor has ordered an incorrect length wire, a hacker could turn it into a deadly weapon that could kill patients. In short, many of these medical devices are so critical, doctors should consider their survival paramount, said Dr. Andrew Schulte, an emergency physician and researcher at Case Western Reserve University in Ohio who previously worked on medical device security issues.
+"People used to say I had a talent for trial and I never thought I would have to stand up for myself.
 
-Schulte was part of an investigative team that found a cyberattack against an orthopedic implants manufacturer in 2005. He said hacks against systems in critical medical devices are all too easy to spot—especially now that the security industry has focused more on the vulnerabilities and how to fix them: "If you want to do something on your own time, you can just find a vulnerability and implement your own patch within 45 minutes."
+"I am extremely grateful to Jody. We were both going to be jury forewomen and did it for different reasons.
 
-Security analysts point to several factors that make security in medical devices difficult to find and fix: The proliferation of systems in hospitals and clinics makes it difficult for them to monitor all their systems or verify that they have been properly updated. As people tend to trust these devices, making sure it hasn't been hacked is more a matter of not looking
+"Jody took me under his wing when I needed to feel better about myself."
+
+Jody had pleaded for clemency saying his punishment was no tougher than for "a man his age".
+
+He claimed his crime was so "out of character" it was akin to a "sudden death incident" because it happened "between his and his mother's arms".
+
+Media playback is unsupported on your device Media caption The death of his son Sean would "make him more determined", say his family
+
+After being asked by the court about his plans for the future, he responded: "I see the point in living a long time so I will live a good life.
+
+"Life is short - life is short and so I will make the most out of it."
+
+Media playback is unsupported on your device Media caption As the verdict came in he told the court it had been a difficult situation
+
+He told the court: "I have nothing to say other than this has been a very, very difficult time for me."
+
+He said his conviction could not affect the death penalty because that was not a form of punishment that was common in the UK.
+
+"It's been a really difficult time for me, a really difficult time for my wife and my family," he said.
+
+After listening to the jury's verdict, it was clear that the three-to-one majority had found Jody not guilty on the first two charges of murder and not guilty on the final charge of manslaughter.
+
+The jury rejected his version of events and found that he had been an innocent husband and father.
+
+Image copyright PA Image caption Sean Murray was left to die of exposure after a house where he had

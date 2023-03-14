@@ -1,0 +1,19 @@
+ humans, this analysis would be a big step forward in the fight against lung cancer.
+
+The program also involves a "predictive" test, in which physicians use biomarkers they measure in tissue samples of tumor biopsies.
+
+Currently, cancer patients must undergo a CT scan of their chest, which can reveal whether they have lung cancer or other disease. But the traditional CT scan will not show whether the cancer is located in the lung or in their chest. The program can make this determination, with 95 percent accuracy, and the process only takes 15 minutes, according to a patent.
+
+"If we can find this biomarker, we can tell if the person has lung cancer in 15 minutes," Dr. Jonathan Bremner, professor of medicine at Harvard Medical School and director of the Massachusetts General Hospital Comprehensive Cancer Center, told MIT Technology Review.
+
+He compared the new diagnostic method to having a breast cancer diagnostic mammogram that determines whether the patient has breast cancer in 15 minutes.
+
+The technology is expected to help physicians better predict the health outcomes of cancer patients. If it can detect the disease sooner, doctors should be less likely to treat patients and to increase radiation doses for those who need more treatment.
+
+Even though the new technique is relatively new, Bremner expects there will have to be changes in how doctors currently diagnose lung cancer, which requires a large amount of specialized testing.
+
+The program will also find some early signs of breast and prostate cancers and prostate cancer, although the program uses a much different technique: A cancer treatment called molecular profiling of the targeted cells by measuring their unique protein content.
+
+The current test takes about 40 minutes, and at $8,000 a test it could not be available to a large number of cancer patients.
+
+Some in the medical community have expressed concern about what privacy scientists are doing with patient data, but the technology is still a few years away before it

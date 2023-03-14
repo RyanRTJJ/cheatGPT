@@ -1,21 +1,19 @@
-more strongly and our assessment is that the labour market is poised to strengthen further," the US Federal Reserve Bank of New York said.
+ Black Hat USA, which opens on Friday.
 
-The Fed said it was also expecting the economy to grow by 2.8%, the slowest since the depths of the financial crisis, though it expects growth to improve next year due to improvements in the labour market.
+The most recent attack was more sophisticated this time around as security researchers claimed to have been able to penetrate the system more quickly, after the attackers' intrusion was first discovered.
 
-Earlier this month, the dollar dropped to its lowest level against a basket of six leading currencies in more than 10 months after Trump won the US presidential election and signaled a more hawkish US stance.
+Attackers targeted the systems directly, creating a fake version of the medical provider's system which did not contain the backdoors embedded in a more traditional one that could be noticed only with specialised knowledge, the researchers claimed.
 
-The pound fell as much as 7.8% against the dollar on Wednesday on expectations of a faster rate rise.
+They then used a virus called EZ-Recon to take control of the medical providers' networks, including their database. In their report, the researchers describe how attackers targeted at least 50 institutions worldwide, including a hospital in the UK, that use the same system.
 
-On Wednesday morning, Trump told reporters in Riyadh that he would unveil his energy policies on Thursday, adding: "We're going to be putting in place something very special that nobody has ever seen before."
+The hackers accessed the computer systems of all their patients to steal health data. The attack was initially identified by the security firm Check Point, but has now been independently verified by researchers with Lookout.
 
-Trump's energy advisers include former Texas governor Rick Perry, the former CEO of energy giant energy firm Tudor Capital and the head of an energy company that serves as the biggest provider of oil and gas drilling rigs through its subsidiaries.
+The backdoors used in the attacks allow the attackers to view all the data the networks have on their patients, monitor the users' movements as well as the health records they have, they said in their report.
 
-The president-elect gave vague, campaign-era policies about energy over the past several months, telling an interviewer on CNBC in May: "We will be able to be like nobody ever was before. We're going to have the oil, the natural gas and the clean, beautiful coal - so beautiful."
+"This gives an attacker the ability to view what information the networks have on every patient," said Erven.
 
-During his campaign, the New York businessman also promised to cancel the Trans-Pacific Partnership.
+They are able to identify the health records of individual patients by adding their name and date of birth to a medical record. Any breach of the health records can be used to access the whole networks' entire database.
 
-"We are going to have very much energy independence, and if we don't get the energy independence we need, we are just going to be a victim of our own success," Trump said in June at an energy rally in Ohio. "And I say this with great respect and appreciation."
+The hackers have been contacting victims to reassure them that they are working on a new security patch, which will be released on March 1, Erven said. It will prevent them accessing patient details to obtain the private code needed to gain access to other network segments too and will block some of the systems from being controlled remotely.
 
-On Thursday, he tweeted: "It's time for the industry to recover."
-
-"We are not going to allow OPEC nations to blackmail the United States with a devalued currency. There are some very smart people in the oil & gas industry. Oil & gas will come
+"We are all relieved," said Erven. "The way we have seen it go, it gives the industry new confidence to release a patch." ®

@@ -1,0 +1,17 @@
+. These unique identifiers can be used to track specific web activity over a period of time by using an algorithm to create the "history" of each visitor's movement.
+
+"These vulnerabilities exist because of the inherent design features present in the use of web cookies," said Jari Arkko, one of the researchers from security firm SecurityScorecard.
+
+Arkko described how using analytics analytics technology - known as "tracking pixels" - sites are able to create a unique ID for each of their visitors.
+
+This unique ID has to be used to calculate a unique "geolocation number" that identifies web activity within a certain area that is defined by the web site. Tracking pixels are the small computer pixels embedded in the website that a user has to choose to access the website.
+
+The tracking pixels are embedded in the content of the page, and are therefore linked to the IP address of the visitor once the tracking pixel is activated.
+
+Because a tracking pixel is embedded in the website, it includes a unique ID that is calculated by the tracking technology without regard to the visitors IP address. By adding a unique identifier, the tracking pixel is able to calculate the IP address of the user regardless of which browser plugin is used.
+
+"The problem is that the cookie used to store this unique ID cannot be removed until the web site is closed (for example, once the user leaves)," said Arkko.
+
+With this loophole in place the unique ID has to be used to identify each visitor, even after the tracking code is deleted from the web page or the browser is reloaded. This means that a web site's user can then be followed on the web after the tracker's IP address has been deleted.
+
+The technique makes it nearly impossible for many web-related organizations to protect the confidentiality, integrity and availability of digital media because the same web content that

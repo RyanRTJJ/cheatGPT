@@ -1,0 +1,18 @@
+ open spaces where the devices were installed, to ensure they hadn't been installed on more sensitive equipment. After that, the pi would be placed near the devices using a laptop computer. The devices were installed on the ground on a table that the PI and the computer were placed on, so they could be easily hidden.
+
+The company also worked with the University of Cambridge on the Pi sniffing operation. It worked with other researchers to confirm the devices weren't being deployed by a targeted attacker. Using the sniffing technique, it seems to reveal a bunch of details about the devices, including their manufacturer, serial code (which may be used to determine which wifi device they belong to) and their location within the vicinity of other devices, as well as GPS data for their location.
+
+The researchers behind the project are currently working on a number of different features, with the end goal to develop a feature where they can listen in and view anything that's being transferred on the wifi networks. Although the Pi does a good job sniffing data, it could do so without knowing what's being transmitted.
+
+Advertisement
+
+They've also been talking to companies about developing their gadget, and they've been having some success, with some users confirming they were listening in to their wireless networking data. It's just the beginning, though. They're looking at creating more useful gadgets that can snoop on your phone and computers. Maybe they'll give a little money to organizations like WikiLeaks, or that hacker group that published the leaked CIA files. It'll be interesting to see if they build those gadgets. Also, don't expect to have your wifi turned off.
+
+Image by J.P. Sottoz/Shutterstock
+
+Contact the author at kate.knibbs@gizmodo.com.
+
+
+Public PGP key
+
+PGP fingerprint: FF8F 0D7A AB19 6D71 C967 9578 8C12 9478 EE07 10C

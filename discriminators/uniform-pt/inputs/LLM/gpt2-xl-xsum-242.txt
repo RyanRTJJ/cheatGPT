@@ -1,0 +1,13 @@
+ was one of hundreds available in July as part of the Adobe Flash Player zero-day initiative. The initiative is intended to make it more difficult for hackers to leverage previously known security holes.
+
+FireEye said the flaw, one of the most advanced in the year-old program, would "have been able to execute JavaScript code on the victim's system." The zero-day flaw was an "enormous help to attackers" in their ongoing efforts to create malware that runs on popular software like the internet browser Mozilla Firefox and Chrome, and other popular devices like smartphones and tablets. The vulnerability was first discovered last month when another security firm reported it months after it was introduced in the program.
+
+The zero-day flaws are one of the major perks offered in the program, with more fixes and vulnerabilities being revealed in recent months, according to FireEye VP and threat intelligence director Alex Holden. The program aims to highlight the types of vulnerabilities the company can fix and give organizations and businesses more information about the risks they're faced with, including how easy it is for hackers to exploit holes in software.
+
+"The Adobe Zero Day Initiative allows organisations and companies to take more control over their networks, so they aren't falling prey to a series of Internet-supported attacks," Holden said Thursday. "More importantly, we are offering security researchers and system administrators the ability to identify and fix vulnerabilities in their systems in a controlled environment."
+
+The program also allows companies to quickly patch vulnerabilities discovered within the program, which could be invaluable if there's an upcoming cyberattack and hackers see a vulnerability in a particular program.
+
+"The zero-day vulnerability was very specific to Flash Player, so that gives a lot of the attackers an edge," Holden said.
+
+In July, for example, an Adobe researcher who participated in the initiative reported some flaws within the program. The researcher said the flaws were being fixed and that they weren't being exploited by hackers. The researcher did say that attackers had previously tested an exploit that exploited Adobe's Flash Player zero-day vulnerability in June,

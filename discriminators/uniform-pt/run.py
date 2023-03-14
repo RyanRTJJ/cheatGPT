@@ -40,7 +40,7 @@ def load_base_model_and_tokenizer(name):
     if "facebook/opt-" in name:
         print("Using non-fast tokenizer for OPT")
         optional_tok_kwargs['fast'] = False
-    if args.dataset in ['pubmed']:
+    if args.dataset in ['pubmed', 'writing']:
         optional_tok_kwargs['padding_side'] = 'left'
     base_tokenizer = transformers.AutoTokenizer.from_pretrained(name, **optional_tok_kwargs, cache_dir=cache_dir)
     base_tokenizer.pad_token_id = base_tokenizer.eos_token_id
@@ -50,12 +50,12 @@ def load_base_model_and_tokenizer(name):
 def drop_last_word(text):
     return ' '.join(text.split(' ')[:-1])
 
-def _openai_sample(p):
+def _openai_sample(p, min_words):
     if args.dataset != 'pubmed':  # keep Answer: prefix for pubmed
         p = drop_last_word(p)
 
     # sample from the openai model
-    kwargs = { "engine": args.openai_model, "max_tokens": 200 }
+    kwargs = { "engine": args.openai_model, "max_tokens": int(min_words*1.2) }
     if args.do_top_p:
         kwargs['top_p'] = args.top_p
     
@@ -81,7 +81,7 @@ def sample_from_model(texts, base_tokenizer, gpt2_tokenizer, min_words=300, prom
 
     if args.openai_model:
         pool = ThreadPool(args.batch_size)
-        decoded = pool.map(_openai_sample, prompts)
+        decoded = pool.map(_openai_sample, prompts, min_words)
 
     else:
         decoded = ['' for _ in range(len(texts))]
@@ -121,8 +121,8 @@ def sample_from_model(texts, base_tokenizer, gpt2_tokenizer, min_words=300, prom
         API_TOKEN_COUNTER += total_tokens
 
     # eliminate the prefix from the output
-    decoded = [d[len(p) + 1:] for d, p in zip(decoded, prompts)]
-    original = [t[len(p) + 1:] for t, p in zip(original, prompts)]
+    decoded = [d[len(p):] for d, p in zip(decoded, prompts)]
+    original = [t[len(p):] for t, p in zip(original, prompts)]
     
     return original, decoded, prompts
 
@@ -153,8 +153,8 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
         "prompt": []
     }
 
-    for batch in range(len(raw_data) // batch_size):
-        print('Generating samples for batch', batch, 'of', len(raw_data) // batch_size)
+    for batch in range(len(raw_data) // batch_size + 1):
+        print('Generating samples for batch', batch, 'of', len(raw_data) // batch_size + 1)
         original_text = raw_data[batch * batch_size:(batch + 1) * batch_size]
         original_text, sampled_text, prompts = sample_from_model(original_text, base_tokenizer, gpt2_tokenizer, min_words=375 if args.dataset in ['pubmed'] else 300)
 
@@ -200,7 +200,7 @@ def generate_data(dataset, key, n_samples, base_tokenizer, gpt2_tokenizer, prepr
 
     # try to keep only examples with > 350 words
     if dataset in ['writing', 'squad', 'xsum']:
-        long_data = [x for x in data if len(x.split()) > 350]
+        long_data = [x for x in data if len(x.split()) > 340]
         if len(long_data) > 0:
             data = long_data
 
@@ -228,7 +228,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset_key', type=str, default="document")
     parser.add_argument('--n_samples', type=int, default=500)
     parser.add_argument('--base_model_name', type=str, default="gpt2-medium")
-    parser.add_argument('--batch_size', type=int, default=20)
+    parser.add_argument('--batch_size', type=int, default=25)
     parser.add_argument('--do_top_k', action='store_true')
     parser.add_argument('--top_k', type=int, default=40)
     parser.add_argument('--do_top_p', action='store_true')

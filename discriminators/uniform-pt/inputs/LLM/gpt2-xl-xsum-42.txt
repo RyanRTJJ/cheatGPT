@@ -1,0 +1,27 @@
+ a previously-used work was used as a model.
+
+Researchers at the Max Planck Institute for the Science of Art in Munich said the results showed the two pieces of art were "not that dissimilar".
+
+The technique was developed after Professor Thomas Schimmelbein, who specializes in computer vision and art with over a decade of experience, spotted a difference in the colours in two paintings by Rembrandt and Raphael.
+
+The technique gives the computer a visual "smell" for a given piece of artwork.
+
+Image copyright Max Planck-Institute for the Science of Art/Lena Fazekas Image caption The algorithm has learned not to look at the Rembrandt, but the Raphael
+
+Professor Schimmelbein said: "We saw that in the Rembrandt, if you turn on the red in one part of the Rembrandt painting, there is a similar colour where the red is turning off.
+
+"But if we looked at the same part of the Rembrandt, it actually turned on the white in the paint here, where the red was going off in another part of the Rembrandt painting. It's a difference that looks completely different but it is the same part of the painting."
+
+A previous study of colour variation found a similar problem with the difference between the Rembrandt, one of the greatest painters of all time, and the Raphael, a Renaissance artist widely considered to be the best of her time.
+
+"At the time of the painting Rembrandt, when he was alive, used a very, very light paint," said Professor Schimmelbein.
+
+"After he died, he used a much lighter paint.
+
+"So you could say that the Rembrandt had the same problem; he used a light painter's paint and the Raphael, a heavy painter's paint. Actually they were the same painter."
+
+The computer programme was developed for the Max Planck Institute, where researchers study the history of art and technology.
+
+The research is published in the Journal of Quantitative and Computational Image Processing.
+
+Follow James on Twitter

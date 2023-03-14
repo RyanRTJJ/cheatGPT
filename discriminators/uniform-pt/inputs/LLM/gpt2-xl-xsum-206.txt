@@ -1,0 +1,27 @@
+ enable customers to deposit money into their accounts without going to a branch.
+
+According to the complaint, Commonwealth Bank failed to ensure customers' funds were not moved between credit/debit card transactions (such as a cheque) in the IDMs or between accounts, such as withdrawals to pay for utility bills and tuition fees.
+
+"This was done without customers' explicit acknowledgement, acknowledgement that the transactions were being carried out, or without obtaining consumer consent," Commonwealth Bank claimed in its defence. The bank has also claimed Commonwealth Bank should have notified customers when there were unauthorized activity on their accounts.
+
+The bank has also complained about the way it informed Australian banks when the data for its customers' accounts was stolen by hackers working overseas.
+
+After the data was stolen by a group calling itself The Dark Overlord, Commonwealth Bank informed Australian banks when its customers' financial accounts were breached, but not Australia's financial identity theft crisis warning body, the Financial Systems Ombudsman.
+
+The Ombudsman said this made banks liable for compensation if customers complained and if the banks did not notify them about how the breach occurred.
+
+"The Ombudsman must investigate complaints about financial institutions," it said in a statement on Friday morning. "The Ombudsman can act expeditiously if it determines a consumer is suffering detriment under the Consumer Credit Act 1974 (Cth).
+
+"The Ombudsman must determine, as a matter of urgency, whether the complainants may be eligible for compensation."
+
+How a banking hack could work (and what you need to worry about) Read more
+
+Consumer watchdogs have criticised regulators for allowing the financial sector to evade their duties when it comes to security breaches.
+
+In August, the Australian Competition and Consumer Commission (ACCC) said banks did not adequately ensure the security of customers' financial products.
+
+In October, the ACCC said in a separate investigation that banks did not adequately warn customers over breaches of their personal information.
+
+"We also note the ACCC also acknowledges there are significant ongoing issues regarding the accuracy of bank records relating to security breaches," the group said in a statement.
+
+But regulators had no power to impose fines or enforce

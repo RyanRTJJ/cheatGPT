@@ -1,0 +1,19 @@
+ likely stolen from an American federal employee on behalf of their government".
+
+Other data sets being offered include "all social security numbers" and "physicals (including birth certificate, drivers license, passport and credit cards) with expiration dates", the hacker told the Guardian.
+
+A separate set of hacked medical data sold for 977 bitcoins (£6,350).
+
+"I started to think about Bitcoin when I noticed people were asking me how I was able to access this data," the hacker wrote in a blogpost. "I couldn't imagine how all of this was possible. I finally realised that in order for you all to get this data, they had to hack into one of these government databases in some way."
+
+While the hacker claims to not know who is behind the hacked medical data, he says he has made contact with the person who owns it. "If I were to tell them what exactly had happened I would kill myself," he said. "So for now I'm just going to provide a link which is the original web page."
+
+In the email to an unnamed recipient, the person who sells the medical data said he would not offer medical records because he did not trust the source.
+
+Medical providers have long struggled to obtain data from government departments due to the need for patient confidentiality. While health data can be accessed by other parties from the Department of Health, it must be processed through an NHS central database before the results can be distributed for diagnosis or treatment.
+
+In June, a US security firm, Hold Security, claimed that it had been hacked and the medical data of 1.17 million patients posted to the public. The files included patient name, address, age, nationality and health record number.
+
+The British Department of Health defended the data breach and said that all health data was being protected with "the highest levels of encryption, and secure transmission of medical information is now an important national priority", although the incident raised concerns from some groups over the future of patient confidentiality.
+
+• This article was
