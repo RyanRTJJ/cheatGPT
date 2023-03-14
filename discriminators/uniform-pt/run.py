@@ -102,7 +102,7 @@ def sample_from_model(texts, base_tokenizer, gpt2_tokenizer, min_words=300, prom
                 sampling_kwargs['top_p'] = args.top_p
             elif args.do_top_k:
                 sampling_kwargs['top_k'] = args.top_k
-            min_length = 375 if args.dataset in ['pubmed'] else 450
+            min_length = 375 if args.dataset in ['pubmed'] else 425
             outputs = base_model.generate(**masked_encoded, min_length=min_length, max_length=500, do_sample=True, **sampling_kwargs, pad_token_id=base_tokenizer.eos_token_id, eos_token_id=base_tokenizer.eos_token_id)
             new_decoded = base_tokenizer.batch_decode(outputs, skip_special_tokens=True)
             j = 0
@@ -149,15 +149,16 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
     np.random.seed(42)
     data = {
         "human": [],
-        "sampled": [],
+        "LLM": [],
+        "prompt": []
     }
 
     for batch in range(len(raw_data) // batch_size):
         print('Generating samples for batch', batch, 'of', len(raw_data) // batch_size)
         original_text = raw_data[batch * batch_size:(batch + 1) * batch_size]
-        original_text, sampled_text, prompts = sample_from_model(original_text, base_tokenizer, gpt2_tokenizer, min_words=400 if args.dataset in ['pubmed'] else 300)
+        original_text, sampled_text, prompts = sample_from_model(original_text, base_tokenizer, gpt2_tokenizer, min_words=375 if args.dataset in ['pubmed'] else 300)
 
-        for o, s in zip(original_text, sampled_text):
+        for o, s, p in zip(original_text, sampled_text, prompts):
             if args.dataset == 'pubmed' or args.dataset == 'writing':
                 o = o.replace(custom_datasets.SEPARATOR, ' ')
             if args.dataset == 'pubmed':
@@ -167,9 +168,8 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
 
             # add to the data
             data["human"].append(o)
-            data["sampled"].append(s)
-
-    data["prompts"] = prompts
+            data["LLM"].append(s)
+            data["prompt"].append(p)
 
     return data
 
@@ -228,7 +228,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset_key', type=str, default="document")
     parser.add_argument('--n_samples', type=int, default=500)
     parser.add_argument('--base_model_name', type=str, default="gpt2-medium")
-    parser.add_argument('--batch_size', type=int, default=50)
+    parser.add_argument('--batch_size', type=int, default=20)
     parser.add_argument('--do_top_k', action='store_true')
     parser.add_argument('--top_k', type=int, default=40)
     parser.add_argument('--do_top_p', action='store_true')
@@ -259,7 +259,7 @@ if __name__ == '__main__':
     print(f"Saving args to absolute path: {os.path.abspath(SAVE_FOLDER)}")
 
     # write args to file
-    with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{args.dataset}-({args.n_samples}-{START_DATE}-{START_TIME}.json'), "w") as f:
+    with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{args.dataset}-{args.n_samples}-{START_DATE}-{START_TIME}.json'), "w") as f:
         json.dump(args.__dict__, f, indent=4)
 
     n_samples = args.n_samples
@@ -283,7 +283,6 @@ if __name__ == '__main__':
 
     print(f'Loading dataset {args.dataset}...')
     data = generate_data(args.dataset, args.dataset_key, n_samples, base_tokenizer, gpt2_tokenizer, preproc_tokenizer)
-    print(data.keys())
     
     # save every element of the data dict to a separate file in respective folder
     for key, value in data.items():
@@ -292,7 +291,7 @@ if __name__ == '__main__':
             os.makedirs(SAVE_FOLDER)
         print(f"Saving {key} to absolute path: {os.path.abspath(SAVE_FOLDER)}")
         for i, elem in enumerate(value):
-            with open(os.path.join(SAVE_FOLDER, f"{i}.txt"), "w") as f:
+            with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{args.dataset}-{i}.txt'), "w") as f:
                 f.write(elem)
 
     print(f"Used an *estimated* {API_TOKEN_COUNTER} API tokens (may be inaccurate)")
