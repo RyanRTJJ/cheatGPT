@@ -9,7 +9,6 @@ import argparse
 
 def print_list_nice(some_list):
     for thing in some_list:
-        print("")
         print(thing)
 
 class Perturber:
@@ -65,7 +64,7 @@ class Perturber:
         # Create the model here
         self.mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(
             self.MASKING_FILLING_MODEL_NAME, 
-            cache_dir=self.CACHE_DIR)
+            cache_dir=self.CACHE_DIR).to(self.DEVICE)
         try:
             n_positions = self.mask_model.config.n_positions
         except AttributeError:
@@ -88,7 +87,7 @@ class Perturber:
         self.scoring_model = transformers.AutoModelForCausalLM.from_pretrained(
             self.SCORING_MODEL_NAME, 
             **scoring_model_kwargs, 
-            cache_dir=self.CACHE_DIR)
+            cache_dir=self.CACHE_DIR).to(self.DEVICE)
 
         optional_tok_kwargs = {}
         # This chunk is currently useless, but we may use facebook/opt-2.7b
@@ -317,9 +316,8 @@ class Perturber:
         ll_grid = np.zeros((len(grid), len(grid[0])))
         with torch.no_grad():
             for set_idx, perturb_set in enumerate(grid):
-                print(f"\nGrading set: {set_idx}")
+                print(f"Grading set: {set_idx}")
                 for segment_idx, perturb_segment in enumerate(perturb_set):
-                    print(f"Grading segment_idx: {segment_idx}")
                     tokenized = self.base_tokenizer(perturb_segment, return_tensors="pt").to(self.DEVICE)
                     labels = tokenized.input_ids
                     ll_grid[set_idx, segment_idx] = -self.scoring_model(**tokenized, labels=labels).loss.item()
@@ -352,12 +350,14 @@ class Perturber:
 
             # Save OG story likelihood
             og_story_grid_ll = self.get_ll_of_grid([segmented_story])
+            os.makedirs(self.LL_SAVE_LOC, exist_ok=True)
             np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}_og.npy", og_story_grid_ll)
 
             perturb_grid = self.perturb_story_n_times(segmented_story) # a (N_PERTURBS, N_SEGMENTS) grid.
             # Save perturbations
             for perturbation_idx, perturbed_segments in enumerate(perturb_grid):
                 perturbed_text = ' '.join(perturbed_segments)
+                os.makedirs(self.FOLDER_TO_SAVE_PERTURBS, exist_ok=True)
                 f = open(f'{self.FOLDER_TO_SAVE_PERTURBS}/{story_names[idx]}_p_{perturbation_idx}.txt', 'w+')
                 f.write(perturbed_text)
                 f.close()

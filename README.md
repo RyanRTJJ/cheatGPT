@@ -197,3 +197,6 @@ LLM texts are just the `"{LLM_RESPONSE}"` parts **without** the scaffolding, and
 2. Generate LLM text based on this prompt.
 3. LLM text consists of **only** the LLM-generated "response" to the prompt.
 4. Human text consists of **only** the part that came after the 30 tokens.
+
+# Perturbing Pipeline
+`python perturb.py --folder_to_perturb inputs/human --ll_save_loc results/gpt2-medium-scorer/human --folder_to_save_perturbs perturbations/human --num_perturbations 50`
