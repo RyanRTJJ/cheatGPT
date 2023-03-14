@@ -173,7 +173,7 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
 def strip_newlines(text):
     return ' '.join(text.split())
 
-def generate_data(dataset, key, base_tokenizer, gpt2_tokenizer, preproc_tokenizer):
+def generate_data(dataset, key, n_samples, base_tokenizer, gpt2_tokenizer, preproc_tokenizer):
     # load data
     if dataset in custom_datasets.DATASETS:
         data = custom_datasets.load(dataset, cache_dir)
@@ -298,7 +298,7 @@ if __name__ == '__main__':
     load_base_model()
 
     print(f'Loading dataset {args.dataset}...')
-    data = generate_data(args.dataset, args.dataset_key, base_tokenizer, gpt2_tokenizer, preproc_tokenizer)
+    data = generate_data(args.dataset, args.dataset_key, n_samples, base_tokenizer, gpt2_tokenizer, preproc_tokenizer)
 
     if args.scoring_model_name:
         print(f'Loading SCORING model {args.scoring_model_name}...')
