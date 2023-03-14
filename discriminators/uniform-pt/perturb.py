@@ -5,6 +5,7 @@ import torch
 import torch.nn.functional as F
 import re
 import os
+import argparse
 
 def print_list_nice(some_list):
     for thing in some_list:
@@ -20,60 +21,50 @@ class Perturber:
                         that you don't mask out contiguous spans.
     - "pct":            A masking percentage
     - "ceil_pct":       A percentage (of how much to mask cap)
-    - "int8":           A setting inherited from detect-gpt (unknown)
-    - "half":           A setting inherited from detect-gpt (unknown)
     - "cache_dir":      The directory where huggingface stores downloaded models (default: ~/.cache)
     - "mask_top_p":     A float, search "top_p" here for more info: https://huggingface.co/blog/how-to-generate
     - "mask_pattern":   A regex to match all <extra_id_*> tokens, where * is an integer
     - "num_perturbs":   Number of perturbations per story (text).
     """
-    SPAN_LENGTH = 2
     BUFFER_SIZE = 1
-    PCT = 0.3
     CEIL_PCT = False
-    INT8 = False
-    HALF = False
-    CACHE_DIR = '~/.cache'
-    MASK_TOP_P = 1.0
     MASK_PATTERN = re.compile(r"<extra_id_\d+>")
-    SEGMENT_LENGTH = 50
-    N_PERTURBS = 20
+    MASK_STRING = '<<<mask>>>'                  # Model-dependent
 
     """
     Different models and what they do
     ---------------------------------
-    - BASE_MODEL:                The model that assesses perturbation likelihoods
-    - MASK_FILLING_MODEL_NAME
+    - SCORING_MODEL:                The model that assesses perturbation likelihoods
+    - MASK_FILLING_MODEL_NAME:      The model that generates the perturbation tokens
     """
 
-    MASK_STRING = '<<<mask>>>'                  # Model-dependent
-    MASKING_FILLING_MODEL_NAME = 't5-large'     # Is there a reason we don't use same model here?
-    BASE_MODEL_NAME = 'gpt2'                    # A 'generic generative model'. Was 'facebook/opt-2.7b' in detect-gpt
+    def __init__(self, args):
+        # Sanity check that the necessary args have been given
+        assert args.folder_to_perturb != None, "Where are your texts to perturb? Usage: --folder_to_perturb [DIR_NAME]"
+        assert args.ll_save_loc != None, "Where to save your loglikelihoods? Usage: --ll_save_loc [DIR_NAME]"
+        assert args.folder_to_save_perturbs != None, "Where to save your perturbed texts? Usage: --folders_to_save_perturbed [DIR_NAME]"
+        
+        self.FOLDER_TO_PERTURB = args.folder_to_perturb
+        self.LL_SAVE_LOC = args.ll_save_loc
+        self.FOLDER_TO_SAVE_PERTURBS = args.folder_to_save_perturbs
 
-    def __init__(self, device='cpu', span_length=None, buffer_size=None):
-        self.DEVICE = 'cpu'
+        self.DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-        if span_length != None:
-            self.SPAN_LENGTH = span_length
-        if buffer_size != None:
-            self.BUFFER_SIZE = buffer_size
+        self.SPAN_LENGTH = args.span_length
+        self.PCT = args.pct_words_masked
+        self.CACHE_DIR = args.cache_dir
+        self.MASK_TOP_P = args.mask_top_p
+        self.SEGMENT_LENGTH = args.segment_length
+        self.N_PERTURBS = args.num_perturbations
+        
+        self.MASKING_FILLING_MODEL_NAME = args.mask_filling_model_name  # The bigger the better; rule of thumb
+        self.SCORING_MODEL_NAME = args.scoring_model_name               # A param to vary in tests
 
         # Mask filling / perturbing model
         # -------------------------------
-        int8_kwargs = {}
-        half_kwargs = {}
-        
-        # As of March 2 2023 this is block does nothing; inherited code from detect-gpt
-        if self.INT8:
-            int8_kwargs = dict(load_in_8bit=True, device_map='auto', torch_dtype=torch.bfloat16)
-        elif self.HALF:
-            half_kwargs = dict(torch_dtype=torch.bfloat16)
-        
         # Create the model here
         self.mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(
             self.MASKING_FILLING_MODEL_NAME, 
-            **int8_kwargs, 
-            **half_kwargs, 
             cache_dir=self.CACHE_DIR)
         try:
             n_positions = self.mask_model.config.n_positions
@@ -86,38 +77,29 @@ class Perturber:
         
         # Evaluating model
         # ----------------
-        print(f'Loading BASE model {self.BASE_MODEL_NAME}...')
+        print(f'Loading SCORING model {self.SCORING_MODEL_NAME}...')
 
-        base_model_kwargs = {}
+        scoring_model_kwargs = {}
         # This chunk is currently useless, inherited from detect-gpt
-        if 'gpt-j' in self.BASE_MODEL_NAME or 'neox' in self.BASE_MODEL_NAME:
-            base_model_kwargs.update(dict(torch_dtype=torch.float16))
-        if 'gpt-j' in self.BASE_MODEL_NAME:
-            base_model_kwargs.update(dict(revision='float16'))
-        self.base_model = transformers.AutoModelForCausalLM.from_pretrained(
-            self.BASE_MODEL_NAME, 
-            **base_model_kwargs, 
+        if 'gpt-j' in self.SCORING_MODEL_NAME or 'neox' in self.SCORING_MODEL_NAME:
+            scoring_model_kwargs.update(dict(torch_dtype=torch.float16))
+        if 'gpt-j' in self.SCORING_MODEL_NAME:
+            scoring_model_kwargs.update(dict(revision='float16'))
+        self.scoring_model = transformers.AutoModelForCausalLM.from_pretrained(
+            self.SCORING_MODEL_NAME, 
+            **scoring_model_kwargs, 
             cache_dir=self.CACHE_DIR)
 
         optional_tok_kwargs = {}
         # This chunk is currently useless, but we may use facebook/opt-2.7b
-        if "facebook/opt-" in self.BASE_MODEL_NAME:
+        if "facebook/opt-" in self.SCORING_MODEL_NAME:
             print("Using non-fast tokenizer for OPT")
             optional_tok_kwargs['fast'] = False
         self.base_tokenizer = transformers.AutoTokenizer.from_pretrained(
-            self.BASE_MODEL_NAME, 
+            self.SCORING_MODEL_NAME, 
             **optional_tok_kwargs, 
             cache_dir=self.CACHE_DIR)
         self.base_tokenizer.pad_token_id = self.base_tokenizer.eos_token_id
-
-    def sanity_check(self, texts):
-        # Check 1: require that all texts have at least 2 full segments in them
-        too_short_idxs = []
-        for idx, text in enumerate(texts):
-            if len(text) < self.SEGMENT_LENGTH * 2:
-                too_short_idxs.append(idx)
-        
-        assert len(too_short_idxs) == 0, f"\nTexts {too_short_idxs} are too short. Ensure each text has >= {2 * self.SEGMENT_LENGTH} words."
 
     def tokenize_and_mask(self, text):
         """
@@ -271,9 +253,19 @@ class Perturber:
         perturbed_texts = self.apply_extracted_fills(masked_texts, extracted_fills)
         
         # detect-gpt has a while loop here to detect "empty" perturbed texts, i.e. some
-        # texts become '' post-fill. Don't know why this will happen, but for now, we simply
-        # assert that this is not true. Implement fix if necessary.
-        assert '' not in perturbed_texts, f"{len([x for x in perturbed_texts if x == ''])} texts have no fill. Please check why."
+        # texts become '' post-fill. Don't know why this will happen,
+        # Handle the fact that sometimes the model doesn't generate the right number of fills and we have to try again
+        attempts = 1
+        while '' in perturbed_texts:
+            idxs = [idx for idx, x in enumerate(perturbed_texts) if x == '']
+            print(f'WARNING: {len(idxs)} texts have no fills. Trying again [attempt {attempts}].')
+            masked_texts = [self.tokenize_and_mask(x, self.SPAN_LENGTH, self.PCT, self.CEIL_PCT) for idx, x in enumerate(texts) if idx in idxs]
+            raw_fills = self.replace_masks(masked_texts)
+            extracted_fills = self.extract_fills(raw_fills)
+            new_perturbed_texts = self.apply_extracted_fills(masked_texts, extracted_fills)
+            for idx, x in zip(idxs, new_perturbed_texts):
+                perturbed_texts[idx] = x
+            attempts += 1
 
         return perturbed_texts
 
@@ -330,56 +322,71 @@ class Perturber:
                     print(f"Grading segment_idx: {segment_idx}")
                     tokenized = self.base_tokenizer(perturb_segment, return_tensors="pt").to(self.DEVICE)
                     labels = tokenized.input_ids
-                    ll_grid[set_idx, segment_idx] = -self.base_model(**tokenized, labels=labels).loss.item()
+                    ll_grid[set_idx, segment_idx] = -self.scoring_model(**tokenized, labels=labels).loss.item()
         return ll_grid
 
+    def perturb_and_score_dir_of_stories(self):
+        """
+        +---------------+
+        | Functionality |
+        +---------------+
+        What the function name suggests.
+        """
+        subdirs = os.listdir(self.FOLDER_TO_PERTURB)
+        files = [self.FOLDER_TO_PERTURB + '/' + subdir for subdir in subdirs if subdir.endswith('.txt')]
+        story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.txt')]
+        print("\nfilenames:")
+        print("-" * 30)
+        print_list_nice(files)
 
-
-def perturb_and_score_dir_of_stories(perturber, dir, ll_save_loc, perturbed_txt_save_loc):
-    """
-    @param perturber: [Perturber] an instance of the Perturber class.
-    @param dir: [String] a name of a directory containing .txt files of stories. (One story per file).
-    """
-    subdirs = os.listdir(dir)
-    files = [dir + '/' + subdir for subdir in subdirs if subdir.endswith('.txt')]
-    story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.txt')]
-    print("\nfilenames:")
-    print("-" * 30)
-    print_list_nice(files)
-
-    texts = []
-    for file in files:
-        f = open(file, "r")
-        text = f.read()
-        texts.append(text)
-        f.close()
-    
-    segmented_stories = perturber.segment_texts(texts)
-    for idx, segmented_story in enumerate(segmented_stories):
-        print(f"\nPROCESSING STORY {idx}...")
-
-        # Save OG story likelihood
-        og_story_grid_ll = perturber.get_ll_of_grid([segmented_story])
-        np.save(f"{ll_save_loc}/{story_names[idx]}_og.npy", og_story_grid_ll)
-
-        perturb_grid = perturber.perturb_story_n_times(segmented_story) # a (N_PERTURBS, N_SEGMENTS) grid.
-        # Save perturbations
-        for perturbation_idx, perturbed_segments in enumerate(perturb_grid):
-            perturbed_text = ' '.join(perturbed_segments)
-            f = open(f'{perturbed_txt_save_loc}/{story_names[idx]}_p_{perturbation_idx}.txt', 'w+')
-            f.write(perturbed_text)
+        texts = []
+        for file in files:
+            f = open(file, "r")
+            text = f.read()
+            texts.append(text)
             f.close()
-
-        # Save perturbed stories' likelihoods
-        perturbation_grid_ll = perturber.get_ll_of_grid(perturb_grid)
-        np.save(f"{ll_save_loc}/{story_names[idx]}_pgrid.npy", perturbation_grid_ll)
-    
         
+        segmented_stories = self.segment_texts(texts)
+        for idx, segmented_story in enumerate(segmented_stories):
+            print(f"\nPROCESSING STORY {idx}...")
 
-perturber = Perturber()
+            # Save OG story likelihood
+            og_story_grid_ll = self.get_ll_of_grid([segmented_story])
+            np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}_og.npy", og_story_grid_ll)
 
-perturb_and_score_dir_of_stories(
-    perturber, 
-    dir="eda/human_stories", 
-    ll_save_loc="eda/human_results", 
-    perturbed_txt_save_loc="eda/human_stories_perturbed")
+            perturb_grid = self.perturb_story_n_times(segmented_story) # a (N_PERTURBS, N_SEGMENTS) grid.
+            # Save perturbations
+            for perturbation_idx, perturbed_segments in enumerate(perturb_grid):
+                perturbed_text = ' '.join(perturbed_segments)
+                f = open(f'{self.FOLDER_TO_SAVE_PERTURBS}/{story_names[idx]}_p_{perturbation_idx}.txt', 'w+')
+                f.write(perturbed_text)
+                f.close()
+
+            # Save perturbed stories' likelihoods
+            perturbation_grid_ll = self.get_ll_of_grid(perturb_grid)
+            np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}_pgrid.npy", perturbation_grid_ll)
+        
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, default="xsum")
+    parser.add_argument('--dataset_key', type=str, default="document")
+    parser.add_argument('--pct_words_masked', type=float, default=0.3) # pct masked is actually pct_words_masked * (span_length / (span_length + 2 * buffer_size))
+    parser.add_argument('--span_length', type=int, default=2)
+    parser.add_argument('--n_perturbation_list', type=str, default="1,10")
+    parser.add_argument('--scoring_model_name', type=str, default="gpt2-medium")
+    parser.add_argument('--mask_filling_model_name', type=str, default="t5-large")
+    parser.add_argument('--batch_size', type=int, default=50)
+    parser.add_argument('--output_name', type=str, default="")
+    parser.add_argument('--openai_model', type=str, default=None)
+    parser.add_argument('--openai_key', type=str)
+    parser.add_argument('--mask_top_p', type=float, default=1.0)
+    parser.add_argument('--cache_dir', type=str, default="~/.cache")
+    parser.add_argument('--segment_length', type=int, default=50)
+    parser.add_argument('--num_perturbations', type=int, default=20)
+    parser.add_argument('--folder_to_perturb', type=str, default=None)          # Something like "eda/human_stories"
+    parser.add_argument('--ll_save_loc', type=str, default=None)                # Something like "eda/human_results"
+    parser.add_argument('--folder_to_save_perturbs', type=str, default=None)    # Something like "eda/human_stories_perturbed"
+    args = parser.parse_args()
+
+    perturber = Perturber(args)
+    perturber.perturb_and_score_dir_of_stories()
