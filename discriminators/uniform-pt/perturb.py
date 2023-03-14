@@ -65,7 +65,7 @@ class Perturber:
         # Create the model here
         self.mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(
             self.MASKING_FILLING_MODEL_NAME, 
-            cache_dir=self.CACHE_DIR)
+            cache_dir=self.CACHE_DIR).to(self.DEVICE)
         try:
             n_positions = self.mask_model.config.n_positions
         except AttributeError:
@@ -73,7 +73,7 @@ class Perturber:
 
         self.mask_tokenizer = transformers.AutoTokenizer.from_pretrained(
             self.MASKING_FILLING_MODEL_NAME, 
-            model_max_length=n_positions, cache_dir=self.CACHE_DIR)
+            model_max_length=n_positions, cache_dir=self.CACHE_DIR).to(self.DEVICE)
         
         # Evaluating model
         # ----------------
@@ -88,7 +88,7 @@ class Perturber:
         self.scoring_model = transformers.AutoModelForCausalLM.from_pretrained(
             self.SCORING_MODEL_NAME, 
             **scoring_model_kwargs, 
-            cache_dir=self.CACHE_DIR)
+            cache_dir=self.CACHE_DIR).to(self.DEVICE)
 
         optional_tok_kwargs = {}
         # This chunk is currently useless, but we may use facebook/opt-2.7b
@@ -98,7 +98,7 @@ class Perturber:
         self.base_tokenizer = transformers.AutoTokenizer.from_pretrained(
             self.SCORING_MODEL_NAME, 
             **optional_tok_kwargs, 
-            cache_dir=self.CACHE_DIR)
+            cache_dir=self.CACHE_DIR).to(self.DEVICE)
         self.base_tokenizer.pad_token_id = self.base_tokenizer.eos_token_id
 
     def tokenize_and_mask(self, text):
