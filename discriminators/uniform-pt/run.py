@@ -153,7 +153,7 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
     for batch in range(len(raw_data) // batch_size):
         print('Generating samples for batch', batch, 'of', len(raw_data) // batch_size)
         original_text = raw_data[batch * batch_size:(batch + 1) * batch_size]
-        sampled_text = sample_from_model(original_text, base_tokenizer, gpt2_tokenizer, min_words=300 if args.dataset in ['pubmed'] else 400)
+        sampled_text = sample_from_model(original_text, base_tokenizer, gpt2_tokenizer, min_words=400 if args.dataset in ['pubmed'] else 300)
 
         for o, s in zip(original_text, sampled_text):
             if args.dataset == 'pubmed' or args.dataset == 'writing':
@@ -205,10 +205,10 @@ def generate_data(dataset, key, base_tokenizer, gpt2_tokenizer, preproc_tokenize
 
     data = data[:5_000]
 
-    # keep only examples with <= 600 tokens according to mask_tokenizer
+    # keep only examples with <= 512 tokens according to mask_tokenizer
     # this step has the extra effect of removing examples with low-quality/garbage content
     tokenized_data = preproc_tokenizer(data)
-    data = [x for x, y in zip(data, tokenized_data["input_ids"]) if len(y) <= 600]
+    data = [x for x, y in zip(data, tokenized_data["input_ids"]) if len(y) <= 512]
 
     # print stats about remainining data
     print(f"Total number of samples: {len(data)}")
@@ -313,38 +313,35 @@ if __name__ == '__main__':
         print(f"Writing raw data to {os.path.join(SAVE_FOLDER, 'raw_data.json')}")
         json.dump(data, f)
 
-    # if not args.skip_baselines:
-    #     baseline_outputs = [run_baseline_threshold_experiment(get_ll, "likelihood", n_samples=n_samples)]
-    #     baseline_outputs.append(eval_supervised(data, model='roberta-base-openai-detector'))
-    #     baseline_outputs.append(eval_supervised(data, model='roberta-large-openai-detector'))
+    # baseline_outputs = [run_baseline_threshold_experiment(get_ll, "likelihood", n_samples=n_samples)]
+    # baseline_outputs.append(eval_supervised(data, model='roberta-base-openai-detector'))
+    # baseline_outputs.append(eval_supervised(data, model='roberta-large-openai-detector'))
 
     # outputs = []
 
-    # if not args.baselines_only:
-    #     # run perturbation experiments
-    #     for n_perturbations in n_perturbation_list:
-    #         perturbation_results = get_perturbation_results(args.span_length, n_perturbations, n_samples)
-    #         for perturbation_mode in ['d', 'z']:
-    #             output = run_perturbation_experiment(
-    #                 perturbation_results, perturbation_mode, span_length=args.span_length, n_perturbations=n_perturbations, n_samples=n_samples)
-    #             outputs.append(output)
-    #             with open(os.path.join(SAVE_FOLDER, f"perturbation_{n_perturbations}_{perturbation_mode}_results.json"), "w") as f:
-    #                 json.dump(output, f)
+    # # run perturbation experiments
+    # for n_perturbations in n_perturbation_list:
+    #     perturbation_results = get_perturbation_results(args.span_length, n_perturbations, n_samples)
+    #     for perturbation_mode in ['d', 'z']:
+    #         output = run_perturbation_experiment(
+    #             perturbation_results, perturbation_mode, span_length=args.span_length, n_perturbations=n_perturbations, n_samples=n_samples)
+    #         outputs.append(output)
+    #         with open(os.path.join(SAVE_FOLDER, f"perturbation_{n_perturbations}_{perturbation_mode}_results.json"), "w") as f:
+    #             json.dump(output, f)
 
-    # if not args.skip_baselines:
-    #     # write likelihood threshold results to a file
-    #     with open(os.path.join(SAVE_FOLDER, f"likelihood_threshold_results.json"), "w") as f:
-    #         json.dump(baseline_outputs[0], f)
-        
-    #     # write supervised results to a file
-    #     with open(os.path.join(SAVE_FOLDER, f"roberta-base-openai-detector_results.json"), "w") as f:
-    #         json.dump(baseline_outputs[-2], f)
-        
-    #     # write supervised results to a file
-    #     with open(os.path.join(SAVE_FOLDER, f"roberta-large-openai-detector_results.json"), "w") as f:
-    #         json.dump(baseline_outputs[-1], f)
+    # # write likelihood threshold results to a file
+    # with open(os.path.join(SAVE_FOLDER, f"likelihood_threshold_results.json"), "w") as f:
+    #     json.dump(baseline_outputs[0], f)
+    
+    # # write supervised results to a file
+    # with open(os.path.join(SAVE_FOLDER, f"roberta-base-openai-detector_results.json"), "w") as f:
+    #     json.dump(baseline_outputs[-2], f)
+    
+    # # write supervised results to a file
+    # with open(os.path.join(SAVE_FOLDER, f"roberta-large-openai-detector_results.json"), "w") as f:
+    #     json.dump(baseline_outputs[-1], f)
 
-    #     outputs += baseline_outputs
+    # outputs += baseline_outputs
 
     # save_roc_curves(outputs)
     # save_ll_histograms(outputs)
