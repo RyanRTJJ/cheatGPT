@@ -50,9 +50,10 @@ def load_base_model_and_tokenizer(name):
 def drop_last_word(text):
     return ' '.join(text.split(' ')[:-1])
 
-def _openai_sample(p, min_words):
+def _openai_sample(p, min_words=375):
     if args.dataset != 'pubmed':  # keep Answer: prefix for pubmed
         p = drop_last_word(p)
+        min_words = 300
 
     # sample from the openai model
     kwargs = { "engine": args.openai_model, "max_tokens": int(min_words*1.2) }
@@ -81,7 +82,7 @@ def sample_from_model(texts, base_tokenizer, gpt2_tokenizer, min_words=300, prom
 
     if args.openai_model:
         pool = ThreadPool(args.batch_size)
-        decoded = pool.map(_openai_sample, prompts, min_words)
+        decoded = pool.map(_openai_sample, prompts)
 
     else:
         decoded = ['' for _ in range(len(texts))]
@@ -290,6 +291,7 @@ if __name__ == '__main__':
         if not os.path.exists(SAVE_FOLDER):
             os.makedirs(SAVE_FOLDER)
         print(f"Saving {key} to absolute path: {os.path.abspath(SAVE_FOLDER)}")
+        
         for i, elem in enumerate(value):
             with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{args.dataset}-{i}.txt'), "w") as f:
                 f.write(elem)
