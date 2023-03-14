@@ -287,13 +287,13 @@ if __name__ == '__main__':
     
     # save every element of the data dict to a separate file in respective folder
     for key, value in data.items():
-        SAVE_FOLDER = f"inputs/{key}"
+        SAVE_FOLDER = f"inputs/{key}/{args.dataset}"
         if not os.path.exists(SAVE_FOLDER):
             os.makedirs(SAVE_FOLDER)
         print(f"Saving {key} to absolute path: {os.path.abspath(SAVE_FOLDER)}")
         
         for i, elem in enumerate(value):
-            with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{args.dataset}-{i}.txt'), "w") as f:
+            with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{i}.txt'), "w") as f:
                 f.write(elem)
 
     print(f"Used an *estimated* {API_TOKEN_COUNTER} API tokens (may be inaccurate)")
