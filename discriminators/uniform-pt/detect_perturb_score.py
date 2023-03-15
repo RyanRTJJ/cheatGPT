@@ -44,18 +44,15 @@ def load_mask_model():
     print('MOVING MASK MODEL TO GPU...', end='', flush=True)
     start = time.time()
 
-    if args.openai_model is None:
-        base_model.cpu()
-    if not args.random_fills:
-        mask_model.to(DEVICE)
+    mask_model.to(DEVICE)
     print(f'DONE ({time.time() - start:.2f}s)')
 
 
 def tokenize_and_mask(text, span_length, pct, ceil_pct=False):
     tokens = text.split(' ')
     mask_string = '<<<mask>>>'
-
-    n_spans = pct * len(tokens) / (span_length + args.buffer_size * 2)
+    buffer_size = 1
+    n_spans = pct * len(tokens) / (span_length + buffer_size * 2)
     if ceil_pct:
         n_spans = np.ceil(n_spans)
     n_spans = int(n_spans)
@@ -64,8 +61,8 @@ def tokenize_and_mask(text, span_length, pct, ceil_pct=False):
     while n_masks < n_spans:
         start = np.random.randint(0, len(tokens) - span_length)
         end = start + span_length
-        search_start = max(0, start - args.buffer_size)
-        search_end = min(len(tokens), end + args.buffer_size)
+        search_start = max(0, start - buffer_size)
+        search_end = min(len(tokens), end + buffer_size)
         if mask_string not in tokens[search_start:search_end]:
             tokens[start:end] = [mask_string]
             n_masks += 1
@@ -300,8 +297,7 @@ def save_llr_histograms(experiments):
         except:
             pass
 
-
-def get_perturbation_results(span_length=10, n_perturbations=1):
+def get_perturbations(span_length=10, n_perturbations=1):
     load_mask_model()
 
     torch.manual_seed(0)
@@ -321,25 +317,28 @@ def get_perturbation_results(span_length=10, n_perturbations=1):
 
     for idx in range(len(human_text)):
         results.append({
-            "original": human_text[idx],
-            "sampled": LLM_text[idx],
-            "perturbed_sampled": p_LLM_text[idx * n_perturbations: (idx + 1) * n_perturbations],
-            "perturbed_original": p_human_text[idx * n_perturbations: (idx + 1) * n_perturbations]
+            "human": human_text[idx],
+            "LLM": LLM_text[idx],
+            "perturbed_LLM": p_LLM_text[idx * n_perturbations: (idx + 1) * n_perturbations],
+            "perturbed_human": p_human_text[idx * n_perturbations: (idx + 1) * n_perturbations]
         })
+    
+    return results
 
+def get_perturbation_results(results):
     load_base_model()
 
     for res in tqdm.tqdm(results, desc="Computing log likelihoods"):
-        p_sampled_ll = get_lls(res["perturbed_sampled"])
-        p_original_ll = get_lls(res["perturbed_original"])
-        res["original_ll"] = get_ll(res["original"])
-        res["sampled_ll"] = get_ll(res["sampled"])
-        res["all_perturbed_sampled_ll"] = p_sampled_ll
-        res["all_perturbed_original_ll"] = p_original_ll
-        res["perturbed_sampled_ll"] = np.mean(p_sampled_ll)
-        res["perturbed_original_ll"] = np.mean(p_original_ll)
-        res["perturbed_sampled_ll_std"] = np.std(p_sampled_ll) if len(p_sampled_ll) > 1 else 1
-        res["perturbed_original_ll_std"] = np.std(p_original_ll) if len(p_original_ll) > 1 else 1
+        p_LLM_ll = get_lls(res["perturbed_LLM"])
+        p_human_ll = get_lls(res["perturbed_human"])
+        res["human_ll"] = get_ll(res["human"])
+        res["LLM_ll"] = get_ll(res["LLM"])
+        res["all_perturbed_LLM_ll"] = p_LLM_ll
+        res["all_perturbed_human_ll"] = p_human_ll
+        res["perturbed_LLM_ll"] = np.mean(p_LLM_ll)
+        res["perturbed_human_ll"] = np.mean(p_human_ll)
+        res["perturbed_LLM_ll_std"] = np.std(p_LLM_ll) if len(p_LLM_ll) > 1 else 1
+        res["perturbed_human_ll_std"] = np.std(p_human_ll) if len(p_human_ll) > 1 else 1
 
     return results
 
@@ -348,18 +347,18 @@ def run_perturbation_experiment(results, span_length=10, n_perturbations=1):
     # compute diffs with perturbed
     predictions = {'real': [], 'samples': []}
     for res in results:
-        if res['perturbed_original_ll_std'] == 0:
-            res['perturbed_original_ll_std'] = 1
-            print("WARNING: std of perturbed original is 0, setting to 1")
-            print(f"Number of unique perturbed original texts: {len(set(res['perturbed_original']))}")
-            print(f"Original text: {res['original']}")
-        if res['perturbed_sampled_ll_std'] == 0:
-            res['perturbed_sampled_ll_std'] = 1
-            print("WARNING: std of perturbed sampled is 0, setting to 1")
-            print(f"Number of unique perturbed sampled texts: {len(set(res['perturbed_sampled']))}")
-            print(f"Sampled text: {res['sampled']}")
-        predictions['real'].append((res['original_ll'] - res['perturbed_original_ll']) / res['perturbed_original_ll_std'])
-        predictions['samples'].append((res['sampled_ll'] - res['perturbed_sampled_ll']) / res['perturbed_sampled_ll_std'])
+        if res['perturbed_human_ll_std'] == 0:
+            res['perturbed_human_ll_std'] = 1
+            print("WARNING: std of perturbed human is 0, setting to 1")
+            print(f"Number of unique perturbed human texts: {len(set(res['perturbed_human']))}")
+            print(f"human text: {res['human']}")
+        if res['perturbed_LLM_ll_std'] == 0:
+            res['perturbed_LLM_ll_std'] = 1
+            print("WARNING: std of perturbed LLM is 0, setting to 1")
+            print(f"Number of unique perturbed LLM texts: {len(set(res['perturbed_LLM']))}")
+            print(f"LLM text: {res['LLM']}")
+        predictions['real'].append((res['human_ll'] - res['perturbed_human_ll']) / res['perturbed_human_ll_std'])
+        predictions['samples'].append((res['LLM_ll'] - res['perturbed_LLM_ll']) / res['perturbed_LLM_ll_std'])
 
     fpr, tpr, roc_auc = get_roc_metrics(predictions['real'], predictions['samples'])
     p, r, pr_auc = get_precision_recall_metrics(predictions['real'], predictions['samples'])
@@ -394,22 +393,22 @@ def run_baseline_threshold_experiment(criterion_fn, name):
     np.random.seed(0)
 
     results = []
-    for batch in tqdm.tqdm(range(math.ceil(len(data['original']) / batch_size)), desc=f"Computing {name} criterion"):
-        original_text = data["original"][batch * batch_size:(batch + 1) * batch_size]
-        sampled_text = data["sampled"][batch * batch_size:(batch + 1) * batch_size]
+    for batch in tqdm.tqdm(range(math.ceil(len(data['human']) / batch_size)), desc=f"Computing {name} criterion"):
+        human_text = data["human"][batch * batch_size:(batch + 1) * batch_size]
+        LLM_text = data["LLM"][batch * batch_size:(batch + 1) * batch_size]
 
-        for idx in range(len(original_text)):
+        for idx in range(len(human_text)):
             results.append({
-                "original": original_text[idx],
-                "original_crit": criterion_fn(original_text[idx]),
-                "sampled": sampled_text[idx],
-                "sampled_crit": criterion_fn(sampled_text[idx]),
+                "human": human_text[idx],
+                "human_crit": criterion_fn(human_text[idx]),
+                "LLM": LLM_text[idx],
+                "LLM_crit": criterion_fn(LLM_text[idx]),
             })
 
     # compute prediction scores for real/sampled passages
     predictions = {
-        'real': [x["original_crit"] for x in results],
-        'samples': [x["sampled_crit"] for x in results],
+        'real': [x["human_crit"] for x in results],
+        'samples': [x["LLM_crit"] for x in results],
     }
 
     fpr, tpr, roc_auc = get_roc_metrics(predictions['real'], predictions['samples'])
@@ -419,7 +418,7 @@ def run_baseline_threshold_experiment(criterion_fn, name):
         'name': f'{name}_threshold',
         'predictions': predictions,
         'info': {
-            'n_samples': len(data['original']),
+            'n_samples': len(data['human']),
         },
         'raw_results': results,
         'metrics': {
@@ -464,14 +463,14 @@ def eval_supervised(data, model):
     with torch.no_grad():
         # get predictions for real
         real_preds = []
-        for batch in tqdm.tqdm(range(len(real) // batch_size), desc="Evaluating real"):
+        for batch in tqdm.tqdm(math.ceil(range(len(real) / batch_size)), desc="Evaluating real"):
             batch_real = real[batch * batch_size:(batch + 1) * batch_size]
             batch_real = tokenizer(batch_real, padding=True, truncation=True, max_length=512, return_tensors="pt").to(DEVICE)
             real_preds.extend(detector(**batch_real).logits.softmax(-1)[:,0].tolist())
         
         # get predictions for fake
         fake_preds = []
-        for batch in tqdm.tqdm(range(len(fake) // batch_size), desc="Evaluating fake"):
+        for batch in tqdm.tqdm(range(math.ceil(len(fake) / batch_size)), desc="Evaluating fake"):
             batch_fake = fake[batch * batch_size:(batch + 1) * batch_size]
             batch_fake = tokenizer(batch_fake, padding=True, truncation=True, max_length=512, return_tensors="pt").to(DEVICE)
             fake_preds.extend(detector(**batch_fake).logits.softmax(-1)[:,0].tolist())
@@ -519,15 +518,14 @@ if __name__ == '__main__':
     parser.add_argument('--span_length', type=int, default=2)
     parser.add_argument('--n_perturbation_list', type=str, default="50")
     parser.add_argument('--scoring_model_name', type=str, default="gpt2-medium")
-    parser.add_argument('--mask_filling_model_name', type=str, default="t5-3b")
+    parser.add_argument('--mask_filling_model_name', type=str, default="t5-large")
     parser.add_argument('--batch_size', type=int, default=50)
     parser.add_argument('--chunk_size', type=int, default=20)
-    parser.add_argument('--output_name', type=str, default="")
     parser.add_argument('--openai_model', type=str, default=None)
-    parser.add_argument('--openai_key', type=str)
     parser.add_argument('--mask_top_p', type=float, default=1.0)
     parser.add_argument('--cache_dir', type=str, default="~/.cache")
-    parser.add_argument('--perturb_and_baseline', action='store_true')
+    parser.add_argument('--perturb', action='store_true')
+    parser.add_argument('--baseline', action='store_true')
     parser.add_argument('--score', action='store_true')
     args = parser.parse_args()
 
@@ -540,13 +538,13 @@ if __name__ == '__main__':
     START_DATE = datetime.datetime.now().strftime("%Y-%m-%d")
     START_TIME = datetime.datetime.now().strftime('%H-%M-%S-%f')
 
-    SAVE_FOLDER = f"detect_results/args"
-    if not os.path.exists(SAVE_FOLDER):
-        os.makedirs(SAVE_FOLDER)
-    print(f"Saving args to absolute path: {os.path.abspath(SAVE_FOLDER)}")
+    ARGS_FOLDER = f"detect/args"
+    if not os.path.exists(ARGS_FOLDER):
+        os.makedirs(ARGS_FOLDER)
+    print(f"Saving args to absolute path: {os.path.abspath(ARGS_FOLDER)}")
 
     # write args to file
-    with open(os.path.join(SAVE_FOLDER, f'{base_model_name}-{scoring_model_string}-{args.dataset}-{START_DATE}-{START_TIME}.json'), "w") as f:
+    with open(os.path.join(ARGS_FOLDER, f'{base_model_name}-{scoring_model_string}-{args.dataset}-{START_DATE}-{START_TIME}.json'), "w") as f:
         json.dump(args.__dict__, f, indent=4)
 
     mask_filling_model_name = args.mask_filling_model_name
@@ -559,85 +557,106 @@ if __name__ == '__main__':
         os.makedirs(cache_dir)
     print(f"Using cache dir {cache_dir}")
 
-    gpt2_tokenizer = transformers.GPT2Tokenizer.from_pretrained('gpt2', cache_dir=cache_dir)
-    
-    mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(mask_filling_model_name, cache_dir=cache_dir)
+    PERTURBATIONS_FOLDER = f"detect/perturbations/{base_model_name}/{args.dataset}/"
+    if not os.path.exists(PERTURBATIONS_FOLDER):
+        os.makedirs(PERTURBATIONS_FOLDER)
+
+    SAVE_FOLDER = f'detect/results/{base_model_name}/{scoring_model_string}/{args.dataset}/'
+    if not os.path.exists(SAVE_FOLDER):
+        os.makedirs(SAVE_FOLDER)
 
     print(f'Loading dataset {args.dataset}...')        
     data = {}
-    for key in ['LLM', 'human', 'prompt']:
+    for key in ['LLM', 'human']:
         data[key] = []
         LOAD_FOLDER = f"inputs/{key}/{args.dataset}"
         for filename in os.listdir(LOAD_FOLDER):
             if filename.startswith(base_model_name):
                 with open(os.path.join(LOAD_FOLDER, filename), "r") as f:
                     data[key].append(f.read())
+
+    if args.perturb:
+        print(f"Loading mask filling model {mask_filling_model_name}...")
+        mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(mask_filling_model_name, cache_dir=cache_dir)
+        try:
+            n_positions = mask_model.config.n_positions
+        except AttributeError:
+            n_positions = 512
+
+        mask_tokenizer = transformers.AutoTokenizer.from_pretrained(mask_filling_model_name, model_max_length=n_positions, cache_dir=cache_dir)
+    
+        perturbations_list = []
+        for n_perturbations in n_perturbation_list:
+            perturbations_list.append(get_perturbations(args.span_length, n_perturbations))
         
+        with open(os.path.join(PERTURBATIONS_FOLDER, f'perturbations_list.json'), "w") as f:
+            json.dump([perturbations_list, n_perturbation_list], f, indent=4)
+
     print(f'Loading SCORING model {args.scoring_model_name}...')
-    torch.cuda.empty_cache()
-    base_model, base_tokenizer = load_base_model_and_tokenizer(args.scoring_model_name)
-    load_base_model()
-    SAVE_FOLDER = f'detect_results/{base_model_name}/{scoring_model_string}/{args.dataset}/'
-    if not os.path.exists(SAVE_FOLDER):
-        os.makedirs(SAVE_FOLDER)
-    baseline_outputs = [run_baseline_threshold_experiment(get_ll, "likelihood")]
-    if args.openai_model is None:
-        rank_criterion = lambda text: -get_rank(text, log=False)
-        baseline_outputs.append(run_baseline_threshold_experiment(rank_criterion, "rank"))
-        logrank_criterion = lambda text: -get_rank(text, log=True)
-        baseline_outputs.append(run_baseline_threshold_experiment(logrank_criterion, "log_rank"))
-        entropy_criterion = lambda text: get_entropy(text)
-        baseline_outputs.append(run_baseline_threshold_experiment(entropy_criterion, "entropy"))
-
-    baseline_outputs.append(eval_supervised(data, model='roberta-base-openai-detector'))
-    baseline_outputs.append(eval_supervised(data, model='roberta-large-openai-detector'))
-
-    # write likelihood threshold results to a file
-    with open(os.path.join(SAVE_FOLDER, f"likelihood_threshold_results.json"), "w") as f:
-        json.dump(baseline_outputs[0], f)
-
-    if args.openai_model is None:
-        # write rank threshold results to a file
-        with open(os.path.join(SAVE_FOLDER, f"rank_threshold_results.json"), "w") as f:
-            json.dump(baseline_outputs[1], f)
-
-        # write log rank threshold results to a file
-        with open(os.path.join(SAVE_FOLDER, f"logrank_threshold_results.json"), "w") as f:
-            json.dump(baseline_outputs[2], f)
-
-        # write entropy threshold results to a file
-        with open(os.path.join(SAVE_FOLDER, f"entropy_threshold_results.json"), "w") as f:
-            json.dump(baseline_outputs[3], f)
+    baseline_outputs = []
     
-    # write supervised results to a file
-    with open(os.path.join(SAVE_FOLDER, f"roberta-base-openai-detector_results.json"), "w") as f:
-        json.dump(baseline_outputs[-2], f)
-    
-    # write supervised results to a file
-    with open(os.path.join(SAVE_FOLDER, f"roberta-large-openai-detector_results.json"), "w") as f:
-        json.dump(baseline_outputs[-1], f)
+    # commented out just in case loading the model takes up too much memory
+    # torch.cuda.empty_cache()
+    # base_model, base_tokenizer = load_base_model_and_tokenizer(args.scoring_model_name)
+    # load_base_model()
+    if args.baseline:
+        if args.openai_model is None:
+            baseline_outputs.append(run_baseline_threshold_experiment(get_ll, "likelihood"))
+            rank_criterion = lambda text: -get_rank(text, log=False)
+            baseline_outputs.append(run_baseline_threshold_experiment(rank_criterion, "rank"))
+            logrank_criterion = lambda text: -get_rank(text, log=True)
+            baseline_outputs.append(run_baseline_threshold_experiment(logrank_criterion, "log_rank"))
+            entropy_criterion = lambda text: get_entropy(text)
+            baseline_outputs.append(run_baseline_threshold_experiment(entropy_criterion, "entropy"))
+
+        baseline_outputs.append(eval_supervised(data, model='roberta-base-openai-detector'))
+        baseline_outputs.append(eval_supervised(data, model='roberta-large-openai-detector'))
+
+        if args.openai_model is None:
+            # write likelihood threshold results to a file
+            with open(os.path.join(SAVE_FOLDER, f"likelihood_threshold_results.json"), "w") as f:
+                json.dump(baseline_outputs[0], f)
+                
+            # write rank threshold results to a file
+            with open(os.path.join(SAVE_FOLDER, f"rank_threshold_results.json"), "w") as f:
+                json.dump(baseline_outputs[1], f)
+
+            # write log rank threshold results to a file
+            with open(os.path.join(SAVE_FOLDER, f"logrank_threshold_results.json"), "w") as f:
+                json.dump(baseline_outputs[2], f)
+
+            # write entropy threshold results to a file
+            with open(os.path.join(SAVE_FOLDER, f"entropy_threshold_results.json"), "w") as f:
+                json.dump(baseline_outputs[3], f)
+        
+        # write supervised results to a file
+        with open(os.path.join(SAVE_FOLDER, f"roberta-base-openai-detector_results.json"), "w") as f:
+            json.dump(baseline_outputs[-2], f)
+        
+        # write supervised results to a file
+        with open(os.path.join(SAVE_FOLDER, f"roberta-large-openai-detector_results.json"), "w") as f:
+            json.dump(baseline_outputs[-1], f)
 
     outputs = []
 
-    # run perturbation experiments
-    for n_perturbations in n_perturbation_list:
-        perturbations = get_perturbations(args.span_length, n_perturbations)
-        perturbation_results = get_perturbation_results(args.span_length, n_perturbations)
+    if args.score:
+        print(f'Loading perturbations list from {PERTURBATIONS_FOLDER}...')
+        with open(os.path.join(PERTURBATIONS_FOLDER, f'perturbations_list.json'), "r") as f:
+            perturbations_list, n_perturbation_list = json.load(f)
 
-        output = run_perturbation_experiment(
-            perturbation_results, span_length=args.span_length, n_perturbations=n_perturbations)
-        outputs.append(output)
-        with open(os.path.join(SAVE_FOLDER, f"perturbation_{n_perturbations}_{perturbation_mode}_results.json"), "w") as f:
-            json.dump(output, f)
+        # run perturbation experiments
+        for perturbations, n_perturbations in zip(perturbations_list, n_perturbation_list):
+            perturbation_results = get_perturbation_results(perturbations)
 
-    outputs += baseline_outputs
+            output = run_perturbation_experiment(
+                perturbation_results, span_length=args.span_length, n_perturbations=n_perturbations)
+            outputs.append(output)
+        
+        with open(os.path.join(SAVE_FOLDER, f"perturbation_experiment_results.json"), "w") as f:
+            json.dump(outputs, f, indent=4)
 
-    save_roc_curves(outputs)
-    save_ll_histograms(outputs)
-    save_llr_histograms(outputs)
+        outputs += baseline_outputs
 
-    # move results folder from tmp_results/ to results/, making sure necessary directories exist
-    new_folder = SAVE_FOLDER.replace("tmp_results", "results")
-    if not os.path.exists(os.path.dirname(new_folder)):
-        os.makedirs(os.path.dirname(new_folder))
-    os.rename(SAVE_FOLDER, new_folder)
+        save_roc_curves(outputs)
+        save_ll_histograms(outputs)
+        save_llr_histograms(outputs)
