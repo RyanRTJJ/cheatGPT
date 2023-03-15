@@ -1,0 +1,28 @@
+ers, and may not have reproduced the correct appearance when typeset electronically. This is especially noticeable in printings which did not employ type case or other means of visually distinguishing lowercase from uppercase letters.
+
+Note also that in the first issue, "o" and "O" were actually the lowercase forms of the characters, ɑ and, respectively. In later editions, the o and O were revised to be normal lowercase (the case they have in modern computers).
+
+In this first issue, two of the characters were not used, because they were unknown to the printer:
+
+ and  replaced the characters,, and 
+
+in the left margin, below the characters:
+
+and  replaced, 
+
+In the right margin:
+
+The original character set was printed in two sizes: 1.125 points and one-half point. The 1.125 point versions of  and  were,  and,,,,  and. The 1.125 point versions of,, and  replaced the  and,  and, and the  and  respectively in the left margin, in the same order and size as the characters. The one-half point versions of  and  replaced,  and, respectively.
+
+These characters were used through the first issue, replacing,, and.
+
+In the right margin the characters replaced the same as the left:
+
+The one-half point versions, as in the left, were printed at one-fourth the size. The normal case, shown above, was printed as:
+
+With the advent of monospaced fonts in the 1970s, most typesetting software now ignores this issue, and positions characters with  in a normal way.
+
+Other names for the non-alphanumeric characters include:
+ Fudge (replaced from the left margin), Fidget (replaced from the right margin), and Widget (used throughout the run).
+ Invented, or "improvised" characters.
+ "Hornets",

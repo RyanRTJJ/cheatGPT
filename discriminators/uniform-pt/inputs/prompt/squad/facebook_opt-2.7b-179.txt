@@ -1,0 +1,1 @@
+Intel had tried unsuccessfully to push Apple to migrate the Macintosh platform to Intel chips. Apple concluded that Intel's CISC (Complex Instruction Set Computer) architecture ultimately would not

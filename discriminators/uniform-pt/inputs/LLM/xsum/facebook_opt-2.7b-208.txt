@@ -1,0 +1,25 @@
+ handles third-party apps. This update was a pre-release preview, so it was not rolled out universally. You should be able to update to it now, so if things work it will work.
+
+Microsoft explained that the bug affects a small number of users. This means it probably isn’t a big problem as Microsoft can simply update the app to fix it.
+
+How to fix the Skype update problem
+
+You’ll need to check what version of Windows 10 you use and then try what Microsoft provided in its troubleshooting tips.
+
+Microsoft says to check whether you might have an older software update you can take advantage of, but if you do then you shouldn’t update further until your Skype has been fixed:
+
+You should check if there is an update from Microsoft that will resolve the bug. If there isn’t, consider stopping the update process so it can go and fix the issue.
+
+After you’ve stopped the update process, you’ll need to delete the Skype app from Windows Update. Then you’ll need to reinstall the app, either via the Store or the Windows File Explorer. You’ll have to sign in to your Skype account, but if you’re still in the early stages of using an update then you should have the appropriate permissions set.
+
+Finally, you’ll need to restart Windows Explorer. This should hopefully fix the bug and then you won’t have to worry about it again.
+
+How to deal with an updated Windows 10
+
+Windows 10 is an important update for users, but the updates can be problematic. Some issues might be resolved completely, while others may not.
+
+Windows updates are the best way to get the latest security and performance enhancements and improvements to your devices. But they’re also important because they’ll help make your operating system more efficient, and it’ll be less prone to crashing.
+
+Keep checking back to this page to get the latest on Windows 10 bugs. If you’ve been affected by an issue in Windows 10, and no-one you know has the same problems, you can let us know in the comments.
+
+This post may contain affiliate

@@ -1,0 +1,13 @@
+ "generated a magnetic field in the direction desired. The system allowed moving machines along longitudinally inclined surfaces, even down to vertical surfaces." He also noted that when "objects were moving toward each other, the space between said objects was made narrower by a field." It remains the dominant concept within the field of magnetism.
+
+The idea of magnetic fields was proposed by German geophysicist Helmuth Gottfried Wilhelm Leibniz (1766-1832) around the same time as the field equations. His field theory of fluids was also based on rotating magnetic field lines. In 1796, he published a work titled Magnetic Bodies; he also published the paper: A Handbook to the Study of Magnetism with illustrations.
+
+A Brief Historical View of Magnetic Fields
+
+In 1834, William Herschel (1789-1834) proposed that the earth's magnetic field was produced by an earth-magnetic core surrounded by an inner mantle. His work was inspired by the work of Isaac Newton, and, in 1838, he published his Principles of Geology; its first edition (1838) used a geometrical representation of the globe and provided the first description of an earth-based electric circuit between two metallic terminals. He also proposed the existence of magnetic "horns" with the force acting upwards. His idea of the earth's magnetic field was based on a mathematical model in which the earth, at the center, acted as its own bar magnet. His later (1852) book, Magnetic Principles, proposed that "A bar magnet would exhibit a certain force of attraction if it had a solid core and a solid mantle surrounding it."
+
+In 1849, Professor Thomas Beddoe (1820-1882) published his paper titled The Effect of Magnetic Fields on Air; it included a mathematical model of earth's field, which concluded "that in some instances the force from the Earth's Magnetic Field is more powerful than that from that of the Sun or the other planets."
+
+Magnetic Flux
+
+Magnetic flux (or magnetic flux density) is the strength of a magnetic field, given by the relation F = f μ m where f is the field density and μ is the magnetic susceptibility. The electric flux density is proportional to voltage across the circuit

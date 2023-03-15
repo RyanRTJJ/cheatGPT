@@ -1,0 +1,33 @@
+ Races". A great introduction to how FST could be used as a way of comparing the genetics of distant, related populations.
+
+In 2004 I began to receive emails from readers of my blog, discussing the very same issues. I had not realized there was a large community of people around this one concept.
+
+In 2014, a couple of years after I sent a mail to the FST mailing list inquiring about FST, I began to receive emails from readers looking for assistance with their own DNA analyses.
+
+The number of people contacting me and offering FST advice soared, because people wanted to do things that were not supported by the standard DNA analysis of the time by their university biology departments. I got several emails a day asking these questions:
+
+Can I do my own FST?
+
+How many SNPs do I need to test to be sure of finding a significant difference?
+
+Can I do this for my whole genome?
+
+What's a significance level of 0.05?
+
+Why isn't there a standard FST software out there, that I can recommend to people?
+
+What do I need to carry out FST?
+
+How do I know if a SNP is a likely marker for intelligence?
+
+What should I examine to test for this?
+
+Which markers?
+
+To get the most out of FST – and to get your analysis up and running on time – I recommend you read William Hamilton's Introduction to FST as well as Jeffrey Long's FST Primer. There are so many different approaches, you're bound to be able to do something that might benefit you or someone else, if it's consistent with your goals.
+
+FST Primer
+
+The main page of Jeffrey Long's FST Primer.
+
+To start, you'll need to install the FST software. I don't know too much about this – it really doesn't take much skill to do all the

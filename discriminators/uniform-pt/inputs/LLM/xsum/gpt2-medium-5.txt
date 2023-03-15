@@ -1,0 +1,15 @@
+ Black Hat in Las Vegas.
+
+The researchers, from the University of Michigan Computational Medical Intelligence team at the American University, say they've identified around 68,000 doctors, dentists, psychiatrists and other medical workers within just the first two months of 2014 who may have been infected with a strain of malware called Eseta.
+
+While in 2010 one US-based cybersecurity firm, CIFU Research, spotted a second strain, Stuxnet, of similar size – Eseta was used to sabotage Iran's nuclear programme. The CIFU researchers also pointed out that a similar worm, Wiper, has been targeted at major energy utilities as well as commercial airlines.
+
+Dr Erven said Eseta could have been used to steal computer files on patients, sell them on to drug or computer labs and steal information about the condition of people they treat.
+
+The researchers said it was hard to prove just how many doctors may have been infected with Eseta "especially given that most infections were not linked directly to the specific system the malware was targeting", however many of them also contained potentially important information such as patient-details, lab-signature, and patient-doctor ratings.
+
+Eseta was previously thought to spread by infecting patient data on the internet, allowing it to be copied and distributed. However, the researchers say the size of the infection could have allowed it to transfer data in a much more systematic manner, which could also have allowed the malware to gain control.
+
+Dr Collao added: "The infection was very much a 'discovery campaign' rather than a 'attack'" – to be targeted on a computer which had a specific type of code installed in it – the researchers wrote. "This means that some of this infection may have been directly by patients whose computers may have been infected by different and possibly compromised malware, thus giving the malware a high risk. A small number of computer users are, however, more likely to have infected these computers with malware."
+
+As part of what is now the world's largest study on the spread of medical malware by security researchers, the researchers were able to determine that 1.9 million medical records

@@ -1,0 +1,23 @@
+ user. Once an attacker gains control of such an identifier, they can track a user's location with relative accuracy using an IP address.
+
+The researchers say the code for identifying users has been available on the internet for at least seven years. However, the most recent attacks appear to be the most widespread.
+
+The researchers published their findings in a paper Wednesday in the peer-reviewed International Journal of Computer and Network Security.
+
+"If you are running a site with this technology, you might never hear about it," the paper reads. "Because your site is using Open ID Connect, when somebody logs into your site, this can pass any of this data to the attacker."
+
+"It's about the most bad-ass thing you can do," David Emm, an independent security researcher in San Diego who was a researcher of the system and who was not involved in the paper, told CNNMoney.
+
+Open ID Connect, the company which manages the system, said the findings are "deeply concerning."
+
+Open ID connect is an online service that lets users sign in to accounts associated with all the major social networks, including Facebook, Twitter, Google, YouTube and LinkedIn. Google, Twitter and Facebook have announced plans to shut down the service.
+
+The researchers said the system makes the information it collects in general public through a service called "tracker.openidconnect.io." That server lists the data gathered, including an encrypted, randomly generated ID, an encrypted user name and a browser ID number.
+
+"The attacker can now use this information to locate the actual user on the Internet," the researchers write.
+
+Open ID Connect said it notified users whose sites relied on its technology after the researchers published an earlier paper last November. But the researchers said their work is now complete.
+
+"This problem is far more widespread and persistent than previously thought," the paper reads.
+
+They found that many of the websites they analyzed used Open ID Connect technologies, including some of the

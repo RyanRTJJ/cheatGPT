@@ -1,0 +1,15 @@
+ was one of hundreds of bugs discovered as part of Google's Android security release which affected millions of Android devices.
+
+One of the largest of these bug fixes, dubbed A8.8, is still used by Android devices today, according to Ars Technica. The flaw affected Android software that uses Java, which Google had yet to fully update.
+
+Android devices running A8.8 could have run one of three different vulnerable versions of the vulnerable version of Java. As the code in the affected app could not properly determine when a user was in the Android sandbox, security tools could not protect.
+
+As Google has yet to fully patch A8.8, the current version on devices running this version of Android is only supported by just 30 to 40 percent of Android devices with at least a minimum of Android 4.1 Jelly Bean for Google Nexus and Nexus 6 devices. Google has said it plans on releasing an update in January with the latest exploit, the first of dozens of security updates targeted at the bug in the mobile operating system. One such update is slated for release in May.
+
+GitHub: One of The Most Popular Submissions For This Trend
+
+Users that find exploitable code will often use it to take over a device they've locked to. Hackers are increasingly using malware to take control of a device through a number of ways, such as in email attachments. One of the newest of these comes from the development of CVE-2014-8472, the version of Java exploited in the new vulnerability found in Google's latest Android security release.
+
+Researchers spotted the new issue in October but had not made a public discovery. In an incident Tuesday, that changed. By July 28, the bug had been widely reported by affected users and researchers. By August, the fix was made public and in March, Google said it had begun to distribute the bug fix.
+
+It does not appear that Google or Google Play have made it to the end of the bug, which has a severity field in the Android security bulletin listing that changes between

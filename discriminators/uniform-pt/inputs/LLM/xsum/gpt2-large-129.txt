@@ -1,0 +1,31 @@
+ information and sent to the scientists that had been monitoring the message in Germany for half a century.
+
+The work shows for the very first time in a laboratory that the microwave photons can be transported by a quantum effect, or quantum tunneling.
+
+It also suggests that the message that the Russian scientists intercepted was genuine, although that is just one of several possible interpretations.
+
+There is also no way to be certain whether the message was sent in the same form as the Russian officials described it or by a different, less secure method.
+
+"This quantum-information transmission has become common," said Prof Wolfgang Lauterborn of the Massachusetts Institute of Technology in Cambridge, who is part of team that reported the findings.
+
+"Now this experiment shows it works. Quantum communication is indeed possible."
+
+Pipeline
+
+Scientists were studying the effect of two microwave photons separated by as much as 10,000 times.
+
+As they pass in opposite directions, they can be split in two, causing one to become a photon and one another one. Even though they now share only a handful of photons, the effect makes the message "transparent" – its properties indistinguishable from the message that was intercepted.
+
+To measure the difference between the photons, the scientists used an electron microscope called a "pulsed microwave tomography", and the receiver of the electromagnetic waves picked up the photons.
+
+The scientists were amazed to find that the first photon appears to be the same as the message.
+
+In a follow-up experiment, they switched on an electromagnetic detector called an interferometer that picked up the first photon from the other transmitter. It too detected the two photons with identical properties as the message, meaning that they were indeed the same.
+
+The second photon was only detected when the researchers turned on an interferometer that is sensitive to two photons.
+
+"This shows that it has been possible for two photons to coexist and combine to form a photon," said Prof Andrew Jones of Cambridge University.
+
+"It shows that quantum information is possible."
+
+A message could in principle be broken into four or even

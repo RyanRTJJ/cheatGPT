@@ -1,0 +1,7 @@
+ Races".
+
+In their 2003 paper “Human Genetic Diversity and the Nonexistence of Biological Races,” Jeffrey Long and Rick Kittles provide a long critique of the application of FST (F-statistic; a measure of genetic variation between populations) to human populations. They point out that FST was initially applied to laboratory organisms, where mortality and interbreeding were relatively uniform, and suggest that it is not as useful when applied to humans, since their behavior is more complex and highly variable.
+
+The authors argue that due to the massive amount of genetic flow that occurs over the course of history and the fact that human populations are too continuous to be classified into discrete “races”, FST is ill-suited to the study of human population genetics. Furthermore, they discuss the role of environmental variation, reproductive isolation, and other factors in influencing genetic variation. They also emphasize the importance of recognizing population structure as it facilitates effective selection of biomarkers in medical genetics research. 
+
+Overall, Long and Kittles provide an extensive review of the disadvantages of using FST to study human population dynamics. They provide many cases in which FST falls short of capturing meaningful differences among populations, highlighting the need for more accurate indicators of human genetic variation.

@@ -1,0 +1,13 @@
+ default.
+
+The booting process is considered secure in order to ensure the ability to run certain trusted applications. Security advocates don't like the idea of users having to install applications they aren't sure are trustworthy themselves, even to access their PCs.
+
+To help make that decision a bit easier for users on Windows Phone, Microsoft created a set of device-specific Windows Phone 8 security settings.
+
+"A secure boot certification helps to ensure your phone or tablet can always successfully boot into Windows. Without secure boot your device will not be able to properly load trusted applications," Microsoft explained in a blog post earlier today.
+
+Windows Store apps (which are not officially required for the operating system and have, in fact, already been preloading Windows 8 devices for a while), and those coming from the Windows Phone Store are the only categories where secure boot is optional. Anyone who's purchased a Windows Phone 7.5 or 8 device, and has set bootable devices as their default setting, already has bootable devices with secure boot enabled turned on.
+
+The blog post also notes that "if you disable secure boot as Windows 8 is updated, you will need to disable secure boot in Windows 8 before you can enable it again."
+
+If you don't have a Windows phone or tablet, you can check out Windows Phone 8 to see if it features

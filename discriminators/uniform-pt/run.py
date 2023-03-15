@@ -16,6 +16,7 @@ import functools
 import custom_datasets
 from multiprocessing.pool import ThreadPool
 import time
+import math
 
 def load_base_model():
     print('MOVING BASE MODEL TO GPU...', end='', flush=True)
@@ -154,8 +155,8 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
         "prompt": []
     }
 
-    for batch in range(len(raw_data) // batch_size + 1):
-        print('Generating samples for batch', batch, 'of', len(raw_data) // batch_size + 1)
+    for batch in range(math.ceil(len(raw_data) / batch_size)):
+        print('Generating samples for batch', batch, 'of', math.ceil(len(raw_data) / batch_size))
         original_text = raw_data[batch * batch_size:(batch + 1) * batch_size]
         original_text, sampled_text, prompts = sample_from_model(original_text, base_tokenizer, gpt2_tokenizer, min_words=375 if args.dataset in ['pubmed'] else 300)
 
@@ -199,9 +200,10 @@ def generate_data(dataset, key, n_samples, base_tokenizer, gpt2_tokenizer, prepr
     # remove newlines from each example
     data = [strip_newlines(x) for x in data]
 
-    # try to keep only examples with > 350 words
+    # try to keep only examples with decent length
     if dataset in ['writing', 'squad', 'xsum']:
-        long_data = [x for x in data if len(x.split()) > 340]
+        min_length = 250 if dataset == 'squad' else 300
+        long_data = [x for x in data if len(x.split()) > min_length]
         if len(long_data) > 0:
             data = long_data
 
@@ -212,8 +214,9 @@ def generate_data(dataset, key, n_samples, base_tokenizer, gpt2_tokenizer, prepr
 
     # keep only examples with <= 512 tokens according to mask_tokenizer
     # this step has the extra effect of removing examples with low-quality/garbage content
+    max_length = 750 if dataset == 'squad' else 512
     tokenized_data = preproc_tokenizer(data)
-    data = [x for x, y in zip(data, tokenized_data["input_ids"]) if len(y) <= 512]
+    data = [x for x, y in zip(data, tokenized_data["input_ids"]) if len(y) <= max_length]
 
     # print stats about remainining data
     print(f"Total number of samples: {len(data)}")

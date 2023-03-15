@@ -1,0 +1,9 @@
+. HDI values are considered to be less reliable than the UBI as some statistics include indicators for income on both sides of the sample, but not necessarily the other way round).
+
+The HDI and its associated error are the focus of an upcoming book by David Behan and William K. Burt (available at the University of Chicago Press's website). They argue that estimates of the quality and robustness of the UBI "can be better understood through the same criteria used to assess the importance of other features of social policy interventions" than with income and education data, which "are often far more variable and hard to interpret."
+
+The project seeks to tackle this challenge by taking a sophisticated approach to combining income and education data with health statistics, for example by integrating those of the Canadian Cardiovascular Disease Health Survey with health statistics data about the adult population and combining those of the Population Health Survey, which covers almost two and a half million adults across Canada and the United States, with hospital health surveys.
+
+The project looks at the possible sources of these various variables in the underlying data by combining statistics on mortality and incidence, disability-adjusted life years (DALYs) per capita, and other measures of the health status of Canadians and US adults in order to obtain an HDI score.
+
+"Achieving health literacy by providing universal basic income (UBI) may

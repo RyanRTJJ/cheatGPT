@@ -1,0 +1,11 @@
+, though now it looks like this may be reversed. According to a new update in the Windows Update KB, you won’t have to do any special actions in order to disable Secure Boot on OEM Windows 8 devices. The update from the April Patch for OEM Windows 8 machines now lists the following instructions:
+
+When you select Troubleshoot in the Start menu, select Customize Your Computer, then select Advanced Update Settings.
+
+Under Advanced Update Settings, click the Startup Restore tab and then select No.
+
+Finally, restart your PC.
+
+This apparently turns off the Secure Boot “boot” prompt in a way that works around the mandatory Secure Boot on OEM-certified Windows 8 machines, thereby allowing them to be sold with Windows Update turned off. Some readers noted that it is possible to disable Secure Boot on Windows by altering the Boot.ini file, though this has been done in other ways as well.
+
+Further, there continues to be discussion about whether or not to mandate UEFI Secure Boot to OEMs for the purpose of enforcing platform exclusivity, though support for this has recently come to an end with Microsoft’s statement last week that “you are not required by law to use UEFI Secure Boot — we recommend that you do, as described in our article on UEFI Secure Boot Security“. Further, the recent report that Intel is considering

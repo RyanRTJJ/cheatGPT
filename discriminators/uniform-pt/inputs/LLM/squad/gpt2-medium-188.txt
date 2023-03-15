@@ -1,0 +1,11 @@
+NEVs), designated as "tapered" and not being completely straight. For example, a NEV is a straight section of feeder tube feeding into a non-tapered section of NEV (where as a tapered line is a straight section of NEV).
+
+In addition to Neutral Section (NEV) construction constraints, the design team and the manufacturer are also responsible for developing "stretch guidelines" to assure continuity of line, which requires detailed analysis and implementation of design specifications.
+
+The line feeds between the line feeder and the "bend joint" (or feed-stalk) of a conventional, wire-wrapped line feeder that is also connected to a power plant, can introduce a risk of mixing feeder signals into power plant operating environments. So, many existing designs and standards require that cable or plastic cable (or equivalent) that would be used to transport this cable and line should have both ends covered. This leads to the issue of providing cable on certain lines, as well as the issue of supplying the cable to the proper end points such as the power plant feeder. When cables or plastic cables cannot be located at all points along its length, they must either be used with cable or at a rate sufficient to ensure continuity of the line to the electrical equipment (for example, when used with wire, conduit, or similar material and is wrapped in special insulators) or replaced with cable.
+
+The following technical notes, as well as the related Technical Annexes and Acknowledgements, contain useful information for the builder and/or an engineer trying to locate wires running on the line.
+
+In the design phase, it is important to understand, and test, the various wire insulation materials, in such a way that these materials can be designed to resist the extreme conditions, including thermal shock, to which cable or line supplies are subjected.
+
+When designing a line, check

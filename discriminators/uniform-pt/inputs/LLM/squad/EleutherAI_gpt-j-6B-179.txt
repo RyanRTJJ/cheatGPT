@@ -1,0 +1,15 @@
+ able to power the Macintosh platform. The Macintosh software industry was built around the power of the Motorola 68000 and now was going to be replaced by the power of x86. That meant a wholesale change in the architecture of the Macintosh OS.
+
+In the end, Intel gave up and dropped out of the Macintosh hardware business. Instead, it decided to sell its MIPS processor design to Nintendo's SGI. MIPS, which is now a publicly traded company, made little effort to compete with the x86 architecture, instead focusing on embedded designs for mobile computing applications.
+
+Apple's move to the PowerPC in 1993 (for the Power Macintosh series) and then to a completely new architecture, called the Coprocessor, in 1998 (for the iMac and Power Book series) represented a wholesale reinvention of the company. When the first Power Macs with the new architecture were introduced, Macintosh systems were actually cheaper that the x86-based systems like the Gateway 486 that had dominated personal computers over the past few years.
+
+After the introduction of the Power Mac, the x86 became the world's dominant computer architecture, and Apple, which has been an IBM partner for 40 of the company's 50-year history, was part of the x86's ascendancy.
+
+What's the story behind the move to Intel's Xeon line of chips? Why did the new Power Macs get such a bad reception, even from die-hard Apple fans? How did Apple get back to the top?
+
+Apple and its CEO
+
+Steve Jobs is a unique person. When he was ousted from Apple in 1985 for refusing to go along with a plan to break up the company, he walked away from a $1 million annual package at the time.
+
+He had an amazing ability to

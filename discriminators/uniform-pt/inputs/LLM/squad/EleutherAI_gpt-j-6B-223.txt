@@ -1,0 +1,14 @@
+ If the connections are interrupted before morning, even a few hours' sleep does not reverse these changes.
+
+Sleep was once considered necessary in acquiring new information. However, the findings that sleep is no more necessary in acquiring new information than in old information contradict the initial view about the need for sleep ([Fig. 1](#F0001){ref-type="fig"}).
+
+![Sleep in long-term memory.\
+Sleep is a time for the brain to make new permanent connections; this is especially helpful for the long-term retention of information. But only one night's sleep is required to make these permanent connections, meaning that sleep does not improve memory formation per se.\
+SIRS](ANISO-74-1-g001){#F0001}
+
+We should note that other parts of our bodies are able to consolidate memories without a night of sleep. If we use our legs instead of our eyes, while we are walking (but not sleepwalking), our leg muscles will also make permanent connections with neurons. This is called *exercise* and is a consolidation-like process ([Fig. 1](#F0001){ref-type="fig"}).
+
+But what happens after sleep? Many scientists believe that sleep is the time to consolidate memories. The most important part of consolidation is called \"replay\" in which memories are transferred to a part of the brain called the *hippocampus* from the part of the brain with the most recent experience. Some scientists even believe that a part of the sleep-dependent consolidation is actually not sleep; rather it is a waking activity like movement ([Fig. 2](#F0002){ref-type="fig"}).
+
+![Sleep and learning.\
+Researchers from Stanford University and Caltech reported that sleep is not required for forming long-term memories. They did it by measuring sleep and measuring recall from a new object by

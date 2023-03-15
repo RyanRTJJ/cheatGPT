@@ -1,0 +1,29 @@
+_______ The next day, you walk down the street and see a man and a man and a group of people all wearing very nice suits. One woman is holding a jar of "gifts", or a jar in its case. She is looking for someone to donate to. Do you be the good guy and offer to accept the jar? Or are you the bad guy, who just thinks it looks cool to have money inside his jar?
+
+In order to give $2 dollars to a charity, you need to buy one dollar.
+
+In order to give $10 dollars to a charity, you need to buy two dollars.
+
+In order to give $1000 dollars to a charity, you need a jar that sells for $6,000.
+
+The first step is to think of a charity that sells only $6,000 jars.
+
+The second step is to think of a charity that sells only $100,000 jars.
+
+You see, if all three jars were equal in value, the first step is still valid:
+
+You buy a jar. You find out that everytime you swear, a dollar appears inside it.
+
+So the next time you find yourself looking up the price of things, your first impulse is probably to think about whether or not you should give the jar to this charity.
+
+Of course, with thousands of gifts, it's impossible to know which charity you will want to support. But in the case of this jar, it seems safe to say you don't want to donate to the first two charities. Especially when you realize how much money the second two charities are going to make!
+
+You can donate to one of the first two charities or you can donate to the last charity. If you donate to the last one, I'll happily donate the jar to you. You also have to factor in the fact that $4000 of every dollar in the jar goes to charity.
+
+Here's the rest of the code, if anyone ever wants to try it:
+
+var giftJars = { "gifts": [ "gifts" ] }
+
+function donateJar(amount) {
+
+if (

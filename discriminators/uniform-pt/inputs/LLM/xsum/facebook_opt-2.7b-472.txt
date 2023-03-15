@@ -1,0 +1,19 @@
+ and playgrounds across London, where more than 3,400 messages from the Samsung Watches were listened to by the volunteers, who were then given a small reward for passing on data.
+
+The messages were sent as part of a scheme designed for Samsung's smartwatches to allow them to be used as a kind of security alarm. But the information which was being sent was not as it seemed.
+
+"The watch broadcasts a series of binary numbers at around 80 to 90 bytes each on its network access point, which we call a hotspot," says Dr Alan Woodward, Senior Research Scientist at Synygia, one of the firms involved in the project.
+
+"These messages are used for the authentication, and to send alerts if the watch's battery drains or is switched off, for example.
+
+"Since all the messages are sent around in the same place, a small piece of software can pick them out by matching the patterns of the message numbers and looking for the same group of patterns on the other watches in the local cluster.
+
+"This shows that each watch only sends the same group of data, meaning it is more likely that someone listening at the same location would recognise the pattern.
+
+"We can use this as a way of determining the geographical location of the phone, so we can track someone if they are transmitting out through an LTE network."
+
+The device works by mimicking a nearby signal, using the information it collects to form a unique encrypted message. All is received as part of the same encrypted message.
+
+By collecting data from all of the watches in a cluster for a given period of time, it can then work out from the messages which of those watches were transmitting at any point at which the other watches were also transmitting. But the researchers added an additional piece of code which meant only the watches transmitting the data that matched the current cluster at the time were picked out.
+
+That meant the surveillance network could only be used from locations where the phones were turned on and near an open wifi signal, not by a device like the Raspberry

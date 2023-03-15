@@ -1,0 +1,21 @@
+ Germany. When he tried booking hotel rooms this weekend, he was greeted by a screen that said "Our code is no longer valid."
+
+"I was very disappointed because the code I entered during my visit last year to DisneyWorld was working at the time," Mr. Korell said. But on his second attempt, the code expired, too, and this time they refused to honor it.
+
+Disney World on Friday said that "this was a very unusual occurrence, only affecting a small number of guests, and was quickly resolved by our technical team."
+
+On Sunday, Disney sent a "more detailed notification" to customers who used the expired codes.
+
+"The problem has now been resolved," the company said.
+
+Disney World has an enormous database of guest accounts, with millions of details. It has to check guest details against that database many times a day from hundreds of locations, each location running on dozens of servers.
+
+"This was an isolated event to one site on one holiday in one market," said Disney. The company has "the best security team in the business" and is using the lesson to improve its systems, said Disney.
+
+The fact that the problem occurred late in the season and at Disney World "was a plus," according to Chris Scambos, a security researcher who regularly looks into Disney World.
+
+Related: You may not be able to use Disney's free passes anytime you want
+
+Although Disney World is well known for its extensive use of technology, it isn't immune to problems. Mr. Scambos said that he regularly gets calls about computerized ticket systems that aren't working properly.
+
+Last October, Disney closed a popular roller coaster at its flagship park, Disney World. It was due to undergo major maintenance work and the company said it hoped to have it fully operational by June. More than two-thirds of tickets bought for the opening week of the season were resold as late June approached, according to data from the ParksInsider website. Those who missed out on the roller coaster were

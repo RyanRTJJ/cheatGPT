@@ -1,0 +1,30 @@
+ airports, and monitored for possible vulnerabilities, said Symantec.
+
+The researchers were able to locate "a range of security vulnerabilities with high-profile public release dates including vulnerabilities in HTTPS by the Tor network, and even a vulnerability in Microsoft's web-server implementation that allows attackers to compromise sensitive software."
+
+In addition, they discovered a single vulnerability to the web-server's firewall, and said that it was a key to the hackers' ability to steal the data from the Pi and access the remote code on its encrypted chip.
+
+The latest hacking comes just two months after three people were convicted of hacking into the computer systems of three Indian universities, including Mumbai's Mysore University. Two of the victims were found dead after being exposed to malware.
+
+The two attackers are in custody, and will be sentenced shortly to their original trials in the Indian High Court. They were all linked to a group with connections to the Internet.
+
+But the case was won, after the five people charged in the first two cases pleaded guilty. One of the defendants, the group's head of security, was arrested in September after being accused of hacking an international bank in India.
+
+Since that indictment, the Internet has been a sensitive business area. The researchers say the security threats, both on private and public sites and by large institutions and business, have grown exponentially since they discovered the work.
+
+"For us, as well as our supporters and supporters across Silicon Valley, we are determined to hold anyone who attempts to hack against the computer system of our industry accountable for their actions," said Pankaj Prakash, founder and CEO of Symantec.
+
+Also on Forbes:
+
+10 Things to Know About Cisco's 'Sonic'
+
+This Man Who Changed the Voice of Microsoft Is Exposed to Threat
+
+9 How to Kill Smartphone Applications and Your Data for an App
+
+
+'Hacker's Guide' To the Cyberwarrior Ransomware
+
+'Cisco' Injured by FBI In New 'Pillow Attack'
+
+The Hacker Who Leaked Data to Chinese Media

@@ -1,0 +1,15 @@
+, which means it can work even when users take steps to block cookies that can give rise to tracking.
+
+The study, published by the American Civil Liberties Union on Thursday, identified 17 website tracking systems that it considered to be operating in violation of industry web standards. By identifying the different types of tracking, the research suggests that users may in some cases be able to block tracking by identifying which kind is being used.
+
+The researchers' findings follow reports of numerous incidents in which companies collected data from consumers' Internet traffic without their knowledge or consent, including the 2015 revelation over at Reuters that British Airways was using tracking cookies on its domestic flights to follow passengers as they moved around its website.
+
+Adobe Systems, Facebook and Google are among organisations that say they comply with the industry guidance (W3C) in respect to web tracking technologies. The W3C is an international standards body that sets the rules for web technologies.
+
+A Facebook spokesman told Reuters the company only uses its pixels (ad pixel) to build audiences on Facebook itself so that it can serve ads at the right place and time. "We believe people should control how they are tracked by online services," the spokesman said.
+
+He added: "To do this, we create audiences directly from Facebook's own data sources rather than data harvested directly from the network." Facebook users can use the third-party app Ghostery to block the technology at www.ghostery.com/en/.
+
+Adobe, Google and several US firms (including Twitter, AOL and Yahoo) say they follow the standard in an "opt-in" model as long as consumers are given the chance to block tracking, even though the standard requires them to do so.
+
+Under the system, users can "opt in" to cookies by changing settings on many browsers as well as in the operating systems of mobile devices and other connected components such as TVs, connected thermostats and fitness

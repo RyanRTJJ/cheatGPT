@@ -1,0 +1,17 @@
+ a lot of the design and game-development trade-offs that plagued other companies with less-advanced technology on the market. This resulted in the more rounded/streamlined design for the NES, something I didn’t realize was the reason for the original design of the system. I assumed the NES looked like this because it was popularized in the US whereas its predecessors were originally designed for European markets. But what most people don’t realize is that the design for the NES was influenced by Atari in the US and SNK in Japan.
+
+The Design and Innovation of the NES
+
+Though the NES was first released in Japan, many of the developers and console designers working on the NES were veterans of Atari and the early NES versions that were developed in Japan for that system. Their expertise and experience gave rise to the Nintendo Entertainment System.
+
+The NES could handle about 10 different NTSC games at once
+
+The NES could use cartridges, not reels like the earlier 8 bit consoles.
+
+The NES could even handle an expansion card that doubled the processing speed from 2.5 megahertz for a single NTSC game to 5MHz.
+
+Although it was a 32-bit processor, the NES had only 2 megabytes of memory for all of the games/programs.
+
+The NES was based out of Japan
+
+The NES was the first video (or home computer) system with support

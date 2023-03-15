@@ -1,0 +1,11 @@
+M audio tracks, and some soundtracks had surround tracks, a DVD-ROM single could carry six tracks, and some video discs had up to nine or thirteen audio channels that were combined into stereo.
+
+Digital video
+
+Digital video was primarily a technology for video playback. For most movies and video games, digital video was used to encode video on video cassette tapes and to compress audio and video on videotape and digital versatile discs.
+
+In 1989, the Video Standards Development Group (VSDG) began standardization on the standard of digital video. During the 1990s, the VSDG standardized the specifications for MPEG-1 and MPEG-2 (now MPEG-4) digital video compression, and standards on MPEG-2 Audio were established as well. In 1993, the VSDG established standards on MPEG-1 Transport Streams, and MPEG-2 Transport Streams have since evolved to support more functions.
+
+Other common video compression formats include Advanced Video Coding (AVC) and Advanced Video Transport Protocol. New video compression standards are standardized by several independent standards groups. MPEG-4 and 8-VSB audio have been standardized by the International Telecommunication Union (ITU), and most home PCs and personal digital assistants (PDAs) today support these systems, and some computers ship supporting digital video and AVC/AVTP/DP.
+
+The format of digital video used as a data transport is determined by several factors including data rate, file structure, and the media on which the video has been recorded. In 1988, the VSDG recommended that any digital video format should

@@ -1,0 +1,15 @@
+ who complained for several days about the bug, which was later reported on Amazon by Paul Johnson, software engineer for Windows and Android products.
+
+The issue, which happened after 3:36 p.m. ET today, was resolved by the company around 5:40 p.m. ET, but some users said that they were still facing the bug. In this version of the software, you also cannot close applications when the device is asleep.
+
+As far as you can tell the solution is working, Google said, but some users saw this bug and started blaming the company. Google is currently in a dispute with its suppliers.
+
+One of the biggest Windows 10 devices, the 8K and 10K Series, shipped on October 25.
+
+Amazon will not be the only vendor to face this issue. Microsoft will likely also get heat, especially as its Bing search results now show a search error when searching for the term "Windows 10 problem." At least some users are calling that version a Windows 10 problem, though Microsoft has said that this problem has been resolved and Microsoft's Bing search engine also has not been affected by the bug.
+
+Microsoft has said that it has been working to resolve Windows 10's problem since the start of development nearly a year ago, and the company has shown some improvements to the software in the first few weeks since the October 29 release.
+
+The latest version, which was delivered to developers on October 24, fixes the problem in about three quarters of users' systems, according to experts. In addition, developers now have the option to turn off Wi-Fi and display a message when the device is asleep. And it also turns off any other applications when the device is in sleep mode.
+
+Microsoft will not release new versions of the new Windows with the fixes. Instead, the company is going to allow developers and users of other Windows devices, including the Xbox One S in its new $299 model, to manually install the fixes in

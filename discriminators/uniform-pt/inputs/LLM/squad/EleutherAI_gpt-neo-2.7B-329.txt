@@ -1,0 +1,9 @@
+. They contend that the measurement of health outcomes is hampered by the limitations in data sources and measurement.
+
+Abstract:
+
+The Health Development Index (HDI) ranks countries along a continuum of socioeconomic development. Data imperfections complicate its measurement, however, with some estimates of HDI from the year 2000 finding lower scores in more developed countries including the United States than other HDI estimates. The authors investigate this discrepancy in HDI data, focusing on the impact of data errors on the HDI’s ranking of countries. They also highlight some other ways in which data imperfections affect the HDI (e.g., over-fitting and sampling effects), as well as how some of its components are subject to measurement error (e.g., the non-categorical nature of education). They conclude that more empirical research is needed regarding potential data errors in the current HDI index, and they make some recommendations to address this in the research area of health development research.
+
+The Health Development Index (HDI) is a measure of progress toward international targets for the MDGs (World Health Organization, 2011). The HDI uses both income and life expectancy to create a continuous scale measuring progress toward national goals for development. The HDI takes the approach that the difference between the years 1990 and 1999 represents a standard of living when gross domestic product is translated into money.
+
+The HDI has been in use since the early 1960s when the

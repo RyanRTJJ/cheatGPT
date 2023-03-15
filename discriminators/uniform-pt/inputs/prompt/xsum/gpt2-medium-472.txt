@@ -1,0 +1,1 @@
+The work, carried out by security firm Symantec, used a Raspberry Pi computer to grab data broadcast by the gadgets. The snooping Pi was taken to parks and

@@ -1,0 +1,12 @@
+ yards deep. For a football field 20 feet high and 50 feet wide we have a minimum yardage of 1,200 yards. In our yardage calculations, the minimum yardage was determined so the overall number of yards is 200.
+
+
+In order to make the yardage calculations easier, we assumed that each game was won by the team with the better record. For each game, our yardage calculations were completed by creating a single point-value equation on each season's table that was then multiplied by the number of games played in each year. Once again, our equation showed a score where the average score was -23.50, so the average score was 27.00. This mean a score of 23.50 could be made using 17,000 games, or 22,000 points, or 23,000 yards. We therefore calculated a total of 23,000 yards when we came up with three games at 27.00, three games at 23.50 and three games at less than 23.50: 1-27, 2-26.5, 3-25.
+
+
+In addition to the points system, the table is divided up into five teams for each team's points total. The first team to win three games will get an additional three points on the table. The winning team of each division will get two points. The winning team of the East Division team has one point toward winning the AFC West (in what is likely to be a three game conference). The winning team of the Central Division team has one point toward winning the NFC East (not likely to be a three game conference), the division that the Redskins play for the championship.
+
+
+This game chart does not actually show who has gained points with victory, because only the following points are reported: Offensive, Defensive and Special teams
+
+Fumbles recovered, Special teams and Field Goals made If we look carefully at the points that came from both teams and divide

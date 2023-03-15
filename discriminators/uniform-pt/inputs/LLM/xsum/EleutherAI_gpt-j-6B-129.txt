@@ -1,0 +1,19 @@
+ effects and was almost impossible to intercept – but could only be read once by the recipient.
+
+‘The quantum nature of matter has so far escaped detection’, wrote Kipping in a paper, submitted to the journal Physical Review Letters, which he said, ‘gives us a glimpse into the very heart of quantum mechanics’.
+
+The satellite carries a miniature version of a nuclear fusion reactor. As it revolves, the satellite produces neutrinos, which can be read in the receiving stations at the same time as the messages.
+
+The two receivers in the mountains are at the top of a mountain range that stretches across central Sardinia in the north of Italy. The two stations can communicate at the speed of light, which allows them to communicate with the satellite as it whizzes past at about 300km an hour.
+
+Kipping said: ‘The neutrinos are a natural channel for information transmission. The idea is to be able to protect information so it is more difficult to intercept [it].
+
+‘We showed it could be done; information could be transmitted securely at the same time as the message.’
+
+He explained: ‘When the message is ready, it modifies the properties of the neutrino, which is like a letter. When you receive the message, you have to read it to change the properties of your neutrino, too.’
+
+Kipping, an expert in quantum communications from the University of Cambridge, said the scheme could be used to protect messages between people on different continents.
+
+But using satellites to communicate with ground stations across the world might be a bit like using a phone to call friends living on the top of Everest but Kipping did not rule it out as a potential future application.
+
+In theory, you could also do things like: send pictures from a spy satellite to a mobile phone on the ground which could then be decrypted with a pair of scissors; or if the message isn’t encrypted, people could try to find loopholes in the system so that they could get the message but get caught. It’s basically

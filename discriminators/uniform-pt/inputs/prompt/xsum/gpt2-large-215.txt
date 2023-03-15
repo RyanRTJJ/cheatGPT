@@ -1,0 +1,1 @@
+The warning comes from researchers who have found the tracking system being used on thousands of websites. The system exploits features of the web's underlying code to generate unique identifiers for each visitor

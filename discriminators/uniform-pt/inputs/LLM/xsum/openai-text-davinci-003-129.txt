@@ -1,0 +1,3 @@
+sics of quantum entanglement, which links two particles so that what happens to one directly affects the other, even when the two are separated by large distances.
+
+In this particular experiment, two photons (particles of light) created by the team in Vienna were sent up to the satellite. The particles were entangled in such a way that when one particle is measured, the state of the other particle will be determined instantaneously, regardless of the distance. By sending photons between the stations and the satellite, the team was able to establish a secure channel of communication by ensuring that any eavesdroppers between the two stations and the satellite could not intercept or view the message without the system being alerted and the connection broken.

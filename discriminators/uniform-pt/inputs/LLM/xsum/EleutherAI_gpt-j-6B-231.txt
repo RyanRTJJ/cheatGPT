@@ -1,0 +1,9 @@
+ a tracking system on the devices. It relied on a single GPS tracker and a remote monitoring site, which logged the locations of the devices at certain hourly intervals. In addition, the company used QR Code stickers for users to indicate their intentions as well as to mark off stolen devices. Wukong now plans to deploy mobile devices and sensors to track customers, drivers and their bikes to enhance security and add convenience for users.
+
+“After a long journey, we now have to return our kids to their home town after vacation,” says the vice-chairman of Wukong Bikes. “And their parents have to search high and low for them.” Having lost his own daughter in China, he knew a thing or two about the trauma that can befall a loving family. While his company’s bike tracking has been an immense boon for owners, he is still worried about their security. “We hope that the bike monitoring software we plan to launch in the near future will be able to prevent children from being abducted and help them find their families faster,” he says.
+
+To monitor and protect its users’ physical assets, Wukong Bikes is using cutting-edge hardware and software to develop an ‘intelligent platform’ to capture and analyze data from its fleet of 2,000 bikes and to provide instant feedback and intelligence for customers. The firm, which is working with one of China’s fastest bike makers and a US data-mining firm, is also collaborating with several other key players across the automotive, transportation and logistics industries.
+
+Wukong aims to help customers manage their fleets and improve the efficiency of logistics. It will first deploy the platform on bicycles and expand to include the rest of its fleet—including delivery vehicles, motorcycles and vans—this year.
+
+“We can track the locations of any of our cars, motorcycles or wheelchairs when lost, stolen, or damaged,” says Wukong Bikes’ vice-president of marketing. “Thanks to real-time feedback, we can instantly

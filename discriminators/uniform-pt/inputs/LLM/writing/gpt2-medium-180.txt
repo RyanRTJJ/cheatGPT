@@ -1,0 +1,17 @@
+!! (You'll need to replace the original text with someone's IP address.) [/font/pagelover/font-face] -[/font/pagelover/font-face][/font] This will create the background image, text color, and background size for the text within the frame.
+
+For the text inside the frame, take the font provided, and then draw a line from 1 to 13 on the original color that goes from white to black. That's how the text looks inside the frame. Then, fill in the text within the frame, using black.
+
+. Then, fill in the text within the frame, using. This will produce a text image that you can load into Photoshop. That will then look like:
+
+Fill this canvas in with your text.
+
+After you build the image, it will be ready for use in your story. Be sure to fill all spaces with white.
+
+. Save your work as a.png.
+
+. Save your.png in a text format that has all the glyphs you want on the same row of pixels before the line. It should look like this: <p>A man stands at his work table. The door to his study is flung open with a violent crash. He looks up from his work, startled as a red hand grabs him by his collar and runs him down the stairs.[/pagelover/font-face][/font] In Photoshop Illustrator, use the Pen Tool to write a white line directly down the top left corner of the image until you reach where the hand would strike again. The text is being added to that whitespace where the hand ended up.[/pagelover/font-face] Copy and paste that text into the blank border of your story's background section in the storyboard.
+
+A Storyboard
+
+Your new-found story has finally got going! You will be presented with a blank square of paper for your story, surrounded by the details of your first-person adventure. You have more story room than ever before, and you will fill it up with your final artwork! As you build this storyboard you will

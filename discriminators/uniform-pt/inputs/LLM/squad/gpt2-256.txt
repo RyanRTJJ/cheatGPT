@@ -1,0 +1,9 @@
+ fact that users were often used to clicking on things and would now simply type something back, as if they'd found a way to go back in for the quick fix. Another user pointed out that the problem with using this interface is the obvious click on events would make the PC go into battery mode and it would take you back to where you started, which could cause some problems, as well as possibly leaving your computer locked.
+
+As for the app features that were included for use with the operating system, Adobe stated that it "believes that Adobe users have a greater ability to interact with the operating system today than did previously."
+
+This will come as no surprise given the large influx of third-party products, but that may be changing if the iOS and Android operating systems come with some kind of third-party support and are more broadly similar as well - Microsoft recently announced Android and Windows Phone OS support on OSX and other platforms. There may be apps available on the web to work with both Windows 8 apps or on some of the other OS's Windows Phone devices, but you'd be hard pressed to find anything that does not have Android support.
+
+Microsoft's statement indicates that we will see some software in the coming months that will allow native apps to be served over Bluetooth - and that's a nice change to the long-standing status quo in the smartphone gaming industry.
+
+Source: The

@@ -1,0 +1,19 @@
+ NHS.
+
+The claim isn’t true, but Vote Leave, in its general election leaflet, said it would “invest an extra £6bn a week in the NHS” if voters backed leaving the EU.
+
+When we asked Vote Leave directly, it said that this figure referred only to the funding that would come directly to the UK. It is not claiming that leaving the EU would make an extra £6bn available in extra spending across UK government departments.
+
+Vote Leave has not said how it would manage this extra money but our analysis shows the figure is misleading.
+
+The source document
+
+The £6bn a week Vote Leave was referring to comes from an October 2016 Vote Leave leaflet. But Vote Leave didn’t directly answer our questions about this figure.
+
+For our investigation we tried to obtain the Vote Leave leaflet through a Freedom of Information request. At first we received an extract from the leaflet (pdf). We wanted to ask about the £6bn figure, but the second document was heavily redacted. If we made the redaction illegal, the Home Office had to disclose the whole leaflet under the Freedom of Information Act. It agreed to do so.
+
+We then received a document on CD-ROM – that’s like a PDF sent by e-mail in which the PDF itself is only 10 megabytes, but on CD-ROM the file is 30 megabytes or more – of the full original leaflet (1.4 gigabytes at the moment of writing).
+
+We can now see that a key part of the original leaflet, referred to by Vote Leave as Table A.1., has been redacted by the Home Office. Only the redacted part is sent as our request. There is no indication that we must pay any charges.
+
+The £6bn figure comes from lines 18 to 30 of Table A.1. As the redacted sections are labelled by votelelaut, they appear on lines 49 to 58, which run in parallel. In other words, it looks like what is being said is that all the figures in Table A.1 that aren’t in lines 48 to 58 would increase if the government gets more money from the EU, but that the funding increase

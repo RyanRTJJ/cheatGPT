@@ -1,0 +1,13 @@
+, they have been able to measure the rotation, speed, and torque of a compass in its magnetic field. Two centuries later, the Swedish physicist Bengt R. Broström discovered that when a compass is made a magnet, the magnetic field also rotates. And the Chinese physicist Chen Zongmu introduced the term rotary magnetic field to describe a rotating magnetic field.[5]
+
+In 1951, Henri Farouze proposed the idea of rotating magnetic fields that are not affected by the strength of a magnetic field lines. He showed how such an idea may lead to a new type of compass design, in which the compass would rotate around an axis of rotation while in its magnetic field. He showed that such an arrangement may allow for magnetic flux to leak from one side of a compass or, if the compass is set up as a flux sensor, may let it measure the magnetic field of a surrounding object.
+
+In 1953, Farouze was able to calculate the rotation rate of such a compass. In the same year, the French physicist Jacques E. Pourier studied the effects of two different types of magnetic field lines, including rotating magnetic field lines.[5]
+
+In 1957, the German physicist Rolf Landmann suggested in his book Magnetic field, a new way to design compasses that use rotating magnetic fields to measure direction and speed.[5] It was later used for developing the BLEU-Compass model.
+
+In 1962, the French physicist François Delobel introduced the concept of flux sensor compasses. He pointed out that such a compass might, if set up as a flux sensor, measure the magnetic field of a surrounding object.[5]
+
+In 1983, the Chinese physicist Wang Wei-Zheng studied the effects of magnetic field lines along cylindrical magnets and found that, when the two types of magnetic field lines meet, their rotors may rotate slowly and abruptly around the axis at different speeds, depending on whether each of the two types of magnetic field lines is a flux line or a magnetic field line. He showed that, for a compass using rotated magnetic field lines to be able to track the direction and speed of a magnetic sphere, the rotation rate of the compass should be known.
+
+Since 2000, the principle of using rotating magnetic field

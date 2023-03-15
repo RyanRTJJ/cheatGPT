@@ -1,0 +1,11 @@
+ buyers without a computer upgrade, there was plenty of other potential for growth.
+
+Windows 8 was a big and ambitious upgrade that "didn't quite have it all figured out", he said. It took a lot from users, he argued, although it did "make it simpler to use" than Windows 7.
+
+However, Warren said that Microsoft seemed to have largely stuck to its plan for the future of its platform. It is in the spirit of what he called the "modern desktop platform" of Windows, with apps that can run on high-end devices like tablets and PCs, and apps that can run on many kinds of existing computers, including desktops and laptops.
+
+However, he said Microsoft needed to make Windows 8 "more responsive and usable for everyone, regardless of what kind of computer can make use of it".
+
+In that environment, Windows 8 was "a welcome re-evolution" in the platform, he argued. "It still has great capabilities, and it's easy to develop new ones. It's better suited than the pre-Windows 7 form factor for people who really need a modern version of a desktop operating system. But that is in part by design, according to Microsoft's own documents: to try to ensure that every version that runs on a PC is able to run Windows 8".
+
+Giles Greaves of IDC thinks Microsoft's strategy is to make Windows 8 easier to upgrade, not harder. Greaves said as new versions were released on Windows 8, they took away the benefits of using a PC for applications that didn't require a mouse and keyboard. To avoid

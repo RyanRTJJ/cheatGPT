@@ -1,0 +1,79 @@
+, and heavy, or more than 12.2 inches, is extremely rare. Heavy snow events are rare, snow totals of 12.2 inches or more occur on average almost once a decade. The odds decrease even further for events that reach 30+ inches of accumulation. The largest storm on record was the Blizzard of 1994, a storm that produced a rare total of 43.7 inches of snow in 24 hours. The odds of a snowstorm that will produce a total of 30+ inches is below one in a million. Below are the odds of some of the heaviest snowfalls in Seattle's recent history.
+
+-
+
+Total Snowfall by Days Following Storm - 1994
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Days
+
+12.7
+
+17.3
+
+11.7
+
+6.7
+
+9.9
+
+4.7
+
+3.0
+
+15.5
+
+7.4
+
+4.1
+
+2.6
+
+-
+
+-
+
+-
+
+-
+
+Storm
+
+Snowfall: 30.1 inches
+
+Snowfall Duration: 9 days
+
+Accumulation Rate: 1.3 inches per day
+
+Wind: 15 mph from NW
+
+Source: NOAA
+
+The Odds are: The odds of a storm that produces a total of 30+ inches of snow in 10 days is one in a million (1 in 1,000,000). Odds are even lower if we take a look at storms that produce a total of 30+ inches in 4 or fewer days. Odds are nearly zero when we compare the odds of producing 30+ inches a few days after a similar storm to producing 30+ inches for the initial snowstorm, that's because the odds of a storm that produces a total of at least 30+ inches in 10 days is nearly as much as the odds of a storm that produces at least 30+ inches within 1-2 days of a similar storm by virtue of the distribution of storms and the number of similar storm within the current storm.
+
+-
+
+Storms by Days Following Event
+
+Days
+
+6-9

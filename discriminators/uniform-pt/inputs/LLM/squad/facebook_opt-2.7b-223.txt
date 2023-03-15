@@ -1,0 +1,9 @@
+, and it is therefore possible that consolidation occurs during sleep [1]. However, in most cases, studies have not focused on whether memory retrieval occurs while you are awake.
+
+A study presented in March in the journal Sleep [2], however, was able to answer this question. The research team, led by neuroscientist Martin Sutter of the University Medical Center Utrecht, asked a group of college students to memorize the names of 25 different food products and then to consume food-related items from a menu. The students were required to write down the name of the item and its nutrition value if they were hungry or full.
+
+At the end of each experiment, the students had to write down the item again or indicate their own number of servings. In one condition, the students consumed water without food. In the second condition, the students were informed they can eat the food they wrote down, and in the last condition, the students were told they can neither eat the food nor take the water.
+
+Based on the response of the students, the researchers could determine if learning occurred during sleep or wakefulness. In the first condition (where the students were given no information), they noticed the students reported they learned the items better while asleep. This fact is interesting because previous studies showed that when we sleep, we do not remember events in a dream, and we do not recall memories in waking life [3,4]. This hypothesis led the researchers to believe that learning occurs in the sleeping period.
+
+In the second condition, however, the students

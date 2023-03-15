@@ -1,0 +1,33 @@
+. They choose a tone and pitch at which this sound is the most effective. What tone and pitch is this? Do more than one of their beings play this role? Who chooses a tone and pitch for human-as-a-whole?
+
+To make this into a piece of interactive fiction: When you select an answer, the answer's tone and pitch is played out, with appropriate modifications for a different answer.
+
+## 8.3.3
+
+To make this into a piece of interactive fiction: When you select an answer, the response to your query is played, with appropriate modifications for a different response.
+
+## 8.4.1
+
+On its way into one of its colonies, the vessel   is destroyed by another alien race. Only the ship's captain survives. When the captain reaches the colony world he is amazed by his appearance. As far as he is concerned, the ship's appearance has been completely redefined by the colony. In the captain's opinion, "We" are now  -human. But the colonists have gone too far. Their culture is now dominated by machines which are worshipped; even our captain has a large statue on his office wall. The captain is outraged. He insists on bringing this terrible imbalance back to the alien race which destroyed his vessel. The new colony   is an attempt to avoid this outcome.
+
+To make this into a piece of interactive fiction: You meet the captain. A dialogue screen presents the options:   or   
+
+## 8.5.1
+
+To make this into a piece of interactive fiction: A few days later, you meet the captain again.
+
+* * *
+
+* * *
+
+Copyright © Cosmic Cutters
+
+* * *
+
+## 8.6.1
+
+Copyright © Cosmic Cutters
+
+## 9.1
+
+Your spaceship has traveled back in time to the very early days of human history. A primitive tribe, wandering in search of a new home, is discovered by your ship's captain. This tribe was settled in

@@ -1,0 +1,7 @@
+ Apple Store during the 1960s. This is a large part of the Mac's architecture, and as such it is not known whether those components are available in the Mac or in the Windows desktop environment. Microsoft also built an emulation for XFree86 in a separate program.
+
+The OS X operating system was created with a series of different APIs, for example an Apple XSDK based OS X Server, an OS X Client, and a graphical client. The OS X client uses a number of different APIs, but the most commonly used is XCode, which has a Windows version called Xcode 5.5+. In 2003 Microsoft provided its second version of the Windows System Interface in the graphical client, with improved handling of objects and functionality. It's possible this was another effort to use standard Windows APIs to provide cross-platform support. However, while those APIs work well together, they only have a small influence on how the Mac is configured. In other words, many of the changes in the operating system were made using the Windows platform.
+
+Today's Macintosh has the same software as those available today.
+
+Mac users often see some variation of how Apple displays the operating system. They may report a different operating system that doesn't run in their Mac's operating system directory, such as a different desktop. Mac and Linux versions of Windows, Mac OS X and other modern browsers and displays have their own different operating system (in their respective flavors of Linux (GNU/Linux), FreeBSD (FreeBSD), and Solaris (Solaris)). These differences can occur in the OS X installer, but

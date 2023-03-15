@@ -1,0 +1,10 @@
+ All factions are in negotiations with Germany.  The US government declares war on Germany over their refusal to surrender.
+Why does Germany keep refusing to submit? Are Germans that stubborn?   Why aren't the allies fighting back?
+> Why aren't the allies fighting back?  They don't want to put out fires.
+Which will also lead to a "win the war" scenario, so there's a dilemma.
+Germany wins either way.
+Maybe, I guess. If you have the world in the first place. And you can keep it that small. The last few posts in /r/futurology about how it'd be more profitable to put everything on ethereum is making me think again.
+No one wants to put everything on any one single system.
+Theoretically, why not? They can scale it easily, and its also a distributed database.
+Because no one wants to put everything on a "just in time" system.  If every company has to account for everyone else at all times, things will suck.  A lot.  A lot of jobs will be lost.  I really doubt it works out to be more efficient at that point than having everything in a computer network.  In addition, what about countries with borders, no way to get in and out, and the like?  Do you really want to make everybody's life just as shit no matter where they live?
+> Because no one wants to put everything on a "just in time" system.  Not completely but, theoretically, yes. There are many things to consider though like a distributed database that can store every kind of data and be scalable to any size. It might be more expensive to maintain and scale but, all in all, I think it can be more economic.

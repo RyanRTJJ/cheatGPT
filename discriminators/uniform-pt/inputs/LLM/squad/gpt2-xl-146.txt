@@ -1,0 +1,9 @@
+ transition to Intel chips. The Rosetta emulator is no longer a requirement because of newer generation chips that run on top of the high-speed, 64-bit x86 processor architecture. Instead, new hardware designs with powerful GPUs are used, so developers using the emulator can still choose to use it, but with an eye to creating highly optimized graphics with GPU compute power added back.
+
+Apple plans to release macOS High Sierra soon. Some time after the release, existing software should be compatible with the new architecture. This has led to some confusion when it comes to what the new architecture means for software developers, and what to expect from them.
+
+Why is all this important? Because the macOS High Sierra release is one of the largest and most significant in the company's history. The new processor architecture features dozens of new features that provide substantial power savings, better performance, support for additional graphics hardware, and a number of other improvements over previous versions. Developers must fully understand how to use the new features and expect to see a significant improvement in the overall quality of their apps. A few examples of the kind of improvements that developers can expect in software made using the new architecture are:
+
+Power efficiency: More efficient processors use less power, so that your Mac continues to run at even higher clock speeds for longer periods of time.
+
+The new, significantly wider graphics API. The new graphics API is based on OpenGL®, a revolutionary graphics standard that combines advanced 3D graphics with precise texturing and interactive geometry – it's like

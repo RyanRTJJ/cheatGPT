@@ -1,0 +1,9 @@
+ lack of a Windows 8 Start button on the taskbar. Others complained it meant the start button took over the entire primary menu—an improvement over the Windows 7 start button—and took some getting used to. Another suggested it was the first application-oriented operating system. When it was finally launched for review, it was heralded by most critics as having "unfairly" treated users as mindless consumers in their quest to make every possible decision for them.
+
+One of the most significant changes in Windows 8, however, is that it has changed the nature of the relationship between user and computer. In a traditional operating system, the application is the operating system, and the user is the application. The relationship is that the user is the application. But, in Windows 8, that's not what the user expects.
+
+"The user may expect the computer to make all kinds of choices for him—to perform one task, and send him to a movie of his choice or make one web search, and send him off to the next game, or do one thing on his machine," Nicholas Negroni—coauthor of Digital Home—wrote. "But it's not that simple. It's far more complicated."
+
+Negroni continued: "Instead, the Windows 8 user has to learn to manage these interactions that he sees as'systemic'—the applications that are most important to his needs. These'systemic' interactions will include the entire set of programs running on the machine, or a specific program, or an entire folder or an application."
+
+Not only does the

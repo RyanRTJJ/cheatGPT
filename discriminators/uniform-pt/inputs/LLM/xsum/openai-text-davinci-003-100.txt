@@ -1,0 +1,9 @@
+sked to work nights.
+
+The researchers found that a gene connected to breast cancer risk - the BRCA1 gene - was expressed differently in women who worked night shifts for two years before the study when compared to those who had never done night shifts before. They said the findings provided strong evidence that the genes of those who already had a genetic risk of developing breast cancer were especially sensitive to disruption by night work.
+
+The study was conducted in the Netherlands and involved 72 premenopausal women who never before had worked nights and 72 premenopausal women who had worked nights continuously for at least two years. The researchers looked at the expression levels of four genes - BRCA1, BRCA2, PALB2 and ATM, all of which are associated with an increased risk of breast cancer.
+
+The results showed that after two years of night shift work, the expression of the BRCA1 gene was significantly lower in the night shift workers than in those who had never worked nights before. The expression of BRCA2, PALB2, and ATM were not affected.
+
+The researchers said that the findings "provide the strongest evidence to date that circadian disruption may contribute to breast cancer risk due to its interference with the transcriptional regulation of the BRCA1 gene". They added that their findings "highlight the importance of protecting workers with a family risk of breast cancer from occupational circadian disruption".

@@ -1,0 +1,12 @@
+similar to a third rail pickup system, albeit a temporary one) using a contact shoe assembly attached to either a truck in front of the tram (trolleybuses and trams with articulated middle trucks) or to a third rail pickup rollway, which was part of the tram support structure (trams with swing middle trucks).
+Conventional buses and subways usually pick up current via overhead catenary.
+
+In the case of trolleybuses with third-rail current collection on two-thirds of their length (a short span in front of the bogies in each direction), current collection in front of the bogies is the same as current collection in back of the bogies, as long as the bus travels along single line, that is, there are no turns along the line.
+
+The third-rail conductor pick up the current coming from several overhead wires strung on pylons along the lines.
+
+The conductors also make sure the tramway is safe for all users by ensuring that the tramway has adequate clearance between it and the tram lines to prevent passengers being hit by the tram.
+
+If there is a line fault, the pick up shoe may pick up a current not just the live one, but also the neutral one which would not allow the tram to run (which would be the equivalent of a short circuit at the line breaker box). On the other hand, the second rail of the system's neutral return conductor will pickup either current if the live one is faulty. The live and neutral current is picked up by the pick up shoe, connected to the current collector for further processing.
+
+The third rail current collector is designed to handle only a few thousand amperes of current. The three primary methods of

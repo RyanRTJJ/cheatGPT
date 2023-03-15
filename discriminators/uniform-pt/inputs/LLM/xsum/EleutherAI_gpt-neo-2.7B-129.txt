@@ -1,0 +1,11 @@
+ entanglement, a concept where particles can be forced apart and recombined in ways that can lead to extraordinary feats of communication.
+
+Quantum entanglement is at the very heart of quantum theory. It is the property that if A is in a particular state and B is in a different state, then in principle they can become entangled with each other, with a probability. In the most extreme case, where A is in a superposition of two states and B is in a superposition of two states, they can even become entangled in as many as four superpositions. It is an incredibly powerful concept.
+
+“One of the simplest experiments involving physics of entanglements is of a single photon in a twin-beam and entangled in position [the twin photons] are going to travel between separated space and are entangled in wavelength,” said physicist Dr. Gerhard Krämer from Vienna University of Technology. Krämer is one of the scientists involved in the experimental work.
+
+The experiment takes place at a satellite based in Kourou, French Guiana on the border of Bolivia and Brazil. “This satellite is the most powerful and advanced of all the satellites in this project,” Krämer told the Daily Mail.
+
+Quantum entanglement is used to secure communications, since the fact that even if we don’t know that an adversary has eavesdropped a message, it is a much harder task to tell whether they have or not. This is because the photons used in quantum experiments have a certain amount of entanglement.
+
+Krämer explains to the Daily Mail that their experiment consists of two experiments designed as a “black box.” A third experiment is also designed in the form of a “black box” with two photon outputs in the same polarization state. The output is measured to determine whether there has been interference, which means the photons were entangled. The black box which is measuring the polarization, does not contain the signal of the original interaction but has an input through the quantum key. In the experiment, when the input is

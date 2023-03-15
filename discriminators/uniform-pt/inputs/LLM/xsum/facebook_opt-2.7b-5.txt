@@ -1,0 +1,17 @@
+ conference Black Hat Europe in London on Monday. They disclosed the vulnerability in March and have been working on it since.
+
+The vulnerability may affect systems running the medical group’s software, which handles medical claims for hundreds of millions of Americans through insurance providers, government programs and private plans. The medical group says it employs 400 people and is one of the largest and oldest non-government healthcare organizations in the US.
+
+It is unclear if anyone has exploited the vulnerability, the duo said. Erven and Collao, of The Linux Foundation’s security group, told Ars they did not expect it to become a vector for an attack, since many of the affected organizations don’t have the means to pay out on that insurance.
+
+The researchers said they began investigating a month ago after obtaining information in a “leaked database” that they could use to look up which companies were affected. According to the database, the group has 68,000 systems in the U.S. alone. About 60,000 are systems that are used to pay claims for insurance carriers and others, and the rest represent individual accounts.
+
+In order to exploit the security hole and attack those accounts, a hacker would need a customer information database, access a customer’s medical record and manipulate the data. It's likely the information would be in plain text, the researchers noted.
+
+The issue may have stemmed from poor password security and/or encryption, the researchers said. The researchers have not been able to verify if the issue affected medical record passwords.
+
+One of the security researchers, Scott Erven, noted on Twitter that he had verified the security flaw by reviewing the medical group’s own records. In a statement, the group admitted that medical records are “not always in-house, especially when there are many entities with access,” but pointed to “a robust security program in place to mitigate this.”
+
+“We take security very seriously," the group said, "and have updated our security controls, policies and processes to address this issue.”
+
+The two researchers didn't publish the vulnerability publicly, though. Instead, Erven and Collao are trying to figure out who the affected companies are

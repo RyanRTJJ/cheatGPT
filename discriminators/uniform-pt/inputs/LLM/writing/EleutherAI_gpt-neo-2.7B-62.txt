@@ -1,0 +1,17 @@
+~~A New York Public Library author
+
+It’s still in the news. The United Airlines and NYSE outages have been tied to cyberattacks, and no one has been charged with the attack that caused the outages. (At least, until now.)
+
+What’s more, a former security expert has been brought in to tell us the truth about this new attack. His name is Alex Stamos and he is the executive director of the MITRE Corporation, a nonprofit organization devoted to improving our online security.
+
+One of the most interesting things about Stamos’s interview is that it is almost 100% unmoderated and uncensored. There have also been a few comments from friends and associates of the MITRE Corporation.
+
+In the interview, Stamos tells us, "The United Airlines cyberattack, which began on a Friday and continued until around 3 a.m. of August 2, was certainly malicious, but to what degree is still a little-understood phenomenon and an area in need of greater academic and technological study and public discussion."
+
+He also explains how the UAL flight, United Airlines Flight 3411, "was apparently hijacked by a group of people armed with cameras," and, at one point, even an exploding camera.
+
+As for the nature of the attack on the exchange, Stamos tells us, "At 3:45 a.m., United’s exchange shut down, and they quickly alerted and announced the incident to the world." He also notes that their website "was very sluggish, and no one else’s sites were affected," which points to something different entirely.
+
+One thing I found interesting was Stamos’s explanation about this "hijacking" and the exploding camera. He said, "The hijackers made a video of themselves shooting video of the exchange, and one of the men was apparently killed by one of the exchange managers. But they got their video, and they were the first to describe what happened."
+
+We have been wondering why these attacks were taking

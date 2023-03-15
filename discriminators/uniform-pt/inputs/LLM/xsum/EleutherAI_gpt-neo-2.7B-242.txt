@@ -1,0 +1,13 @@
+’s quite possible that similar flaws exist in other programs or applications, particularly given the sheer number of open source and commercial apps (such as popular email apps and social media widgets) that already expose users to unpatched software bugs.
+
+It’s also worth noting that Google is doing its best to catch these issues before the general-public. The company is testing an automated scanning tool and says it’s actively monitoring for zero-days. These tests will continue until the public updates its apps.
+
+What’s interesting about Gmail’s and Google Mail’s vulnerability is that both of these apps were affected by the same hole. That means that both of these apps are vulnerable to the same bug that could allow attackers to remotely execute malicious code on users’ computers. In other words, all it takes to trigger Gmail’s vulnerability is to download a document such as an Word or PDF file from a compromised website or open an email with a malicious attachment on someone’s computer.
+
+The security vulnerabilities addressed by Google were disclosed in March, and Google quickly updated Gmail and Mail through an online update, which took several hours to propagate on Android phones.
+
+“In order to stop the email hijacking, Google has been working with software developers to identify and verify the most common ways an attacker could trick you into clicking a link, like opening a malicious attachment or opening a file with an unfamiliar name,” Google’s security team says in the letter. “In addition we are releasing specific details about how this happened so you're able to verify that your particular email address may have been affected,” it added.
+
+But what does this say about the security measures Google is taking now in the mobile operating systems of Apple, Samsung, Microsoft and other companies? While this security issue may have brought about a temporary inconvenience, we’re all still in the dark about how it’ll be corrected.
+
+Gmail and Mail’s vulnerabilities are not related to the company’s ongoing efforts to address mobile operating system security flaws. If you’ve been affected with this attack and you’re able

@@ -1,0 +1,17 @@
+ Black Hat USA in Las Vegas.
+
+READ MORE: Anonymous hack group hacks medical groups; patients lose personal records (VIDEO)
+
+The breach happened in the past three months after the attackers' intrusion was first discovered, and the perpetrators used more aggressive methods, Erven said.
+
+The hackers are probably using sophisticated tools to take large chunks of data out of the cloud. At the time of reporting, their system took as long as six months to pull data from 1 million healthcare users.
+
+"This is a serious escalation of attacks," said the security firm, Veracode, which first discovered the incident. Veracode has warned of a growing threat from "state-sponsored hackers that use exploits to infect and delete data. In the same timeframe, this attack has affected more than 67,000 systems, putting them at risk of a ransomware Trojan," the report read.
+
+Erven urged organizations not to just delete personal data from the servers of healthcare providers. His team says more is needed, the solution lies in the control of data and the security practices of institutions.
+
+"Companies have the responsibility to make sure that they have strong controls. Most, if not all healthcare organizations out there are, at least sometimes, subject to data breaches. However, they are usually handled by a security officer who simply does not do enough to keep systems up to date with the latest security security updates," he said.
+
+"This lack of control is most often caused by a culture of complacency where the individual does not monitor network connections and the software is not patched. Companies can take more proactive measures to improve the security of their systems if they really want to defend themselves," he said.
+
+"Hackers can take your personal information and distribute it online. They can steal your medical records and give your doctor the wrong medicine. They can give your information to criminals. They can destroy your medical records in a fire," he added, stressing that it is vital to protect your privacy with every single thing you do, as well as with the data that you store in the cloud.

@@ -1,0 +1,25 @@
+ were found to not have the security measures and authentication procedures required by the banking laws of Australia and New Zealand.
+
+It is alleged that the bank failed to have its fraud detection and prevention system in place when it implemented the IDMs in May, 2013 and January, 2014 respectively.
+
+"In June 2014, an auditor for the Australian Securities and Investments Commission (ASIC) found that during a search of Commonwealth's system, ASIC was able to download, open and read the internal security tokens," ASIC Deputy Commissioner Peter Ryan from Melbourne said.
+
+"In January 2016, he discovered the bank had not adhered to the appropriate data breach notification obligations."
+
+ASIC said there were "serious irregularities in Commonwealth's implementation of the Intelligent Deposits Master Solution software and its testing processes", which would result in the bank not being able to make a full assessment of the security implications of the IDMs and it had failed to maintain the necessary security measures and encryption level.
+
+The bank has 30 days to respond to the complaint and could be prosecuted.
+
+According to a news report, the bank claimed to have implemented the new system after independent testing, which had been conducted on behalf of the bank by computer intelligence, security, compliance, digital forensics consultancy Pundit Labs.
+
+However, the Australian Banking Association has alleged that there was no test conducted.
+
+The Australian Competition and Financial Services Commission is still investigating the matter and determining whether or not criminal misconduct occurred.
+
+In May, Australia's Reserve Bank put a halt to the nation's biggest financial system to protect the integrity of the IDMs. The Reserve Bank also said the market for the IDMs would be restricted until the regulator has finalised its investigation into the incidents. It was later revealed that the Reserve Bank had failed to do extensive testing and reviews before instituting the restriction.
+
+However, the Reserve Bank said in June it had identified "significant issues" which allowed hackers to make use of the IDMs to steal information.
+
+READ
+
+The IDMs were introduced in Australia to replace card readers and cash machines and was designed to make it

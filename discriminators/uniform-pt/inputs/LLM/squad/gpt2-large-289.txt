@@ -1,0 +1,13 @@
+.
+
+But in early March the OS went free to the public, clearing the way for device makers and manufacturers such as HTC to release fully open source (free) Windows RT tablet editions.
+
+Last week, Microsoft released the first Windows RT tablet, codenamed Surface RT, for pre-order in Europe and the U.S. ahead of a launch date later this year.
+
+In the wake of this latest news, we brought some of our questions to Microsoft, where we learned that these new tablet editions will run the Windows RT operating system, not one of Microsoft's Windows 7 and Windows 8 derivatives.
+
+In other words, these tablet editions will be running Windows RT 1.0, a version of the platform that will run on the devices Microsoft intends to distribute – Windows RT 2.0 and Windows RT 3.0, in both ARM and x86 guise.
+
+In that blog post, Microsoft's Terry Myerson writes, "Our tablets will now run Windows RT instead of version of Windows that they are currently packaged for because to do so requires substantial work to enable secure boot and to ensure that hardware built for the Windows RT OS kernel does not contain non-secure and potentially malicious code. You can read more about this in our latest Developer Preview of Windows RT."
+
+In fact, it does. We looked up the work behind Windows RT 2.0 and found that

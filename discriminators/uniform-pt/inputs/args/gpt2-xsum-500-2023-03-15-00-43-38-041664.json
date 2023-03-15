@@ -1,0 +1,14 @@
+{
+    "dataset": "xsum",
+    "dataset_key": "document",
+    "n_samples": 500,
+    "base_model_name": "gpt2",
+    "batch_size": 25,
+    "do_top_k": false,
+    "top_k": 40,
+    "do_top_p": false,
+    "top_p": 0.96,
+    "openai_model": null,
+    "openai_key": null,
+    "cache_dir": "~/.cache"
+}

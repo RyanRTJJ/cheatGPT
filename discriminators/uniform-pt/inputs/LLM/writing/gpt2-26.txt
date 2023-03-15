@@ -1,0 +1,10 @@
+ This prompt may be one of those one-liners you often see in a text game: "Let's just say that I'm in the background looking at a computer." When I write an expression with this prompt, I'm asking you to think about what it'll say. You must remember exactly what it means before typing.
+I'll look at the text to find out if I want it to read:
+What's it like to live in an environment that provides no protections from the threats of cyber attack and is therefore virtually safe from those threats?
+How do I deal with the threat from this environment?
+Is there a chance that the environment will survive?
+I want to try to make a statement, to make clear that I'm not going to use "cyber attack" or "cyber attack from outside of the Internet" as a way of being less prejudiced against me.
+It should be noted here that I'm not a lone wolf, just a developer. I am a man/woman who has dedicated the last three months to a project that is focused on protecting and developing the Internet from cyber attacks. I know that this project involves several different projects, many of which we need to do more. While I cannot promise every day to work at the speed I need, I recognize that in order to make progress, we have to make changes.
+As I walk through the project I find that the most important task is to make clear that the "cyber attack" is being used here for personal safety and that no one should be allowed to use my personal computer in any way without their consent. This is one of several major changes that I have to make to the project to get this right. Most of the code available in the project for the last six months is written in C only and we're still struggling to figure out the right language.
+In order to understand when I wrote this post, let's break down some steps my project took in building and improving the "virtual environment".
+Before we go any further, though, I want to start with a statement from

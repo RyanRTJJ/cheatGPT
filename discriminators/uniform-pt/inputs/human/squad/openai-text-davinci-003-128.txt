@@ -1,0 +1,1 @@
+ board-only organization typically has a self-selected board, and a membership whose powers are limited to those delegated to it by the board. A board-only organization's bylaws may even state that the organization does not have any membership, although the

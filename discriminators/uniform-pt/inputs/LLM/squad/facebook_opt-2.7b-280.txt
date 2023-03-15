@@ -1,0 +1,9 @@
+ the two inventions are quite different in construction.
+
+Edison’s phonautograph was a mechanical assembly that recorded a sound by forcing the recording sheet to pass over a moving stylus. As the sheet passed over the stylus, it made friction on the record, causing sound to be recorded on the paper. This led to some inaccuracies on the recording sheet and the stylus that resulted in the lack of fidelity.
+
+In contrast, the phonautograph records by sending a recording to a drum record player that contains vibrating recording disks. When the recording disk is rotated, a vibration is produced and this causes the sound to be transmitted to and from the record. The quality of the sound is quite high since the vibrations result in a high electrical signal that can be recorded. While the recording quality for Edison’s phonautograph is low, the quality for a modern sound recorder is almost perfect.
+
+Edison invented the phonograph before the electrical phonograph to improve the musical side of the phonautograph. Prior to Edison’s invention, music for the phonautograph was only audible to an operator sitting in a room that was connected to a phonautograph that sounded a pre-recorded piece of music. Edison’s invention allowed music to be played simultaneously on a phonautophonograph and for an operator to hear the music through headphones. By introducing this feature, Edison revolutionized the sound recording industry by greatly improving the sound quality of music and also revolutionized the music industry.
+
+While Edison was responsible for the phonautograph’s innovations, his invention

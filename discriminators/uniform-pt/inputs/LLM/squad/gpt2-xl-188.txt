@@ -1,0 +1,9 @@
+niss) which are separated by the supply and feed cables from their respective sections, with the feed and neutral lines passing through a neutral switch within the plant. The Neutral Section is kept isolated from the other two sections as much as possible by any means which can be conveniently employed. During normal operations, the neutral sections are turned to the feed or feeder station nearest to the section, by a neutral switch at the beginning of each cycle, to allow a steady supply of feed to the feeder station at a desired voltage.
+
+During emergency events, when supplies are being diverted from one section to another or when the equipment is being connected or disconnected, the two feed stations should be turned off by turn of a given lever. If the Neutral Section is left out, there is the risk of out-of-phase out of the neutral section and, consequently, it must only be used during emergency situations to prevent supply inter-operation.
+
+A small number of electric transformers may be needed which contain individual neutral sections. Each neutral section is enclosed in an insulated box, known as a neutral block, and contains a fuse which will blow when there is a short circuit between the neutral and the feed section; it should be noted that the fuse will not explode if a permanent short occurs which damages the neutral-block housing, for this should not be allowed to occur.
+
+The neutral block is placed within each transformer's central armature. It should be noted that an insulated wire from the neutral switch to a wire socket placed on the main wire rack of all the transformers used in the plant should also be kept separate if there is any doubt as to their intended function.
+
+If it becomes necessary to transfer power from the main battery system

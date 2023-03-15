@@ -1,0 +1,19 @@
+ shopping centres all over the city, and captured what was being broadcast, including GPS location, screen-capture data, and even images taken by the devices.
+
+The firm gathered the data, and then processed it to remove anything that might be used for analysis by hackers, such as locations where devices may be compromised, what brands they appear to be, and how many times they clicked on certain products.
+
+The final analysis was the most detailed known and gathered before now. Symantec said they would publish the data as a GEOBLOCK.com file, meaning that anyone who wants to use it should go through complex procedures to extract anything they could use for analysis.
+
+"This gives data owners a complete understanding of the activity within their online properties through a holistic analysis of all types of data, including video streams, photos, and geolocation data," GEO said.
+
+"The data also ensures these businesses have the most up-to-date information about their customers and products on any given website or platform – as well as being a source of insight into customer behaviour."
+
+Some of the data was published online by GEO on Thursday, with details on the types of data collected from different sites and what type of security was in use. In general, almost everything GEO could find using its own databases of online information.
+
+The most common types of data gleaned was for the time, location, app used, and device ID. It also identified how many times a device was opened and what was being done – the latter is crucial for security professionals who monitor online activities. But it is important to realize it still only represents a very small subset of traffic generated off an IoT device, and is far from a comprehensive record of what is going on.
+
+"The big challenge with understanding consumer behavior around connected devices is the sheer number of them, which can generate tons of data from every connected device," GEO said in a press statement.
+
+GEO said its data was also a more comprehensive way of learning "about the broader landscape of connected devices and what makes them tick".
+
+The GEOBLOCK.com data has existed for

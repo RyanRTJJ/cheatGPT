@@ -1,0 +1,9 @@
+ transfer rate. The proposed rule—which was made public by FCC Chairman Thomas Wheeler on 24 April—would allow ISPs to charge certain content firms such as Netflix or Google, for example, up to six times more to send their data over its networks than they can be charged by telcos for the same capacity. According to Wheeler, the plan will reduce the "discriminatory and unnecessary delays" that the broadband industry faces when it comes to delivering content to its subscribers.
+
+In a post on his blog to explain the plan, Wheeler explained: "After careful analysis, we have determined that there currently exists a lack of common understanding and high barriers to interconnection for broadband providers, and that this lack of understanding is hindering advanced, competitive broadband deployment in the United States."
+
+A new FCC rule would allow broadband providers to trade bandwidth
+
+The key to Wheeler's plan is a proposed new rule that would allow ISPs to give certain content providers — such as their content providers or those that provide content over an application protocol — a higher download speed from each other when they need to transfer their data to another internet user. "Broadband providers may give these ISPs access to capacity that is not previously offered for interconnection, for no up-front payment," says the leaked proposal.
+
+The change would not only mean that content providers would be

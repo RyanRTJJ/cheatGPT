@@ -1,0 +1,7 @@
+ personalized treatments tailored to an individual's genetic makeup, lifestyle and environment.
+
+The study focused on patients with advanced melanoma, a type of skin cancer. It looked at the genetic profiles of 328 patients who enrolled in a clinical trial for targeted melanoma therapy. The trial compared the effectiveness of a targeted therapy drug called vemurafenib with another drug called ipilimumab.
+
+The researchers found that certain genetic variations, including those affecting genes such as BRAF and NRAS, explained why some patients responded better to treatment than others. Patients with BRAF mutations had a much greater response to vemurafenib than other patients. Similarly, those with NRAS mutations were more likely to respond to ipilimumab.
+
+The findings suggest that using genetic tests to identify patients most likely to respond to each type of drug could help improve the success rate of these treatments. The researchers hope their findings could eventually lead to the development of drugs specifically designed to target these specific genetic variations.

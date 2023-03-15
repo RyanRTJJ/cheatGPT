@@ -1,0 +1,9 @@
+ delivery speed than broadband for their customers. Despite this report on the Commission's Web site, it did not come into effect until December 31, 2015.
+
+Broadband delivery speed
+
+Broadband delivery speed can be defined as "the number of times a particular speed can be achieved in a given amount of time." It can also be compared to how much of a difference in speed this speed may affect at a different location relative to a connection with a "similar speed" connection (the typical internet connection is 2 Mbps). The FCC uses a 5 Mbps "broadband delivery speed" metric in its published regulations or guidelines. The metric is not based on how quickly a link is delivered; more generally, broadband delivery speed is what users can get in a given amount of time (within some geographical limitations as discussed in the FCC's blog post on "Regulation of Internet access."
+
+When the Internet was conceived, "broadband delivery speed" was associated with fixed cables (not the new high-speed internet connections made for smartphones today). A lot has changed in the broadband delivery era, including the fact that fast internet connections require much higher infrastructure costs as well as higher data rates. Some technologies – such as those used by mobile operators – now seem to be obsolete, while others are still new in their introduction and need improvement.
+
+The FCC's own research

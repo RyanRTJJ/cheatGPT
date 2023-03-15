@@ -1,0 +1,31 @@
+ Selection". A great introduction to how FST, and similar statistical tests like Fst, are used in genetics.
+
+Richard Lewontin's book The Selfish Gene provides an understanding of population genetic studies and how they are used to investigate the human gene pool.
+
+Skew Tests - Skew tests or sample-treat test are used to look for the presence of population structure in genomic data. They are also used to distinguish among population subpopulations. The reason there are so many versions of them is that there is considerable variation in the methodologies for sampling populations, and many of the techniques involve statistical adjustments that can lead to a spurious comparison of the effects of different populations. Skew tests are used mostly for testing for population structure in genomic data.
+
+How to Use Genetic Testing Results - This article covers the basics.
+
+The Biallelic Gene and its Effects on Health - This article includes a section on the use of genetic genealogy data by researchers and scientists. It briefly illustrates the importance of studying a person's ancestry.
+
+Fruit of the Poison Tree - This article summarizes FST in a non-technical way to make it accessible to people who do not know how to use genetic testing.
+
+Genotype-Environment Interactions - This article helps to understand some of the most common interplay between the Biallelic and other genes. More information can be found at the site of the International Center for Genetic Research.
+
+References [ edit ]
+
+See Also
+
+References to studies of population genetic studies.
+
+Other links [ edit ]
+
+Wikimedia Commons has media related to FST:
+
+Annotations [ edit ]
+
+The following annotation tags are supported by the Genetic Information Project:
+
+tag Description ID cna Annex: Genetics (7)
+
+Annex: Genealogy (1) genealogy Annotation ID: cna

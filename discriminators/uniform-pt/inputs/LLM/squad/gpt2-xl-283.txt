@@ -1,0 +1,7 @@
+ PC users, the upgrade will also "make Windows 8 more accessible to the casual users the company says it wants to attract." David Pogue of The New York Times was less persuaded that Microsoft had a genuine redesign in mind, saying "I'm skeptical that Microsoft is actually going to rethink or improve on a product like this. But there's no denying that Windows 8 is more of an enterprise-focused version of Windows, with the focus primarily on productivity software rather than games (Microsoft's emphasis is on games in the main)."
+
+While I doubt my own evaluation is more conclusive than other reviewers' thoughts, I do think that Microsoft is making a good first step in addressing the problems with Windows' OS. First and foremost, Windows 8 will be Windows 8.1 — a true upgrade, but it will include other new features too. Here are my five biggest gripes and why I think Microsoft and OEMs need to address them:
+
+What about Internet Explorer?
+
+Windows 8's touch-centric UI presents a serious problem for IE. To be clear, while I find Windows 8 design-wise intriguing, it doesn't come close to addressing the IE problem. When all devices (desktop PC, tablet, and laptop) are using touch devices by default, the only solution is a web browser that integrates with touch. Windows 8 provides no mechanism to allow users to add another web browser directly to their Windows installation — there have been attempts to do this before, like Firefox and Thunderbird, but each has had different problems. (Note: Microsoft may well do something

@@ -1,0 +1,9 @@
+~~~ I am very happy to see this prompt. As I was about to close up my laptop after a few minutes of reading, I got the idea to make this.
+
+If you like the idea of being able to create sigils, but aren't sure where to find them or how to do it, here's some resources: First off, I made an online version of this tool for Windows users. It does not work on Mac or Ubuntu. If you use Linux, use Wine to run it: http://www.winehq.org/download.php I created a similar tool for iOS users using a different solution: https://github.com/trevorhollison/sigil-tool-ios When you launch sigil-tool, you will need to download a lot of files, mainly the files for the original "Magic" software. For Mac and Linux users, you can get the files here: https://www.magic-sigil.com/downloads/ Magic Sigil
+
+Once you've got all of that downloaded, go to your file system folders in your operating system. For Linux/Mac users, the file paths are as follows: /private/Library/Application Support or /Users/.config
+
+For Windows users, it's C:\Program Files (x86)\Magic Sigil
+
+The one that you want is on the next row to the right. Open it up in your editor. I've included a.pdf version of this program, so you may want to download that if you need it. I've also included many other sigils for people to use, so you can mix and match them if you use a different version of Magic's software. To use the program, click the icon on the bottom to make it a program. Click the file you want to edit in the list, then click the Edit button. If you don't have your desired symbol on your keyboard, the arrow on the bottom right will move it, giving you an easy way to find it. You will notice how

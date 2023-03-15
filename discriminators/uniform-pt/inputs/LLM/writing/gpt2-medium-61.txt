@@ -1,0 +1,9 @@
+~~~ (I'm really trying to keep up with them for this day. They were on a recent trip with a friend. They had taken the bench outside. It was beautiful.) You can change your birthday at anytime. If you're looking for your birthdays, the "Birthday" subcommand gives you a list of most frequently-occurring ones. In the example above "6/6/2009". This is the birthdate of Nick [3] who just won the first National Championship wrestling match in the country. All of Nick's birthdays can be changed to the birthdays of others on the team by prefixing their birthday with something like [6]: (You can also make a list of your friends' birthdays by typing [NNNNNNNN], which will give them a list of all their friends' birthdays)
+
+To see all these "birthday" options, click "New" in the top right corner. For some fun, look at the list with the options under "Birthdays". The name is there in red text, and all the options are on the map to the right. A couple of the options will be green buttons and will tell you what day you can change your birthday.
+
+As you can see, the "Birthdays" option lets you add whatever you like to your birthday list!
+
+If you want to reset your birthday, you can just type [BNNNNNNNNNNN] and hit return. There is a time function to do a reset.
+
+On some machines, the birthday time doesn't get reset so all the day starts from the time which you did your last reset. This also goes for some systems in which you can not reset your birthday, such as some HP systems. If this bothers you, simply wait until the next day and try again until you get past that period. If you try both of those scenarios until it happens, either have an administrator handle it for you in case you ever do get it back (e.g. by using reset all) or set the default day length of 9.

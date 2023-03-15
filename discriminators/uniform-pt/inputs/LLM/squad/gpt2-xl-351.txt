@@ -1,0 +1,9 @@
+ Unit at Duke University, Durham, North Carolina. The Unit produces heat for use in the Duke Fuel Cells facility for combustion of natural gas.
+
+The DOE Advanced Research Projects Agency - Energy (ARPA-E) Program funded the development of a large scale concentrated solar concentrator (CSP) demonstration facility capable of producing 50 megawatts of thermal-power output. This CSP technology can be deployed on any flat rooftop or flat area, and requires minimal maintenance. One project will use 10 megawatts in the future, and other projects will produce 10 megawatts per year. The demonstration plant will be located near Oak Ridge, Tennessee, about 40 miles west of Knoxville, in the Oak Ridge Advanced Research Park.
+
+The DOE's Office of Science, in partnership with Oak Ridge National Laboratory (ORNL), the National Renewable Energy Laboratory (NREL), the University of North Carolina at Chapel Hill and the Tennessee Valley Authority (TVA), developed and tested methods for increasing the efficiency of concentrating solar power systems.
+
+A typical concentrated solar thermal power tower has a diameter of about 6 meters, and contains several hundred mirrors, each about 3 meters in diameter. At peak output, it can produce 10 million watts of heat. In addition to the solar cells that convert sunlight into electricity, concentrating solar power plants can incorporate other technologies to increase power output.
+
+In addition to concentrating solar power, the DOE's Basic Energy Sciences division funds technology development at several national laboratories - Lawrence Livermore National Laboratory (LLNL), a U.S. Department of Energy national laboratory located in the City

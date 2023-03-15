@@ -1,0 +1,25 @@
+, who spotted problems in one of his customers' sites.
+
+Although the affected websites were only in French and German, there could be other vulnerable sites around the world.
+
+Vulnerable versions of Safari use a feature called X-frame-Options, which allows websites to decide whether they want outside elements to be included or excluded in the frame.
+
+Many other websites use a similar feature to include or exclude ads that appear, for example, on third-party sites such as YouTube.
+
+However, sites can use the feature to exploit security problems without the victim being aware of it.
+
+Apple is planning an update to fix the issue, according to the company. Although it is not known when this update will be available. When the update does arrive a warning will be sent to the browser and a pop-up blocker will prompt the user that the website has been flagged as potentially dangerous.
+
+At present, there is no fix for the problem, although sites that are affected need to change how they code their websites in order to resolve this vulnerability.
+
+It could be possible that some of the websites affected in this particular case could actually be using the X-frame-Options feature in a "safe" way if they have updated to a more recent version of the browser.
+
+However the bug means they are potentially open to a "man-in-the-middle" attack. This is where a browser could be used to replace an ad with another advertisement, that the site owner has not agreed to include.
+
+The code can be found in the JavaScript part of the site. Developers can use different frameworks that contain the code, such as jQuery and YUI.
+
+Because of the way the code is written, it is impossible for the developers to know whether a site using any of those frameworks is affected by the bug.
+
+However, the only websites that need immediate attention are those that have used the default methods to include the X-frame-Options in the code.
+
+Although it is not known exactly how long it will

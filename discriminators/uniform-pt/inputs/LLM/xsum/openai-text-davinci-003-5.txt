@@ -1,0 +1,7 @@
+ DEF CON on Saturday," the report added.
+
+The researchers reportedly discovered the systems by reviewing an Amazon S3 bucket that was openly accessible. "This bucket contained 68,000 medical systems, predominantly X-rays and ultrasounds, but also financial documents, contracts and other personal health information," the report stated. 
+
+The report went on to say that the exposed systems had full read and write access and the researchers could easily have established a portal to access the medical systems. However, they refrained from doing so because their purpose was to highlight the security vulnerabilities that exist in the healthcare industry and not to compromise patient data. 
+
+The findings of the researchers showcase the importance of tight security measures in healthcare organizations. The industry is particularly vulnerable to cyber-attacks as it involves sensitive personal information that can be used for malicious purposes. It is thus essential for organizations to ensure that their systems are secured and updated regularly to prevent any potential data breaches.

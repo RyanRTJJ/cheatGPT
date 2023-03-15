@@ -1,0 +1,45 @@
+
+
+I'm not quite sure how you write down something with no words
+   that still can be read by a person though.
+
+This one is easy:
+
+1. 2. 3. 4.
+
+Is there some form of cipher here?
+
+A:
+
+Is there some form of cipher here?
+
+ This might involve
+
+ writing in different languages to a specific meaning ("what the fuck is that even trying to say??!")
+
+If we had words for the things in this sentence (ie if we said them out loud or mentally),
+
+ we could infer meaning from context, ie, the sentence would probably have been "It seems as though I'm writing down something that's saying this". 
+
+If we had a cipher,
+
+ it'd go "CK3J4CK" (which, after decoding, is something like this:  There once was a boy called Jack, who loved to play with a block of Cheddar, that got coddled on a farm, to the point where he turned blue (I think, it's been a while since I read that).  Then the sky turned purple.  What a weirdo.)
+
+A:
+
+How about...
+
+ A cipher?
+
+A:
+
+This one is easy:
+
+ 
+
+I'm not quite sure how you write down something with no words that still can be read by a person though.
+
+ I'm not quite sure how you read without words. This is a literal interpretation (and probably is the meaning in the context of the prompt).
+
+ This can be decoded back into "K3J4CK". This can be read either backwards or forwards. Thus, it's a literal interpretation (in reverse) and could be read forward as what the asker of the prompt is really asking, too. I'll let you read it backwards. (There once was a boy called Jack, who loved to play with a block of Cheddar...)
+

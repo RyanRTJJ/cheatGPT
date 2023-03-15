@@ -1,0 +1,1 @@
+Many of the non-alphanumeric characters were positioned to correspond to their shifted position on typewriters; an important subtlety is that these were based on mechanical typew

@@ -1,0 +1,14 @@
+{
+    "dataset": "squad",
+    "dataset_key": "context",
+    "n_samples": 500,
+    "base_model_name": "EleutherAI/gpt-j-6B",
+    "batch_size": 15,
+    "do_top_k": false,
+    "top_k": 40,
+    "do_top_p": false,
+    "top_p": 0.96,
+    "openai_model": null,
+    "openai_key": null,
+    "cache_dir": "~/.cache"
+}

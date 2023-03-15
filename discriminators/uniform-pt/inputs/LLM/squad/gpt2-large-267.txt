@@ -1,0 +1,17 @@
+ (or slower) Internet connection. According to a draft letter published on the internet, the rule will allow ISPs to "discriminate in offering services or Internet access based on how much a user spends."
+
+The draft proposal for net neutrality is currently being worked upon by a group of industry experts in Washington, D.C., and the public.
+
+While most Internet providers, including Comcast, Time Warner Cable, Verizon, AT&T, and Charter, have stated they are opposed to the proposal, they will probably allow it to proceed. The majority of ISPs, including Comcast, have stated their intention to sell broadband Internet service to homes and businesses at a fixed fee. If this approach is passed, the FCC would have an incentive to maintain the status quo, thus leaving consumers without reliable Internet service.
+
+On 4 May 2014, the U.S. House of Representatives voted in favor of an amendment proposed by Rep. Anna Eshoo (D-CA) to remove FCC authority over net neutrality. This amendment is currently being considered by the Senate.
+
+This article was written by Tom Mathers and originally appeared on The Conversation. Subscribe to the conversation on Twitter: @tc_emma. Find The Conversation on Facebook.
+
+References
+
+1. David McAteer, "Net neutrality and competition", The Tech Herald (London), 26 August 2014.
+
+2. Michael Mello, "Open Internet: Comcast and its opponents," The New York Times (New York), 1 January 2015.
+
+3. "FCC's proposed net neutrality proposal could stifle

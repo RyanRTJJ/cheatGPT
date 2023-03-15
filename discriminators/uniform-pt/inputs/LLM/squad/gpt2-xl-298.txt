@@ -1,0 +1,9 @@
+ashes a glass then which has been refilled by hand.
+
+If the hand doesn't drop, then it is the hand which has dropped the cup. Since the cup did damage, it is the hand which caused it to be damaged
+
+Similarly for a human drop of a glass being refilled by a hand: the hand doesn't drop
+
+But when we take the argument of causality at face value, such effects are not possible. As we noted in Section 6.1, it is impossible for human activity to cause an otherwise unobservable effect. What does a hand drop do? It drops. All it does is drop something which smashes a glass so that it breaks. A hand can never make something that appears not to have been there and therefore is not caused to drop there. In the case of the human hand dropping the glass then a hand dropping the cup of water would also appear to not be caused to have done so. It would seem as though both hand and cup drops were caused to happen independently in that they didn't occur in the same sequence after taking into account each other.
+
+This argument is quite similar to the one which gives us the explanation of why "there is light" through the motion of the sun around the earth (i.e. through the concept of inertia). For every piece of matter undergoing an action, we have to accept that

@@ -1,0 +1,15 @@
+ the fading property of VHF communications satellites, which uses the weak signals spread over a wider area.
+
+There are two ways to transmit data on a VHF-based satellite. You can encode the message directly onto a payload, which is the preferred method, or you can use special transmission modes like the ones Micius employed to be sure the message remains unchanged over the years. When Micius made its transmissions, it also decided to protect not only its message but also the identities of the people behind the messages. The idea being to make it so difficult for those who want to eavesdrop that decoding all the data inside the message is impossible.
+
+For its messages, Micius placed tiny dots in certain places on the image. The pattern of dots varied depending on which of the three possible message options the viewer wanted to receive. When a viewer decided to receive one of the three message options, the satellite fired an antenna at its intended location and transmitted a one-time-only signal to the receiver station.
+
+Micius' three message options were coded along different lines. In the example shown in the left image in this post, each dot was on a unique grid position.
+
+When it was time to transmit, the satellite fired a narrowband transmitter wave at a spot on the receiver station known to be covered by one of the dots. The signal carried the encoded message in one of four combinations. The dots were picked up by one of the receiver stations and the messages decoded were then relayed.
+
+But it was a relatively simple message. It took less than 10 seconds and only a few bytes of data to encode.
+
+More challenging, however, was to send messages that required users to decode and transmit the signal over many years of VHF transmission. This is because each transmission must carry a message in an encrypted form. Such messages also needed to remain unchanged as a means of security.
+
+To ensure this, Micius encrypted the data before sending it up into space.

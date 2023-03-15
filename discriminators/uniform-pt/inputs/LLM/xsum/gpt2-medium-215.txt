@@ -1,0 +1,11 @@
+ – called geolocation data – along with links to particular websites.
+
+To create the information, the researchers – led by Microsoft security researcher John Menezes – created a "social graph", the network of individuals tracking the site they were visiting at the time they visited. Menezes has said that the analysis reveals a wide range of activities, from watching TV shows and movies to posting emails to specific social media accounts. Menezes told us that the researchers could not say who or how individual users are, but found a significant majority of them were accessing the site on smartphones, and therefore have a "unique identity for each visit." He also noted that the site would be difficult for people to remove.
+
+The researchers noted that more work needs to be done before their tool can be used for automated purposes. Menezes did say that the social graph provided information about the person sharing the social media content, and provided details about their location. It's unclear whether such sensitive information will be widely available.
+
+"I'm definitely concerned if any user of this tool gets their data exposed or if something like this should happen," wrote Menezes on the Microsoft Research Website. He added that the analysis also revealed that in at least four different countries the device was used for "surveillance", "tracing" and "sharing the content" of social media posts with "trolls". This is troubling, as it could be a way for law enforcement authorities to locate the individual involved.
+
+While the tool is being used on Twitter, other social media platforms and even YouTube are also affected by the tool. Microsoft is working on developing an update which is available now, and it says that the company intends to stop using tracking and geolocation "as soon as possible".
+
+"We would highly recommend everyone use browser plugins such as Flash or even disable the plug-in for this feature

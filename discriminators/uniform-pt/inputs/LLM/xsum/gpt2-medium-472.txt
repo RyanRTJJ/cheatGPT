@@ -1,0 +1,19 @@
+ parksides, where volunteers were seen watching the activity with a GPS camera, and then released.
+
+The network of cameras saw a total of 23,892 devices, and it was confirmed a second set of 20,000 IoT devices were deployed and used by volunteers as a testing ground to test the latest firmware.
+
+After being detected the Raspberry Pi was downloaded onto the Internet in a single flash.
+
+"This is extremely valuable as this could be something that's being used by terrorists, criminals or criminals in developing conditions to compromise devices and the wider network before turning them over to law enforcement by making a phone call or by using their smart devices to send money," Gavea said.
+
+"The potential for a major terrorist attack on the city, like the Charlie Hebdo attacks or the London Bridge attacks, would mean that an IoT event like this could become a powerful event, with all the data and other information it will generate being available online.".
+
+The number of cameras that were used for the security test could not all be linked back to the same individual due to individual privacy policy violations and the anonymity of the IoT users, the company said.
+
+"While all of our IoT devices can talk to each other, each sensor device can only be able to connect to the internet through the network connected to it. Each device that uses the internet is associated with some kind of service provider or data centre," a Symantec spokesperson said.
+
+"These types of IoT devices have to store the data they gather and store it for later use. But at the moment there is only one piece of data that is constantly stored in the device so the user has to turn over the device information in case something goes wrong."
+
+The full technical report which describes the event was published on the security blog Sophos.
+
+A spokesman for the security firm said it was "an excellent example of how security can best be achieved. The company has worked closely with the police and is now working with the UK Government, the Metropolitan Police, the Home Office and others to ensure

@@ -1,0 +1,21 @@
+ remained for weeks on end.
+
+Microsoft has a history of patching its software just days after it detects new vulnerabilities, rather than waiting months, as is the custom. Most organizations prioritize their quarterly security reports rather than patching immediately on-site, and they are likely to be frustrated if they find out that it is the same day or a few days after the patch is pushed. Although Patch Tuesday is important for vendors and large customers, it is not the only measure of how well organizations are at keeping their network up-to-date against newly discovered threats.
+
+Even if the vendor released an emergency patch on the 10th, it would not have helped. The exploit that exploited the vulnerability was written to target a Windows Server or Windows Web Services, so would not have benefited from the server patch that Microsoft released this month.
+
+We're not going to use more of this. I can see that they've got a lot of bad stuff and can't seem to do much about it. Let's not be silly, and get rid of the entire internet. Or better yet, go back to the dark ages.
+
+How about this:
+
+1. Have the government require all cell phones to be capable of connecting to GPS satellites.2. Have all web accesses be by direct-connect.3. Have all internet searches and all internet activity be monitored. All communications are subject to monitoring through satellites or the internet connection.4. All data must be stored and searched for keywords for a period of time, and retained in a database.5. All cell phones and computers must be subject to search without warrant
+
+and, of course, the government will have all the necessary tools.
+
+This system would be just what the doctor ordered for all our troubles. You know, before it all gets worse.
+
+How long until a court of law says "look, the government is clearly going to listen in on our communications to find our friends, so lets create ways to make sure they don't have to."
+
+This.
+
+How is "the government can always tell where we are, but they won't be able

@@ -1,0 +1,9 @@
+ of their orbital frequencies. "It's a simple but elegant procedure" that is powerful and flexible because "it doesn't require a set of equations to define a particle," says David Sobel, a physicist at the University of Texas at Austin.
+
+As an example, one could imagine a hypothetical electron, which follows the same behavior with other charges as electrons do with their protons. If one were to imagine a set of charge-parity "spin-orbit" rules that correspond to the set of all the spin-orbit parameters of that hypothetical electron, then one could simulate the interaction of electrons, protons, and others with the same frequency as those particles.
+
+Some physicists, as well as Nobel Prize winner Alexei Leonov, have proposed building a quantum computer — capable of simultaneously representing both atoms and particles — because of these capabilities, as well as for their theoretical flexibility. But building such a computer likely would take hundreds of years, if not longer — and the building blocks are at least another decade away.
+
+One obstacle is quantum computers' inability to make measurements on their current hardware, which would be necessary to confirm whether a possible quantum circuit would be able to accurately represent a real physical system of atoms. In fact, a more useful tool might be to use a classical computer for a simulation, then analyze the results using a quantum computer, because the quantum computer can determine which set of numbers is likely to be correct, says Sobel.
+
+To that end, some researchers think that a quantum computer might not be able to

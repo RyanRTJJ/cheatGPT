@@ -1,0 +1,17 @@
+ a better treatment for certain childhood autoimmune diseases.
+
+"The discovery of genetic differences in the human gut microbiome is exciting news for the treatment of autoimmune diseases," said Sébastien Chollet, MD, PhD, study senior author and a gastroenterologist at the Children's Hospital of Philadelphia. "The finding that many immune reactions are driven directly or indirectly by bacterial communities shows us that we need to understand this relationship better."
+
+To examine this connection, Chollet and his colleagues analyzed stool sample collected from more than 1,800 children with inflammatory bowel disease. They found that the gut microbiome of children with IBD differed from that of healthy individuals, suggesting that microbes influence disease activity. They also found that a common group of bacteria, the Firmicutes, changed during the course of inflammatory bowel disease, with fewer Firmicutes in the gut of children with IBD. To add to this finding, they found distinct differences among children with IBD who had different strains of bacteria, compared with those who had equivalent bacterial diversity.
+
+This new insight, which suggests that the microbiome may be the key to the pathogenesis of IBD, has implications for the development of new drugs for the disease, according to Chollet.
+
+"The finding that the common bacteria also influence the severity of IBD means that there is yet more to be learned about the bacteria and its role in IBD," he said. "We need to find out if the bacterial communities of IBD children are related to the severity of the illness. Our research has the potential to make this a therapeutic area of disease research."
+
+The research also indicates that specific antibiotics and probiotics may improve gut health of IBD patients.
+
+###
+
+The investigators behind the study had their study funded in part by the National Institutes of Health (grants R01 RR002661, T32 AG002735, P30 AG006879, P30 AG024962, T32 AG000878, T32 AC006587) and the National Digestive Diseases and Sciences, Department of Agriculture (GR-080961).
+
+This research was supported in part by grants R01 RR00629, T32 AG00327; and R21 AG025079 (

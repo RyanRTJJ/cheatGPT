@@ -1,0 +1,15 @@
+ Resources". A great introduction to how FST could be used as a metric for evolutionary fitness, their work is very concise:
+
+"A great overview of how FST can be used for population genetic studies is provided in the 2001 issue of Evolution in the Modern Era, from David S. Jones. The article is worth reading in its entirety because while there is more background on the importance of FST for humans (http://www.evolutionalhistory.com/human/evo/2001/FST.html#facts) it isn't a detailed treatment of how it might be interpreted to apply for biological use in humans and other species. This article is intended to be a starting point of discussion that might produce some additional thoughts on these issues."
+
+A detailed study of FST (with links to the most relevant papers related to it) can be found on the Natural Selection FAQ page on the FST website.
+
+Another good background paper is that on the Evolution of Species by B. M. Fritze. (Full text at [11])
+
+And that, finally, is all there is for FST. Here is an excellent resource that covers the basic theory of FST, and an excellent summary paper on FST presented at the meeting of the American Association for the Advancement of Science in September 2004.
+
+Finally, a short but quite relevant book summary of how FST can be applied in humans/animals is given on the main FST site, as it is here.
+
+I found the following interesting to me:
+
+We have been told for decades that selection pressures on natural populations of homunculi were very low, perhaps 100 per cent, perhaps almost no pressure at all. Yet when we do a meta-regression in a group of groups, we find the same selection pressures are present in each of them. This fact in itself is not new... it is really quite startling... and even

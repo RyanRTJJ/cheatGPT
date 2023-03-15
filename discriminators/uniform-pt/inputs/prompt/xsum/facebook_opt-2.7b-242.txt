@@ -1,0 +1,1 @@
+The flaw allowed attackers to take control of a computer via malicious document files. The zero-day, or previously undetected, vulnerability was patched earlier this month. However,

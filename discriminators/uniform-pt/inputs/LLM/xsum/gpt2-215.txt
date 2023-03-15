@@ -1,0 +1,24 @@
+, which could be used in the form of geoblocking or search query capabilities.
+
+The code has been known to be used on about one in 10 mobile phones around the world, according to the new report.
+
+
+Although not specifically mentioned as a cause of the vulnerabilities, the report said that if it is used on mobile phones the tracking system could cause a device to automatically identify you as a user within 10 minutes.
+
+A third attack, which could be a part of the same attack vector, could lead to millions of visits to a particular website within seconds.
+
+"The vulnerability could theoretically allow a browser to detect a browser not to know how long you have before it attempts to search your site as it finds your browsing history," said researcher Bruce G. Taylor of the University of Oregon.
+
+The attack could result in phone numbers that have been "unverified via email or call records or other means that may not be correct as the browser knows that the number was never verified. "
+
+It's not the first time this type of attack has been used on mobile phones.
+
+The security firm found another attack to exploit two years ago using the same method. Users who bought and paid for their mobile phones could only open several pages of a specific website.
+
+"I suspect that this is what the vulnerability is intended for, but also that this could allow anyone who wants to try to control the user experience on their computer to inject malware," said Gandy Williams, an antivirus firm.
+
+"This is a very unusual situation, particularly considering how easy it is to spy on the web."
+
+Garrett said that "we have an idea about what the vulnerability is that is not publicly available. We have been working on it at various times and have yet to provide an official response."
+
+Garrett said that he was also not sure if the

@@ -1,0 +1,11 @@
+riters, so that most of the non-alphanumeric characters tended to be in odd positions on some models.
+
+In recent years, the shifting movement began to be applied to a wide range of non-alphanumeric characters by the Unicode Consortium, an initiative that also introduced other features such as a non-redundant form of the symbol for the letter Q, a new representation of the symbol for the Latin letter "q", and support for a small number of "characters"—some of which are not very common—that are represented only in block form.
+
+Early on, the Unicode standard introduced a small set of characters for some of the letters of Cyrillic, including transliterations for certain common names in other languages. It was also the first Unicode standard to support what has now become a widespread convention by which Arabic Unicode characters are converted to Latin forms on computers, or vice versa.
+
+As of Unicode version 0.1, in October 1999, there are 731 block characters.  These block characters may represent over 8 million English words.  Some of the characters represent other languages, including Japanese, Latin, or several European languages, such as Spanish.  Some of these may also be derived from other characters and may be further decomposed in different directions.
+
+Conventions
+
+Unicode conforms to the principle of the "one-rule, many-applications strategy"—which states that a single character may be used to hold the same meaning across a wide variety of languages: for example, a "backslash" in the Unicode system allows the character to be represent as the Latin letter "backslash-" or as о, л, or y. This principle is the fundamental basis of the many variations in the use of the Latin alphabet:

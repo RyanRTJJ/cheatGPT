@@ -1,0 +1,15 @@
+ of new medications, and perhaps an intervention that could improve a patient's response to treatment.
+
+In cancer drugs, sometimes a single pill, which is often called as a targeted medication for a narrow class of diseases, is given daily to each individual patient who is diagnosed with cancer. However, patients who have inherited genetic abnormalities can be different from each other.
+
+An exception to this was in chemotherapy drug, gemcitabine, the most commonly used chemotherapy drug. This drug, which comes in tablets, can be given to all types of cancer. Patients with genetic variations had less severe reactions, even when using gemcitabine. Researchers have found that these patients have differences in genes that help the body fight cancer when given chemotherapy.
+
+"These findings indicate potential new therapeutics that could treat the majority of patients who will benefit from it," said study author Elizabeth F. Sullinger of Georgetown University Medical Center. "It's a significant advance in the field of cancer treatment that many more patients could benefit from this drug without compromising toxicities. What we're seeing may be an important precursor for a new type of targeted therapy that would benefit many more patients in cancer treatment."
+
+The researchers also found differences in the genes linked to a drug trial called AB-423, to treat non-small-cell lung cancer. AB-423 is a drug that works in a different way than other chemotherapy drugs.
+
+"These observations help in better design of clinical trials that would benefit more patients," said study co-author Dr. John A. Gogos, Director of the Georgetown Center for Cancer Research. "In addition, there may be an opportunity for clinicians to create their own combination of therapies to potentially minimize toxicities when these patients have one genetic abnormality. This could prove to be a very valuable way of approaching treatment of cancer with a single agent."
+
+The study was published in the August 31 issue of the New England Journal of Medicine.
+
+Funding for this study came from the National Institutes of Health.

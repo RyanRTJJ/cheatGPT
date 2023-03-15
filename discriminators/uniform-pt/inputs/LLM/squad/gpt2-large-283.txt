@@ -1,0 +1,23 @@
+ users, Metro interface performance was "excellent", while David Paul Morris of Cnet suggested that the interface suffered from performance artifacts and user errors due to poor memory management.
+
+There have been reports that Windows 8 is having trouble running applications efficiently. Although the company has said that it will address this issue, it's been reported that Windows 8 is causing a huge amount of errors when the operating system is installed on systems using Intel processors.
+
+You need to install the Windows 8 OS as a virtual machine using the image above. To do this, you will need to set your computer to automatically install the Microsoft Windows 8 operating system after you complete its installation. You will then need to restart the computer and follow Microsoft's guide, which will allow the OS to install automatically while you are off on holiday.
+
+Windows 8 will be available in a number of colour options, according to a Microsoft spokesperson. The new OS is due to come to Windows Phone, XBox, Nokia and other Windows users' devices later this year.
+
+Related articles
+
+Advertisements
+
+Share this article: Facebook | Twitter | Google+ | LinkedIn | Reddit
+
+Posted in: Windows 8
+
+About the author: Vishal Gupta (also known as VG) has been awarded with Microsoft MVP (Most Valuable Professional) award. He has written several tech articles for popular newspapers and magazines and has also appeared in a few tech shows on TV channels.
+
+Other similar articles that may interest you
+
+Notable quotes:
+
+"You don't think you can run a computer. You think you need three things." – Tom Ricks, ABC News on

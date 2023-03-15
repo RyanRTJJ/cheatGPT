@@ -1,0 +1,21 @@
+ information.
+
+With this in mind, the Micius project manager, Dr Dinesh Thakur, said it is impossible to send anything bigger than a 1 megabit message.
+
+"There were certain things on the Mars surface which I thought would be useful for the mission," Dr Thakur said in an interview at the European Research Centre in Kourou, France. "We thought, for example, if we could get a good signal over the mountains, we could send the whole world.
+
+"The problem is that the signal strength is very low - if the signal is at the highest, it will lose strength. So, there will be no time to carry this payload through the atmosphere, therefore we need some quantum information."
+
+Dr Thakur said: "A lot of things on any planet have one of these three properties: that it is magnetic or that its chemical composition will affect the size you can get through its atmosphere."
+
+Professor Stephen Eynon, director of NASA's Mars Exploration Laboratory (MAL), said the mission represents a step forward in science.
+
+"We know that the planet of Mars once was an atmosphereless, desert planet once," he said. "The fact that these data could be transmitted through the atmosphere is a nice step forward. This is certainly much finer than what we've come up with before and it is exciting. I think we're the first people to measure the chemistry on this planet and think we can measure the solar system to a much finer structure."
+
+The research was recently published in the journal Nature Geoscience.
+
+______
+
+Dinesh V. Thakur et al. A Micius communications mission to Mars for scientific purposes. Nature Geoscience, published online June 15, 2014; doi: 10.1038/ngeosci1017
+
+Bibliographic information: Dinesh Thakur (2013), Nature Communications: A Micius data relay mission to a Mars object, in Nature Geoscience, volume 11, issue 3 pp. 1469–1474; doi: 10.1038/ngeosci1017

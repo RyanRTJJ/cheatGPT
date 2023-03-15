@@ -1,0 +1,15 @@
+ transition to Intel x86 chips in 2001. The PowerPC chips were eventually retired, but Apple doesn't offer any PowerPC products any more; the company stopped selling PowerPC Macs in 2009. Intel chips on PCs date back to the 1990s; however, they are increasingly unpopular for desktop users, since they're slower than AMD offerings. Apple's switch to x86 is largely driven by the increasing popularity of mobile devices such as the iPod Touch, iPad, and the iPhone. Mobile chips are designed to work with touch interfaces. Apple sold around 100 million Macs globally in 2011 but only made around 40 million iPhones; so the iPhone is the company's most successful product series.
+
+The current family consists of three major lines of Macs: MacBook, MacBook Pro, and Mac Pro.
+
+Most major features of the family are shared from one generation to another.
+
+The MacBook models are sold at retail, while the Mac Pro is sold only through authorized Apple distributors, either in Apple Stores or through their authorized resellers. The MacBook Pro does not come with a CD/DVD drive; both it and MacBooks have the FireWire 400 2.5 Gbit/s per-lane, dual-mode FireWire 800 interface.
+
+The current MacBook family line consists of: 13-inch MacBook Air and 13-inch MacBook Pro, as well as the MacBook. The MacBook Pro has had multiple models; the late 2009 13-inch and 15-inch versions were discontinued in 2010, while the MacBook Pro remained available until 2012 to 2013. The MacBook Pro with Retina display added a third version in mid-2013.
+
+ MacBook (2009--2016)
+13-inch MacBook Air (2010--2018)
+13-inch MacBook Pro (2013--2016)
+MacBook Pro (2015--2019) 
+MacBook Pro (Retina

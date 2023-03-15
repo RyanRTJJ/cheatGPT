@@ -1,0 +1,15 @@
+ measured by the Human Development Index, and how these errors can systematically bias the reported findings. They also give a short summary of how these data are affected by the Gini coefficient and discuss how this affects the HDI.
+
+Hendrik Wolff (LSE): The HDI was developed in 1990 by human development economist Thomas Pogge as a more accurate alternative to the U6 measure of income distribution currently used in the Human Development Index. The index is a composite measure of life expectancy, educational attainment, and per capita income or consumption. The index can be calculated both on individual and aggregate levels.
+
+I want to discuss the limitations of the HDI and the underlying datasets.
+
+First, what are these limitations?
+
+In my own field, I am also a human development economist trying to do the same thing. We don’t use the HDI. I actually have a blog post about this. My blog can be found at www.human-development-institute.org.
+
+Firstly, the data is not as timely as it could be. While these datasets are pretty good compared to previous generations, they don’t include all the information that the HDW would like to measure.
+
+Secondly, some of the data isn’t as timely as it could be. There are some good articles written about the problem with the underlying data in education and health. I will make a short summary of what we have observed.
+
+This might explain why the

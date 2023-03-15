@@ -1,0 +1,13 @@
+ digital tracks for Dolby-AC-3 Surround encoding.
+
+DMG specifications
+
+The Digital Media Group, a division of Sony, provided specifications to the DVD-RAM Association Inc, which in turn provided them to the DVD Forum for the standardization of DVD-RAM and the DVD-R standard. These specifications were described in a memo circulated to various other DVD related parties, and the standardization process was overseen by an Advisory Committee which included people from numerous DVD related organizations.
+
+The DMG group defined the overall physical limitations of DVD-RAM media. The DVD-RAM media must have the same form factor as DVD-5 and DVD-ROM with the same 9.6 mm thickness. DVD-RAM media can be no thinner or longer than DVD-5 and DVD-ROM. DVD-RAM media can also have no larger diameter than DVD-5 and DVD-ROM, with a minimum disc diameter of 120 mm.
+
+Format and capabilities overview
+
+At a bare minimum the minimum physical format of a DVD-RAM disc is a 120 mm disk which is exactly the same size as Compact Discs (CDs). The same 120 mm diameter was chosen to be as compatible as possible with the current DVD media formats, such as Compact Disc's (CDs) and Digital Video Discs (DVDs). The standard form factor allows storage of up to 4.7 GB of data on each track of a DVD-RAM medium, and with the standard media spec, up to 16 such discs can be connected and installed together in the same tray.
+
+The DVD-RAM standard supports three disc formats,

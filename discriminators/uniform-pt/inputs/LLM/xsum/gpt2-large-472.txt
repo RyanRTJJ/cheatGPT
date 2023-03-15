@@ -1,0 +1,29 @@
+ recreation centres across the country, with the activity revealed for the first time.
+
+Image copyright Getty Images Image caption A man looks out of a window as he walks under the Skyscraper. Another was found near London Bridge. Photograph: Stephen Shankland/Rex
+
+'Tricked'
+
+The device was attached to "an unwitting user's camera", but then was used to gather the images of people in the dark, and the activity was streamed live to a nearby tablet computer, according to Symantec.
+
+In one incident, Symantec's researchers had access to "tens of thousands of photographs" taken on 20 September in Nottingham, according to the research report. The images from the cameras are thought to show people "walking, taking photographs, sitting in cafés, eating, having conversation, and using public transport".
+
+The data collected included the location of pedestrians, passengers, cyclists, and people in the vicinity of the buildings.
+
+How did they do it?
+
+Security companies often collect information gathered by their own devices. In the past, they have often been used to monitor unauthorised activities while stealing people's data or monitoring security risks.
+
+Symantec said that the hackers used techniques which had already been known to have been used by other hackers, including stealing credentials by posing as customer service representatives.
+
+It said that after tricking the camera into connecting to its own hotspot, it began siphoning out "large quantities of user related metadata from the device". Other security firms have also said such devices can be easily spoofed.
+
+In some cases, the attackers were likely able to steal passwords by hacking into the cameras' webcams, and the device then reset its screen to say "pass".
+
+What might it mean for us?
+
+Some security companies believe the images of people taking photos in the dark show a new form of digital fraud.
+
+"This raises the possibility that people are using cameras and CCTV to help them commit fraud, including as a means of making purchases such as using credit cards, banking, and purchasing things online," said Rob Graham, director of cybersecurity at Rapid7.
+
+He said the security industry has to address this issue after widespread fears over smartphone cameras that can record us without

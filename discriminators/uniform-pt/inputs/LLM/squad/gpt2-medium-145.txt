@@ -1,0 +1,7 @@
+ased bacteria causes a culture, which can then be used to confirm specific diseases. In addition, the culture is applied to animals to determine the pathogen and the immune response to the potential disease agent.
+
+Efficient screening techniques
+
+In addition to the techniques discussed in this chapter, one of the main priorities in developing vaccines is to find ways to screen all possible combinations of drugs and vaccines. That means that drugs that cause severe illness and a large increase in the incidence of disease in particular subgroups of the population may be recommended as an optimal combination for such vaccines. Once selected, drug-specific vaccine products may also be developed. Vaccines may have to be approved only by the FDA for approval; in the case of biologics and vaccines intended for routine use in humans, this is very rarely the case. Therefore, it is important that the FDA's procedures for approving biologics be followed. It is critical that all such applications for biologics, from vaccines, are approved by the FDA.
+
+Biological or biotechnology applications may need additional precautions, either in design or execution, so that they are as safe as possible. If a biologics application uses one or more components of vaccines, their stability or safety in a human health condition is key considerations. The FDA's review of biologics and vaccines prior to approval, as well as ongoing discussions about how best to

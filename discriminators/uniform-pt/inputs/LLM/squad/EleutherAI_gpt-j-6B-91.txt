@@ -1,0 +1,10 @@
+ fields they generate in their surrounding matter. It was this Feynman quantum electrodynamics which produced a model spacetime that contained a massless spin-2 particle (the Higgs boson) and generated a strong electro-weak force and hence an atomic nucleus.
+
+The first quantum mechanics textbook, by Richard Feynman, was published in 1949. In that book, Feynman explains a mathematical technique to represent an entire wavefunction as a superposition of solutions of the Schr[ö]{}dinger equation describing a collection of different states for the same particle. The book was not published until several years after Feynman had received his PhD and had published his PhD thesis. Feynman would go on to make fundamental advances in developing the theory of quantum electrodynamics to explain the properties of atoms using this simple but beautiful technique and this in turn gave him the means to explain the properties of atoms and the atomic scale universe using the theory of general relativity, which described the universe as a single space and time.
+
+In fact, after describing the quantum mechanical model of the Higgs particle in 1971, Feynman went on to develop several approaches to quantum field theory which showed how to construct an all-encompassing theory to explain any interactions between more than just three particles, even though they had no direct interaction. This was called renormalization and one of his final contributions to science was his development of this concept for field theory.
+
+The Feynman Path Integral {#the-feynman-path-integral.unnumbered}
+=========================
+
+In order to model quantum field theory, physicists had considered the problem of summing over solutions to the

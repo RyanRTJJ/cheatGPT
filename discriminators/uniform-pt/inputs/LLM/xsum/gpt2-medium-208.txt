@@ -1,0 +1,19 @@
+ these cameras as they become part of the operating system.
+
+"In order to make Skype's video processing efficient, we've enabled the default profile that Skype uses when operating in this environment," Microsoft says. "As in the past, Skype's video processing algorithm does not scale in this scenario. In Skype for Windows 8.1, videos are split in multiple threads with each thread being capable of processing different inputs at different speeds. This causes our video processor and videos to overheat and cause video quality to drop rapidly."
+
+We have zero doubt that many of you would like Skype video quality to be up to par with the rest of the Windows operating system, and indeed many of us do. With this update, we are able to improve Windows 10 support without a software change.
+
+For those that would like more info on this update, we have an overview of the changes that are available for Windows 10. It is recommended that the above changes be made as soon as possible.
+
+The full changelog can be downloaded from here.
+
+What's your feedback on this update?
+
+What's your Windows Live, Skype or Skype video quality on Windows 10? We really value your input on how this will impact your personal video quality in the Windows operating system. Can you improve Skype or Skype for Windows on your Windows 10 machine? Let us know in the comments below.
+
+Disclaimer: Intel, the Intel logo, Intel Core and Mobileye are trademarks of Intel Corporation in the US and/or other countries. AMD, the AMD logo, Radeon and the logo of Advanced Micro Devices, Inc. are trademarks and/or registered trademarks of Advanced Micro Devices, Inc. in the US and/or other countries.
+
+Source: Microsoft TechNet | Image via Shutterstock
+
+Read next: Apple's Siri can now answer what's up with Siri, but you can ask a question yourself, reports Nando

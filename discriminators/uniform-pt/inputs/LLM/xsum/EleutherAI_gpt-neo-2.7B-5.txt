@@ -1,0 +1,13 @@
+ Black Hat in Las Vegas in mid-September. Their discovery adds more cases to a growing list of medical breaches that can affect the millions of patients who’ve entrusted sensitive medical records to their care provider, including a breach of Carestream Health which exposed data from 45 million people over two years in 2015. Hackers breached a software program company that used PatientPro to send patient records over the internet, creating remote access to these records. Their method was to gain access to the accounts of doctors at their local hospital who had PatientPro user IDs, and then change their password.
+
+As much as one can imagine, it’s a very easy task for anyone with decent technical skills and the desire for an education. It is however another difficult task to do it without getting caught by a security breach. While it is still far away, the most common problem is of privacy or data loss during data breach. A new data security company out of Melbourne, Australia has released data loss as a common problem of medical information system, and now data breach have become a very common method.
+
+The name of the company is VouchSafe and they have just released a list of 20 examples of data breaches of health information systems and doctors. They have also identified a method to hack a medical system. The method is to use online phishing and identity theft to gain a full access to these doctors accounts with a system.
+
+As the list is not a complete list, it’s quite large. Here are some examples:
+
+1. Datacomp, a US company that sent patient records over the internet, was hacked in August 2015. The company was found to have more than 5 million patients records out of the internet over the period, and it’s not clear which records were breached.
+
+2. US data breach at TransUnion (a data security company) with more than 42 million patient records exposed.
+
+3. Healthcare company Medibank breached the records of more than 11 million people, and the list of patients is the reason why Medibank has been

@@ -1,0 +1,17 @@
+, which in turns opens the door for cookie profiling and the use of analytics on sites.
+
+As The Register explains, the unique identifiers are generated based on visitors' IP addresses and whether each visitor has already been visited on that site before. This means that you may end up seeing duplicate visits using the same unique session ID.
+
+The issue is particularly concerning if you are a web shop or have multiple online stores - as multiple logins could cause the cookies for these sites to be shared.
+
+
+
+The Register article doesn't reveal what is causing the JavaScript security warning; perhaps the problem lies with one of the other JavaScript or cookies in that list. This would cause the warnings for any sites that used cookies in this fashion.
+
+Either way, this would give you a way to track whether any of your customers are trying to sign up for your site using a fake email address. It's not clear, but it's safe to say that it won't be long before most major online shopping sites add the capability to generate such unique cookies.
+
+While this sort of thing can be a cause for concern for web retailers, it's not the end of the world, as you can simply use a browser's privacy settings on the websites in question to block such cookies. You should take this time to do this, as such cookies can be a serious red flag for online fraudsters.
+
+If your site doesn't use cookies or has chosen to block them, don't worry. If you still find it odd to be given this warning, you can check your sites' cookie information on the cookie policy of the site you're using in your browser's privacy settings. A little Google will turn up hundreds of other sites using this cookie tracking.
+
+(For example, the cookie policy of the U.K. government's site doesn't block cookies that use "unique

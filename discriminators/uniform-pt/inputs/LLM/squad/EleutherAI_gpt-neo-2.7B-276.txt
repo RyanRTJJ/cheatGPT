@@ -1,0 +1,9 @@
+enelle's Les Règles de la méthode scientifique, a classic from the second half of the 17th century. The Rules consists of a series of "rules," or mathematical theorems, that could be applied to a myriad of problems and circumstances in a variety of scientific domains.
+
+The Rules were revolutionary for a number of reasons, not the least of which was their application to the general science of astronomy. The first three Rules explicitly stated that the basic principles of Newton's scientific method, discovered by Aristotle but widely misunderstood and ignored by his successors, were true, at least for the problems studied. The Rules became a common textbook throughout Europe well into the 19th century because of the availability of the first three Rules.
+
+The Rule of Three
+
+The first, and longest, of the three Rules states: "Number One, Number One, Number One. Take one thing, multiply it by itself, add it to the last result, and then multiply by the second result, add that result to the last [a result] times the first one [the first result], and so on until the last thing is exhausted." The Rule of Three states, then, exactly, what is needed if the goal is to understand numbers. The next two Rules state that "Number Two says: Add one, multiply [three times] by two [and add two to three, three to six, and so on], and so on."
+
+The Rule of Three, which is considered the pinnacle of the Rules system, has also been termed the "Rule of the Three." This is

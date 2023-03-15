@@ -1,0 +1,18 @@
+ Skype, since many Windows 10 apps were still using the software that was meant to capture the video.
+
+"For a few weeks now, Skype and other Skype clients have been using the obsolete and deprecated WMV 2.0 format, which is now the Microsoft Windows Encoder Pack (Microsoft EEP) video codec. Microsoft is now working on a clean update of the Skype client to use Microsoft EEP-encapsulated H.264 and HEVC (both with profile support)."
+
+Microsoft noted that the Skype client and the rest of the Windows 10 client should already be updated. While Windows 10 is now running on 70 million users, Windows 10 Mobile and Windows 10 IoT were not fully baked, according to Microsoft.
+
+In April, Microsoft began rolling out another software update (KB 2915583) for Microsoft Edge. In July, it completed rollout of the latest update to Windows 10. Microsoft's Skype update was first scheduled for June but was pushed back to July to allow time for the company to tweak the software.
+
+Photo: Microsoft
+
+Get six of our favorite Motherboard stories every day by signing up for our newsletter.
+
+Correction: An earlier version of this story misquoted Microsoft's Matt Green as saying that Skype will switch to EEP-encapsulated H.264 if it gets an update to Windows 10. Green clarified earlier today that Skype must use EEP-based H.264 "for Skype for Business." We regret the error. The story has been updated.
+
+Correction: An earlier version of this story misquoted Matt Green as saying that Skype will switch to EEP-encapsulated H.264 if it gets an update to Windows 10. Green clarified earlier today that Skype must use EEP-based H.264 "for Skype for Business." We regret the error. The story has been updated.
+
+
+Kirk Koenigsbauer is a freelance journalist living in Germany. You can follow him on Twitter @koenigsbauer.

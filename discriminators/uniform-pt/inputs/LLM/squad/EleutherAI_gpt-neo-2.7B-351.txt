@@ -1,0 +1,7 @@
+ Reactor (Solar T.E.R.) in the 1970's by a consortium of industry associations and companies including E. I. du Pont. The device is a parabolic concentrator with a surface area of about 20 m2, a length of about 9 m and a height of about 4 m. It covers an area of the solar spectrum from 0.15 to 300 nm with high light concentration. Although the device has been used extensively in the field of photovoltaics, there are several potential areas for further improvement such as solar concentrators.
+Many factors influence solar light power:
+the incidence angle of the solar rays—light power is a function of the angle of incidence of the solar rays with respect to the solar modules: a larger angle increases the power generated;
+incident direction (i.e., the orientation of the solar modules);
+light transmission through the solar surface in the field of view of an observer: the solar modules tend to concentrate the light at the center. When the optical axis is perpendicular to the solar panels, the maximum solar concentration is obtained if all the solar panels are covered by the same flat sheet of transparent material of the same refractive index;
+the shape of the solar panels and the incident angle of the solar rays projected onto the surface of such panels;
+light absorptance of the transparent material of the solar panels: materials with high light absorption, such as clear quartz and plastics, are generally used for solar panels. Therefore, the solar energy is converted to heat and/or to a heat

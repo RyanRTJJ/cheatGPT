@@ -1,0 +1,41 @@
+____________________
+
+J.R.R. Tolkien
+
+
+Administrator
+
+Registered: 1497257568
+
+Posts: 6,621 Reply with quote #2 I'm not sure if that is an accurate observation, as the games also have the physics of the world that interact, most importantly in that they must be at least somewhat related to the speed of light. So a character who gets hit by one will also die to one that comes at him from the side. ____________________
+
+Bilbo Baggins, Tolkien's Hobbit.
+
+
+Administrator
+
+Registered: 1497257568
+
+Posts: 6,621 Reply with quote #3
+
+
+It is interesting to note that even if the universe has no frame rate, it still has a frame rate. So when the game runs at a framerate of 60, it is still running at 120. If it was at 60, it would need to be encoded at the framerate of 120. So if you had two images that matched perfectly at 60, they would be encoded at 120. If the two frames don't match perfectly at 120, they won't match at 60.
+
+
+A frame rate can be defined as the set number of frames that are displayed every second. When a game runs at 60 frames per second, it gives us 60 frames per second.
+
+
+In other words: If a game is running at 60 frames per second, it is in fact running at 120. This is a great concept, so why isn't it used like this? It has only been mentioned in the context of the speed of light, not in the frame rate context.
+
+
+But there is no reason why, say, an old, outdated game should not be running at 120 frames per second. A PC is fast. As our computer technology progresses in every sector, so will the framerate become slower and slower each generation. An old game running at 120 may be the reason why the next one runs at 60! (But why does a game run at 60 at all? That's not the point!)
+
+
+____________________
+
+J.R.R. Tolkien
+
+
+Administrator
+
+Registered: 14972575

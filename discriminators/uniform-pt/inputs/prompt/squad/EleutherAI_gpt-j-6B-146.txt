@@ -1,0 +1,1 @@
+The current Mac product family uses Intel x86-64 processors. Apple introduced an emulator during the transition from PowerPC chips (called Rosetta), much as it did during the

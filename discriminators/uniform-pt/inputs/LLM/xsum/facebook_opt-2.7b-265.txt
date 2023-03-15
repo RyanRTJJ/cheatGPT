@@ -1,0 +1,13 @@
+ number of drug terms and several racial slurs. It's unclear where the site came from, but a Google cache found that the site had been active since at least May of 2014.
+
+The site isn't the only place to run ads that contain inappropriate words, however. In October, CNNMoney.com reported that ads for an adult sex toy retailer on Google's DoubleClick search ad network contained obscene or derogatory language, like "black ass and black pussy," "ass with no underwear," or "black woman." Google later announced it would be making some changes to its advertising policies in the area.
+
+The tech giant said in September that it would "reduce the amount of sexual content in ads, and we're also in the process of improving our AdWords and DoubleClick systems to detect and block bad terms faster."
+
+Despite the increased focus on keeping offensive and inappropriate ads from appearing, some say that even stricter policies aren't enough. Eric Goldman, a law professor at Santa Clara University and expert on Google and the internet, said he is unsure whether the tech giant is doing enough. Goldman said he is critical of Google for not creating a community standards site or a council to be "in charge of making those calls" as it pertains to offensive or inappropriate ads.
+
+"Google has a long reach," Goldman said. "They have access to a lot of people. … It would be nice to see Google step in on a more active basis and say, 'We don't want that.' "
+
+Google did not immediately respond to a request for comment and could not say whether the company has ever received a complaint or has come into contact with a parent or family about offensive ads on Google AdWords. When asked if the company had seen changes in any of these categories, a Google representative declined to comment.
+
+AdSense policy prohibits companies from running ads for adult businesses like porn, prostitution or sex workers because they consider that as an issue of public health and safety. However, Google will remove ads for anything sexual or violent, which leaves a gap with which critics say they can more easily

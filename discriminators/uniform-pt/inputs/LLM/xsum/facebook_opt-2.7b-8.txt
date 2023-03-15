@@ -1,0 +1,13 @@
+ were showing significantly lower mortality than the general population.
+
+And I suggested that this was a reflection of an improved working pattern of the surgeons – working fewer hours and seeing more patients. However it appears to have been the effect of surgery on large veins, not any ‘workaround’.
+
+And it turns out to be a good example of how good science – which is really very difficult to do – can still make a difference. In this case the research team got a whole lot of new data about the relative risks and benefits of the surgery.
+
+You see, most surgical procedures like this involve operating on a vein that’s much larger than a normal blood vessel – say 5cm, 10cm, 15cm or more. These larger veins tend to be the most dangerous as they’re very hard to locate because they sit so deep in the body. And in fact surgeons commonly need to do open surgery on a major vein before they can find it.
+
+Now it was always known that open surgery wasn’t as easy as just opening the vein and draining it. As one of my colleagues observed, “it ain’t surgery without a little bleeding” – so veins that have gone in for surgery are prone to bleeding.
+
+Yet blood flow rate is a major indicator of the seriousness of the damage that has been done. So it was important to try to find out whether the bleeding was related to the surgery itself or if it was simply tied to the type of large vein that had been operated on.
+
+To find out, in a recent paper in The Lancet, the group measured flow rate for each major vein and then compared that to the number of patients that had died in hospital over their career. Then they used a computer algorithm to compare the number of patients who had died with the number of patients who had been operated on and then had a blood vessel removed. Using these numbers they were able to calculate the absolute risk of death within the year

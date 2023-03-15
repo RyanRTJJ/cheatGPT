@@ -1,0 +1,18 @@
+ I/O conference that year. At the time, the project was called Project Ara, a name Google decided to go with after the Ara project it collaborated on to power Ara died on the drawing board. It was a reference to a Japanese arboretum where the Ara project was born.
+
+By that point, though, Google was busy with its Project Ara partner Telstra and was planning to launch this modular phone in 2014. Google said at one point that Ara would "revolutionize the future of the smartphone." It also said the phone would be available to buy in 2014 and cost $50 to $80 (then $140) depending on the modules chosen.
+
+Unfortunately, Ara never made it to market. By the time the project launched in 2014, Google had already ditched Ara.
+
+Read next: Google and Huawei get sued for unfair competition in patent fight
+
+A week ago, it was announced that Ara would be resurrected and that it would finally launch in China in 2018. The company declined to share details about the project, saying only that it will be an LTE-equipped modular smartphone designed to combine a smartphone and a module in one device.
+
+
+"Today there is too much choice but this isn't the new smartphone trend. There will be one device running multiple different modules, and those modules will be sold separately and the same device will be upgradable," Google's director of experience design, Hugo Barra, said at an event in Beijing last week.
+
+The name Ara will be used for this version of the device, which is expected to be available in China first and have China-specific specs. The phone will use Huawei's new 5G Kirin chipsets and Huawei's Mate 20 design.
+
+After years of being teased on Project Ara, Google decided to stop pushing the modular phone project publicly in 2015.
+
+In 2016, Project Ara was revealed to run a very different open source project, dubbed Open, that used Google's cloud platform and the Android operating system to enable users to build

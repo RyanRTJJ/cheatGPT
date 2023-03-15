@@ -1,0 +1,7 @@
+ into statements about our mental states. Phenomenalism, then, would still have been a useful theory in a world where physicalism (about which there was much less agreement) was not the reigning empirical theory. With this in mind, let's turn to a brief description of some of the various versions of what are usually called "reduction" theories.
+
+I will attempt to define a simple version of reductionism, as follows:
+
+Reductionism: There is a relation that we could define between mental statements and physical statements that would allow us to translate any such physical statement into a mental statement, so that the two are logically connected.
+
+There should be some minimal conditions that qualify as mental, however, that is, something that is not too vague, nor is it too close to physics. The minimal conditions, I think, are those which were listed as belonging to the core sense perception of the earlier phenomenologists, as well as the conditions which can be said to govern "the most basic acts of sensory perception," as listed by John McDowell, a very fine scholar who, like Wilfrid Sellars, has sometimes puzzled many in philosophical psychology by refusing to be part of the reduction/emergence camp of the day.1 McDowell's list may be found in his paper "Two Skeptics of the Mind" (1997, pp. 55-61). McDowell does not include a great deal of attention to ordinary experience but has a nice discussion about "intension" (a term he does not use in his paper)

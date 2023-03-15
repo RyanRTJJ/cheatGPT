@@ -1,0 +1,13 @@
+ the transition from Apple II to PowerPC processors. While that emulation was done in real time and ran without any noticeable slowdowns, Apple doesn't think there needs to be any further emulation, and it's going to stop supporting the emulation in macOS 10.13 (Tiger), according to a new blog post shared by Apple.
+
+There is no immediate danger to users whose computer has an Intel x86 processor. This isn't a rollback of the current architecture or an interruption of services, so users are unlikely to see any slowdown or even errors with their Mac.
+
+Even if Apple stopped supporting Rosetta, it's possible that the Apple emulation code could be rebuilt from scratch to take advantage of modern ARM processors, as it has in the past. Apple's blog describes Rosetta's design as "an essential and highly sophisticated component of the Apple silicon ecosystem" on which it's entirely dependent for its performance.
+
+Apple describes what it did to stop Rosetta support in ten steps, broken into two categories of functionality. One is the emulation of specific Intel x86 instructions, code referred to as "Intel x86-64 emulations." These are necessary for the performance of macOS. The other type of emulation is the emulation of Intel's Atom CPUs with "the same emulated functionality the Rosetta processor executes." This code will be fully supported for the foreseeable future.
+
+Apple says Rosetta provided performance improvements across all architectures, but its emulator doesn't address architectural vulnerabilities or exploit code vulnerabilities.
+
+So unless you are a professional developer, a gamer, an application developer, or a performance person, Rosetta isn't really your problem.
+
+If you

@@ -1,0 +1,9 @@
+ has laid the foundations for the discipline of "emotv research". That work has produced more than 500 articles, articles that have helped many engineers cope with the complex and varied behaviours of machines. Through a variety of exercises, ranging from simple to complex, some of the best tools for teaching machine learning have been uncovered. Today, in contrast to previous decades, it is increasingly recognised that the key research challenges will be the analysis and design of the machines.
+
+This article will explain some of the major challenges in developing advanced learning models for autonomous aircraft, and discuss some of the recent developments. It will also give some short historical insights into the history of AI. We hope it encourages others to engage with the topic.
+
+A long-standing research gap in the areas of machine learning for autonomous systems
+
+A typical system for autonomous aircraft is designed in a computer language called "ML". This is used as the main programming language for determining a variety of operations such as which position to set at which point in a trajectory, how much torque to apply across a range of angles, and so on. The best known ML systems are used for processing flight-related data from aircraft, such as data from onboard sensors.
+
+In particular, an ML system can be used to implement a "planetary correction to attitude" to correct a single angle measured (such as for attitude control) over a course of many consecutive angles. When an aircraft approaches a

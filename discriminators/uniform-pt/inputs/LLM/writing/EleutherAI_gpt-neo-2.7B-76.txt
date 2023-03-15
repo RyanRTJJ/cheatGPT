@@ -1,0 +1,52 @@
+
+
+Word: story
+Category: Short Stories
+Description: Any type of writing about fictional events with a beginning, middle and end
+
+Word: event: History
+Category: History; Time: Past, present
+
+Word: history: Past & Present
+Category: History
+Description: Write about past or present events in history. You will need to indicate what happened, where it's located, and when it happened. 
+
+Word: story 1:
+Category: Short Stories
+Category: Fiction, fiction 
+Description: Write a short story based on this prompt.
+
+Word: event 1:
+Category: Event
+Category: History 
+Description: Write an event that happened in history. You can't make any of the events in this prompt historical, but the events you write about may be based in history. 
+
+Word: story 2:
+Category: Short Stories
+Category: Fiction, fiction 
+Description: Write a short story based on this prompt.
+
+Word: event 2: 
+Category: Event
+Category: History 
+Description: Write an event that happened in history. You can't make any of the events in this prompt historical, but the events you write about may be based in history. 
+
+Word: story 3: 
+Category: Short Stories
+Category: Fiction, fiction 
+Description: Write a short story based on this prompt.
+
+Word: event 3: 
+Category: Event
+Category: History 
+Description: Write an event that happened in history. You can't make any of the events in this prompt historical, but the events you write about may be based in history. 
+
+Word: story 4:
+Category: Short Stories
+Category: Fiction, fiction 
+Description: Write a short story based on this prompt. 
+
+Word: event 4: 
+Category: Event
+Category: History 
+Description: Write an event that happened in history. You can't make any of the events in this prompt historical, but the events you write about may be based

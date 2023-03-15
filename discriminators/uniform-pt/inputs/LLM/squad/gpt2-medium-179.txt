@@ -1,0 +1,11 @@
+ sufficient to cope with all the processing demands of the computer market. In addition, Intel was reluctant to invest in support and certification for OS/2 and for IBM's Advanced Micro Devices (AMD) processors because of what it viewed as IBM's growing influence over ARM's processors. IBM declined to invest in Linux during the early 1990s.
+
+Apple is not the only computer vendor to refuse to invest in support and certification for Linux. Intel's PC-based Macs continue to receive an inadequate amount of support, and most Intel-based computers from this period are poorly built. The IBM PCs sold through the mid-1990s were often made in Asia and have been poorly tested.
+
+Intel and Microsoft agreed to a three-year delay in support for Linux in 1996, as the U.S. software market began to rapidly expand beyond the PC to include the Internet, multimedia applications, personal computers, etc.
+
+Linux was now widely deployed, with approximately 1 in 8 U.S. commercial computers based on Linux in 1996. By then, most IBM PC owners and more than 1 in 100 Microsoft PC owners also had computers with IBM-provided Windows licenses.
+
+IBM sold about 40 million IBM PC computers between August 1996 and August 1999. As shown in Figure 2, in 1998 about 1 in 4 IBM PC owners and more than half the general-private sector PC owners did not have a Windows license. Because of IBM-specific agreements with the other major IT companies and as a result of IBM's strong market position IBM PC business fell from 50.7 percent of consumer PCs sold in 1998 to about 39.2 percent of consumer PCs sold in 1999.
+
+Table 2: Technical Notes for the Technical Notes table. Total volume of hardware and software sold

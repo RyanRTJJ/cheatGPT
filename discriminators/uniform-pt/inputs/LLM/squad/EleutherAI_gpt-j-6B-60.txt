@@ -1,0 +1,9 @@
+ to have a low threshold for antigenic stimulation which causes a high incidence of systemic reactions. In other words, neonates have a low reactivity and can develop symptoms or disease after being exposed to a minimal dose of antigen. Some antigens, like allergen in the atmosphere, can activate a large number of sensitized people and cause a mass emergency. Antigens with a molecular weight of less than 1000 kDa are called small antigen, and the antigenic stimulation of which may cause the maximum allergic cross-reaction. It has an impact on the body’s tolerance to self antigens. Neonates have a tendency to develop higher levels of skin antibodies than adults do owing to an incomplete regulatory mechanism in neonatal immune system.
+
+There are three mechanisms by which antigen is presented to the immune system: 1. the mucosal route, 2. the parenteral route and 3. the intracellular route.[1]
+
+Mucosal Antigen
+
+Skin is the first barrier that encounters antigen. Through the nasal cavity, antigen can easily pass into the bloodstream and activate the immune system. However, antigen can also penetrate the nasal cavity and be phagocytosed by the mucosal sensory lymphatic cells which have Fc receptor I on their surface. This may lead to the production of sIgA in the nasal cavity, which may inhibit the entry of antigen into the systemic circulation.[2]
+
+This phagocytic process has been found to be more effective than the process

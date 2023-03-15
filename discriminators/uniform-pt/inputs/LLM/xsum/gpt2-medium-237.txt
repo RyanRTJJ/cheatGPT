@@ -1,0 +1,21 @@
+ internet security has emerged as a hot-button issue among China's ruling elite, who often use sensitive military and government data to advance their goals.
+
+On Friday, security experts from Kaspersky Lab, Symantec and the Chinese government's Center for Strategic and International Studies said they had found no evidence to suggest China had deliberately engineered the attack, according to AFP.
+
+But the cyber-security firm on Sunday called on the US and Russia to jointly investigate the damage.
+
+"It's clear that some of the actions described by Kaspersky security researchers are not only the product of national security but also are at the extreme end of their legal capacity," said company spokesman Robert Graham.
+
+"We urge all the powers to assist us in our investigation."
+
+The hack prompted concerns in Western capitals that China, another threat to the US, is getting into cyber security more quickly and that Beijing had successfully breached the US's cyberspace defences.
+
+Western governments and businesses have been trying to patch vulnerable systems to better detect and react to cyber attacks since the 2010 hack on Sony Pictures, which was largely blamed on China.
+
+The US State Department is stepping up its response to a breach at the oil giant in July, while officials from the UK and other governments met US President Barack Obama last month in Beijing.
+
+Analysts say China wants to secure its information and that the hacking events and attacks appear to indicate Beijing is trying to exert more control over its cyber capabilities.
+
+© Associated Press 2014. All Rights Reserved. This material may not be published, broadcast, rewritten, or redistributed. REUTERS/KCNA. Last week, The Hill reported that China had been taking steps to block western media coverage of its cyber-attacks.
+
+The hacking of the Sony Pictures studios targeted the company's vast network of movie studios and was blamed on a group allegedly led by North Korean hackers. The group, known as APT 28, claimed responsibility for the attack last year, but did not use the

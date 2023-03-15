@@ -1,0 +1,20 @@
+~~~ 
+1. You told your little sister the truth: [ CWE ]
+The question of your sister: 
+2. You told your little sister the truth: [ CWE ]
+
+The question of your sister: What really happened to you when you tried to hide in the woods?
+3. You told your little sister the truth: [ CWE ]
+The question of your sister: What really happened to you when you tried to hide at all, so you could go to one of your dad's birthday parties with your sisters? ~~~ 
+4. You told your little sister the truth: [ CWE ]
+The question of your sister: What really happened to you when you tried to escape and join up with the police?
+5. You told your little sister the truth: [ CWE ]
+The question of your sister: What really did happen to you when you tried to escape?
+6. You told your little sister the truth: [ CWE ]
+The question of your sister: What really happened to you when you tried to escape?  
+7. You told your little sister the truth: [ CWE ]
+The question of your sister: What really did happen when you tried to escape? 
+What did you find was the  closest thing to truth was a lie: [ CWB ]
+Question of the day: Why we can't find something that is the most likely or closest to truth:  That's called the most plausible explanation which in turn tells us that if we couldn't find such a thing, then  we would have to go with the most probable explanation -  i.e. the easiest to believe story that would take the most time to tell. I would guess that most people have at least one or two of these so far! ~~~ 
+11. The next week of school: 
+12. The next week of school: 

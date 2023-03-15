@@ -1,0 +1,23 @@
+ camera-related messages. Some computers will be able to go back to the old behaviour, but it's not clear if this can be done on every computer.
+
+Microsoft claims that nothing in its operating system needs to be changed - as long as a user isn't using some third-party app that the company hasn't approved. Microsoft will let users find out how to fix the issue, though, as the process of changing the settings in Edge is relatively straightforward (via How-To Geek).
+
+Microsoft's support page explains that the problem is "a change in how operating system messages are handled across apps". Unfortunately the best advice currently available is to "try restarting Edge" as soon as an issue appears, while Microsoft is still working on an updated version of the software which will help with the issue.
+
+More articles like this:
+
+"I will tell them to take a hike to that"
+
+"This is called the Windows upgrade. Its purpose is to make Windows 7 function a lot more like Windows 8,"
+
+"Do I have to install that? It would be nice to keep my Windows 7 on this old computer because I'm very good with Windows."
+
+"Windows 8 is still not worth it, it's just for people who want to look at Facebook on their computer."
+
+"There are too many people on the internet, and that is why we have the internet. The internet is supposed to be a place where only the people who want to speak to each other do,"
+
+"The more people on the internet, the less real life we have, because everyone is on their phone or their tablet. They don't need to see the real world."
+
+"Windows Phone 8 is the number one OS in the world."
+
+"I hate Windows Phone 8. I hate it with all my heart. I hate Windows 8 on my tablet, I hate it, I hate it, I hate it,"

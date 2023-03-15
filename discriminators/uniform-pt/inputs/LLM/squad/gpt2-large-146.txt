@@ -1,0 +1,9 @@
+ transition to Intel 80386s (which is the microprocessor that will eventually run the Mac OS X and iOS). The code for Mac OS X 9.3 or later uses this code, and the code for its iPad variants contains a small extension of the code for the original Mac.
+
+There is no definitive documentation for this code, but other researchers have found that the code can be used to simulate a variety of devices, including some Apple's own products (see the MacRumors blog entry about "Running Mac OS X on an iPad"), Sony PlayStation 2 games, and even Atari machines. For example, Atari emulator maker Matt Sona found that he could access the emulator code on an Atari ST and successfully launch and run an Atari 400 game.
+
+While it's unlikely that some of Apple's own products will ever run on an Apple emulator, the fact that Apple has made such a great effort to preserve an emulated version of a well-known product suggests that Apple can make a viable and legitimate emulator for a variety of mobile devices. If the code is available, then the next logical step is for Apple to actually write the code, make a ROM image, and give the emulator code to manufacturers.
+
+As a result, if you have any interest in the Mac OS X emulator for iOS, it might be worth checking it out on GitHub if for no other reason than just to see what they actually do.
+
+We've contacted both Apple and RetroArch to ask about their progress on emulating Mac OS X 9.3 and

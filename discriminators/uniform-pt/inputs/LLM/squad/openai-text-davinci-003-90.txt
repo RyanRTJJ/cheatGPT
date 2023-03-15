@@ -1,0 +1,3 @@
+ital audio tracks, either PCM or Dolby. Compact disc audio uses PCM digital audio encoding to store sound digitally, and has the ability to store surround sound, depending on the configuration. On Blu-Ray discs, surround sound formats such as Dolby TrueHD and DTS-HD MA can be stored.
+
+MP3 encoding is now a very common way of storing sound digitally, as it is much more efficient than PCM or other uncompressed forms of digital audio. MP3 audio uses lossy compression, meaning it sacrifices some of the original audio information in order to reduce file size. It is still capable of decent-quality sound, but it will not sound as good as original uncompressed audio.

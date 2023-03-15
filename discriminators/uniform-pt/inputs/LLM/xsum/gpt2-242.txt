@@ -1,0 +1,19 @@
+ is unknown whether this was discovered before, or by the current version of Windows 7.
+
+The vulnerability is only exploited in Microsoft Windows 7 Professional on systems running Windows Vista. You must set up or manage the computer to enable the vulnerability, but disabling the feature does not allow you to use Windows 10.
+
+H/T: Microsoft [Update 16-11-10] and Microsoft TechNet
+
+Disclosure: This post was first published by TechNet in June of this year for the post "Microsoft Hacks Open Source Linux in Windows 7 and 2012." I am most definitely not the first to write about security vulnerabilities in Linux. If you like my blogs, follow me on Twitter, and read my other writing at TechNet.
+
+If you enjoyed this post, please rate and review it by leaving a rating and review at Tech Net below.
+
+UPDATE 16-11-10: As of 8/14/14, Microsoft said it is no longer aware of a non-security vulnerability in Linux. It is just that it is still investigating and reporting the patch and fixes.
+
+If you are a Linux user or do not use this software, check out these resources if you wish to find more interesting security vulnerabilities for Windows.
+
+UPDATE 16-11-10: While this post has been corrected to reflect "H/T: Microsoft" rather than "Microsoft," readers should follow the latest update on the topic by following Microsoft on Facebook, Twitter, and other social media platforms.
+
+Share This Post
+
+The Security Information is not Published in The New York Times. This page is provided by the publisher and not the Times' parent company. The list of content is not complete, and may be updated at any time by changing the article's format, notice, paragraph, or any other element. As such, its content is not intended to substitute for professional practice in security matters. Please note that the majority of the article content has not changed since it was first created. Security Policy: You may view this page on the WSJ Web site before using these pages. To view, change; or bookmark this page. If you do not want to bookmark, the site appears on a

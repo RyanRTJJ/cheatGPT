@@ -1,0 +1,19 @@
+ and track them across a wide range of websites.
+
+It is a growing problem as web browsing, especially for the vulnerable older generation of people, increases in sophistication.
+
+Researchers at the University of California, Berkeley demonstrated in 2008 that if a user's computer was infected with a "zero day" worm, this meant they were unknowingly logged into a website that used a variant of the technique.
+
+But since then, security researchers have been finding that the technique is used to obtain unique credentials belonging to every single customer of a site and that hackers can use the tracking to carry out further intrusions.
+
+The research – written by Yves-Alexandre de Montjoye of the University of Montreal, Canada, and his colleague Robert Mok – found that a unique code called Zerosploit allows hackers to hijack the authentication for web pages from a website using a browser extension, and then log into the user's account using that unique code.
+
+As the research was published online, it was immediately seized the headlines as the discovery of new hacking techniques by a relatively new, unknown hacker.
+
+Mr de Montjoye said: "What this research does, is that is it allows someone, at a different website that your current browser is having issues with and also someone else running the web browser, to be able to do essentially the same thing that you're trying to do on your own website.
+
+"If we have a website, and we get a new user that comes into the site and clicks "go" for a profile, we can take that user's unique code, and send them in with the request on to a website that doesn't have that particular code already."
+
+Mr de Montjoye said that the method was possible in recent months because most web browsers are now able to use a more advanced anti-malware measure that allows them to monitor for certain vulnerabilities.
+
+"People who think that this is

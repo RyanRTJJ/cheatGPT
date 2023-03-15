@@ -1,0 +1,9 @@
+ or whether the Apple ecosystem is growing on its own, lies to be seen in another report expected in June.
+
+The Mac has also received some support in recent months from Apple. There have already been several releases of macOS 10.12 Mojave, and now Windows 10 is expected to support the OS in the coming months.
+
+The most recent update, OS 10.13 High Sierra, is currently available in beta form from Apple. High Sierra includes various security and stability improvements, plus support for third-party drivers. It is not out yet, but it will likely make its way to more devices in the coming months.
+
+The first public release of Ubuntu 16.04 LTS could start to hit stores soon as well—Ubuntu 16.10 is expected to be released in October. Ubuntu 16.04 is designed to be lightweight and easy to install, and contains a number of performance enhancements over its 16.04 Lite release. In the short term, it's just good to see two major Linux distributions getting together to improve on both the desktop and servers, while Linux vendors continue to improve their ecosystems and focus on their development efforts.
+
+We'll have a full review of this upcoming release coming up on Thursday, so check back to check out what this new version has to offer as quickly as possible. In the meantime, for more on Linux in general, check out our previous coverage on Ubuntu 16.10 LTS. For more on what makes Linux unique from other operating systems, head

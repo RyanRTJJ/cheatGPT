@@ -1,0 +1,24 @@
+ beaches, and to the university campus.
+
+In a park close to a university in Paris, the gadget sent out a stream of data which the Raspberry Pi was able to record and download.
+
+
+The data included, “information on social media such as Facebook, Twitter and email addresses, location, identity cards etc.,” the report says, adding that it does not know the exact age of the victims or the gender.
+
+According to Ars Technica, the stream also included information about the browser and device the user used to access the social media sites – and not just of the visitor’s device but also their router.
+
+The researchers said the data could be retrieved from one of the user’s gadgets.
+
+“It is not clear if the target has logged out, or had their device reset or even shut down at the time, thus allowing access to personal data on the device,” the firm added.
+
+There is no suggestion, however, that Russian hackers were behind the attack.
+
+“As far as we can tell, these are Russian users who were curious to see what kind of information their neighbours were broadcasting or other Internet users,” the report states. “To be clear, we would not consider this activity in and of itself malicious, but if somebody was trying to break into users’ accounts on social media or email, they could have done worse.”
+
+It is not known exactly how the researcher gained access to the users’ devices.
+
+“In many cases,” Symantec, which has long been accused of spying on its own clients, told Ars, “RasPi has the lowest level of technical requirement to operate. This could be a hobbyist interested in seeing what he can do, or a network security researcher, just looking to prove a point.”
+
+“No matter what, this type of information is generally considered by many to be personal and not at all safe to collect. This is not just a ‘technical curiosity’, but a more serious violation. These individuals were looking to see what, if anything, they could potentially use in their own nefarious activities,”
+
+“There is a lot more

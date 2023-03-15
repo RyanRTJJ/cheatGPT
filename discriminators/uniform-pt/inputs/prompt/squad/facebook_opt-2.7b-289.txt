@@ -1,0 +1,1 @@
+Following the unveiling of Windows 8, Microsoft faced criticism (particularly from free software supporters) for mandating that devices receiving its optional certification for Windows 8 have secure boot enabled by

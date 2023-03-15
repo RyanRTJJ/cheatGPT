@@ -1,0 +1,31 @@
+!!!!!!!! [ W ] E
+
+# This word is a sign that the user should never send a message
+
+[ W ] Df
+
+# The server will log all HTTP requests on your network
+
+[ W ] I
+
+@ I=E
+
+@ I+=I=E/+T
+
+@ I=E=I+F
+
+@ I=I+F
+
+# There are not many options for this command
+
+# "RUN" as it is known to be a command used by many servers. It uses the IP address of the server running the file-server application to communicate with the user. This makes it easy to see which port on the machine is running on the remote network.
+
+# To get more information on some examples of how to use this command, read this one by Jeff Gurd and Jason Gurd (http://gurdw.com) at The Computer Science, and this one by Matt Gurd (http://www.thecomputerscience.com) of The Software Journal.
+
+# This process is described in more detail in The Computer Science Programmer's Online Course.
+
+# This command is executed from the command line. When it is executed, it can't be executed from an administrator's shell (command line). In the above example, the command "server send_command" is executed via an administrator's shell.
+
+# This action can be taken to run a script when prompted.
+
+# This means that when you choose to run any command from an administrator, it won't run at this command prompt if the session file you started with already existed in the remote server. If you are editing a file inside of a script, you must have a file in the script's address space called "script_dir=" and a script to run from it. To run a script in the script dir, click on the file in the script's script line and then choose "Run this command" to start the script. To start a script in an unix directory with some files in

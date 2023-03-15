@@ -1,0 +1,7 @@
+ tracks; a PAL disc was 4-track, with three analog audio tracks, and an additional two uncompressed PCM tracks.
+
+A typical sound track on an audio CD, according to J. Peter Robinson (author of the audiophile classic Sound Effects!: A Guide to Digital Technologies Using Software for the Absolute Beginner), consisted of 24 tracks, all of which were generated digitally; the stereo track, which we're familiar with to this day, was the sum of the 24 tracks. A typical sound track on an audio CD, according to, consisted of 24 tracks, all of which were generated digitally; the stereo track, which we're familiar with to this day, was the sum of the 24 tracks. The four separate PCM tracks, which had been used as the only source tracks on the original soundtrack, would be reduced to a five-track stereo mix before being included on the audio CD, by placing only the stereo left and right channels on a separate track (the master signal).
+
+On an audio CD, sound was divided into its "stages," each of which had its own sound engine, with tracks consisting of different sound generators.
+
+For analog (CD-quality) sound on the first generation of audio CDs, the stage 0 component consisted of a standard stereo track, a mono track, and PCM, and on the second generation audio CDs, stage 0 had been transformed into a total of 15 tracks; each of these tracks

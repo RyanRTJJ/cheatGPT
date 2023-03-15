@@ -1,0 +1,9 @@
+ their location at the edge of the screen, but said that users will have no trouble finding them.
+
+Microsoft has introduced a new type of multitasking in Windows 8 that looks to offer a different way to run different apps by swapping one task for another. Bright suggested that this feature will work well in conjunction with Metro.
+
+The new way of handling apps was demonstrated by Microsoft at its Build conference earlier today. The company's Joe Belfiore said that developers have until October 25 to get their apps up and running on the preview build of Windows 8 before the OS launches to all users this fall. He confirmed that Windows 8 will be getting a "lightning" beta test before launch on Windows Phone and the PC in November.
+
+The Windows 8 release could be delayed by a year, according to a new report. A new patent suggests that the tablet won't go on sale until Spring 2013 at the earliest, as first reported by Windows Central. The patent in question was filed by Microsoft back in June, and if true it could mean that Windows 8 isn't ready for the desktop just yet. The tech site cited anonymous sources that claim the new OS could get delayed until January 2013 at the earliest. The source stated that Windows 8 would be targeted at desktops and laptops because that's where computers are heading, not phones and tablets.
+
+Microsoft's new Windows 8 operating system may be available to tablets by

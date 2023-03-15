@@ -1,0 +1,19 @@
+ automatically withdraw customer funds and transfer them outside the bank.
+
+On July 26, the bank said it had identified a "bug" in the way its IDMs were working that would result in a monthly error rate of up to 0.1%. The bank fixed the problem with software on the IDMs in its branches by July 27 and, despite the glitch, only about 10 customers had lodged complaints from late July until August 6.
+
+The bank said at the time that it had contacted the Australian Prudential Regulation Authority as the IDMs were "susceptible to fraud and money laundering", but it would not say how many of its customers were affected.
+
+CBA said that the number of customers affected now includes transactions from May to July 2016, which the financial intelligence agency alleges the bank has breached its AML/CTF obligations under the law. The bank said it also faced a claim from ASIC over the breach.
+
+"CBA has commenced proceedings today against the [ASIC] for a direction to ASIC and other remedies for their failure to detect and properly assess the vulnerability of the [IDM] system," CBA said on Thursday.
+
+"CBA has taken appropriate measures to prevent the vulnerability from recurring and has engaged leading experts in the market to test and verify the effectiveness of its ongoing remedial measures."
+
+In a statement on Friday about the proceedings, ASIC said it was seeking directions from the courts to the Australian Securities and Investments Commission (ASIC) "to assess the appropriateness and legal validity of directions it [ASIC] issues to CBA in relation to AML/CTF matters".
+
+CBA agreed to a settlement with ASIC in 2011 to resolve related enforcement action that cost it A$40 million ($30.7 million) in fines and legal expenses.
+
+CBA said it will be seeking orders against ASIC. "These orders would include a direction that ASIC assess the appropriateness and legal validity of its direction on CBA not to issue further [IDMs] and would include remedies in the form of damages, costs and other order relief," CBA said.
+
+A spokesperson for ASIC said the authority would consider the case and

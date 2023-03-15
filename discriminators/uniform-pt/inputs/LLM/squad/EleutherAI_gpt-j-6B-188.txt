@@ -1,0 +1,9 @@
+NS), a technique that makes each feeder section an NS. It consists of neutralizing only the feeder section, leaving the other sections of the line as a normal, non NS feeder section. This can be done by neutralizing the signal source, or by using a simple high-level gate. By using a high level gate, the neutralizing circuit will also have to provide a safety-level on the line, which is not as low as the line level. However, for any one piece of equipment, a high-level safety gate may still produce unacceptable conditions with respect to some equipment’s sensitivity to power levels that could come from the opposite equipment.
+
+The schematic diagram of the neutralizing process is shown in Figure 2. The circuit consists of a high-level gate to remove DC from the line. The input to the high-level “gate” is the feeder line that is to be neutralized (NL), the supply line to the non-neutrallzation (NNN) side of the equipment (NSN), the line that is to be non-neutralized (NL), and the supply line to the neutral (0).
+
+All lines are fed back to the power supplies, but are connected in an inverted fashion, as is shown in Figure 2.
+
+Because of the low signal level of the line to be neutralized, it is fed directly to the power supply, as in Figure 2. Since this is a high-level voltage (signal source), the opposite side of the power supply, which is already isolated (the feeder section, NL, NS and the neutral, 0) does not see any other DC on the output, so no problems will arise. The output will be high-level for all supplies when voltage is seen on any of the four lines of the neutralization box.
+
+The two isolated halves of this box are connected to each other by the non neutrallzation (NNN) line,

@@ -1,0 +1,12 @@
+ be competitive.
+
+Later generations of the Intel PowerPC processor are the most advanced and competitive. Its successors would later support many advanced features and support for high power consumption, such as PPC32, which is often seen as replacing SSE, and which is used in mobile computers today, such as Apple's MacBook.
+
+Processor speed
+
+The PowerPC architecture is based on a superscalar architecture similar to that of the Intel Pentium, Pentium 4, Intel Athlon, Pentium Pro, and Xeon-compatible processors. The architecture's architecture, like any superscalar design, has its own level of granularity, or instruction level, (for example, a 4 instruction floating point unit may be on the same processor or on a different one, but not in a single processor, or the level 1, 2 or 3 floating point instructions may be entirely different than a level 2, or instruction pipeline), and different levels of instruction execution granularity, or latency (for example, a 2-cycle latency instruction, such as multiplication, may execute in one cycle). The PowerPC is made to run faster for the same computation than an Intel Pentium. By design, PowerPC processors use fewer transistors, therefore using less energy. However, these differences may result in different amounts of energy consumption depending on the workloads encountered.
+
+The PowerPC 4 nm Core™ 2 architecture
+The PowerPC 4 nm Core 2 architecture is being used in the Intel Core i7, Core i7-3970X, Core i7-3960X, and Core i7-3960X processors. It is a superscalar architecture based  on 32 ops/cycle, as compared with the Intel Pentium 3/ Core 2 Duo (6 ops/cycle) and the AMD Athlon 64 64bit (4 ops/cycle).
+
+The PowerPC design offers a number of advantages over the CPU architecture the previous Intel CPUs used. Like all modern instruction sets supported by most modern microarchitectures, it

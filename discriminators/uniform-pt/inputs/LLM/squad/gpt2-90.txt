@@ -1,0 +1,8 @@
+ tracks; a mix of NTSC and audio formats like MP3, MP2 and FLAC would record audio tracks stored in a variety of formats and would use audio files that were not available from traditional media, such as CDs or MP3 files. However, the only way to play on a PC for sound mixing was through the sound of headphones. As the sound card was designed, speakers could be mounted in a cross-sectional area to connect to the PC.
+
+In 1983, the National Institute of Standards and Technology announced several changes to standards, including changing the way audio samples were recorded using analog tracks. However, this design had its upsides, as audio tracks would play well on a portable computer that could play on multiple PC platforms. As a result, analog tracks were only available via a single external speaker, which also reduced the need to be connected to the video card.
+
+
+Ahead of the 1983 National Institute of Standards and Technology, the American Audience Development Corp (AVC) introduced a new sound design concept known as the "Digital Noise Reduction" (DNR) design standard that was approved as part of the VSCA/DNR series.
+
+DNR is a concept that was first introduced by the U.S. Department of Commerce to increase the use of digital signals in audio recording by reducing the likelihood they would affect or be detected in an audio audio cassette or MP3. It was later

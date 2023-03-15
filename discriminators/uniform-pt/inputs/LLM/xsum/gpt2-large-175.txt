@@ -1,0 +1,13 @@
+ who said that he discovered a bug he thought was a security flaw and then took a picture of the code. It was immediately removed by the company.
+
+"We strongly recommend that when you install software you always run it with this update," the company said in a blog post. "We want to make sure that a malicious company cannot do harm with the security of your computer."
+
+In October 2013, a Facebook customer named David Healy reported that a "very large" malicious Flash backdoor had been installed on his PC. Healy told the BBC he had tried to uninstall the malicious files he discovered, but none of them removed the backdoor that he eventually disabled. After learning of the Facebook incident, Healy told the BBC he believed the company was to blame for the breach. The company is no longer installing the Flash backdoor on PCs, the company said in the blog post."We're also removing Flash from all of our browsers and in some circumstances we're disabling that altogether," the post continued. "The majority of our PCs are not vulnerable at all."
+
+A similar story made headlines during last year's Black Hat conference, when a security researcher from the security firm FireEye said that a vulnerability had been exploited to install a keylogger on 500,000 PCs belonging to a company called Symantec. After learning of the incident, FireEye said it had stopped installing the keylogger from then on.
+
+Facebook did not immediately respond to Fortune's request for comment regarding the vulnerability.
+
+"It's hard for me to imagine any security measure worse." — Mike Jinks, chief information security officer at Symantec
+
+The company said that it had learned about the incident, and had disabled the keylogger from the browser and operating system that it offers to customers. The company said it also planned to replace all those PCs within 90 days. But it didn't immediately respond to questions about why it would leave keyloggers enabled, and why Symantec might be a

@@ -1,0 +1,7 @@
+ and additional means of accessing customers' data via a “hybrid” service that combines the transmission speeds provided by the ISP's broadband Internet access with higher levels of downstream packet-switching capacity. An important question to consider is: should ISPs be able to provide this benefit to their customers?
+
+The issue of network-based services is highly complex, and the following discussion should not be considered as definitive on the entire topic but rather as the starting point in exploring in detail how we think it should best be considered. We have provided links to previous posts on the topic, but the following are by no means exhaustive.
+
+First, a clarification regarding the specific characteristics of “network-based” or “network-provided” services: Broadband providers may offer services that consist of the network infrastructure on which they connect customers' Internet devices (such as computers, phones, tablets, TVs, and so forth). For example, an ISP may have both the physical transmission lines used to deliver broadband service (like DSL Internet service) and any related network services like the caching and packet-switching equipment needed to transfer “content” (that is, Internet content, or other forms of network content, such as telephony content, gaming content, etc.).
+
+However, under our definition of network-based services, ISPs should not be able to make any significant changes to their broadband delivery network itself (such as, for example, add or remove customers, or

@@ -1,0 +1,25 @@
+ video, which it can now ignore while switching to another program.
+
+At the same time, a little-remembered security vulnerability in Microsoft Word (not shown below) caused hackers to gain access to more than 50% of the Office 2010's files, and the company has since patched the vulnerability.
+
+Microsoft says it has not noticed or investigated the problem in its customers' machines. This article has been updated for clarity and to reflect a change in the software bug.
+
+In this post it was assumed both systems where shown to be fully patched. We regret the lack of accuracy, as Microsoft has not yet commented on the matter.
+
+Share this story
+
+Computer maker Samsung is about to introduce a radical new concept, called "Nano Display", a display system that uses pixels of different size, just like a comic book.
+
+It has been called a quantum screen, because it uses a quantum-sized array based on nano-sized pixels.
+
+"Samsung hopes that with a nano panel that can produce full colour images and has a pixel pitch of 80 nanometres, the ultra-slim, bendable display can display hi-resolution images for 3D movies, videos and games, while still maintaining a small form factor," reports Computer, which first reported on the new screen.
+
+The new screen is smaller than the existing panel in which it will be embedded - which is not surprising, Samsung itself says: "With its size of 320x190, 160 pixels across, there's virtually no visual and functional compromise with an existing panel."
+
+A smaller pixel size means the screen will be cheaper to produce and install: it will produce less heat and use less power.
+
+"Our unique nano display technologies could enable the world's first true quantum display to be produced for a truly pocket-sized device with a size of only 9mm", it says.
+
+Samsung has previously hinted that this might be closer than thought: a report last year said that its "NanoTFT" technology would be used in a 4.8" display for TVs.
+
+A similar "quantum" screen with 8bn pixels is being developed by Samsung's rival Sharp to enable 3D. This is being produced for use

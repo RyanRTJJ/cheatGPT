@@ -1,0 +1,1 @@
+the student does not meet both these criteria, then they are not eligible for a free bus pass.

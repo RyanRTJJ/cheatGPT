@@ -1,0 +1,11 @@
+ alleged illegal activity are permitted to participate in a lawsuit regarding unlawful sexual discrimination, it could create an incentive for such companies to discriminate. The appeals court said it would “hurt rather than help” to decide which lawsuits should go forward as it weighs whether the lawsuit brought against Oracle by Google is legitimate.
+
+It noted that a ruling in favor of Google would likely result in other companies taking unfair advantage of an anti-discrimination law. It added that such a decision would also encourage businesses to challenge plaintiffs’ claims based on their race, religion, sex, age or disability, with other kinds of disparate treatment claims following. “That decision flies in the face of the express purpose of the statute,” the court wrote. “It creates a dangerous incentive for businesses to take unlawful advantage of antidiscrimination laws.”
+
+The case was brought by an Indian American woman, Rekha Sharma, who sought damages from Google for a racial and age discrimination lawsuit.
+
+Oracle, in contrast, claims Google used its Java platform without paying licensing fees, with Google now seeking to dismiss the $1 billion suit. It added that the lawsuit against Oracle is a “baseless infringement of copyright and patent rights.” The case was filed by James Schachter, who claims that Oracle’s Java platform software has infringed on Schachter’s patents, and that his software is being misused by Google.
+
+The appeals panel wrote that if it decided that Oracle was being harmed by Google’s alleged conduct, it could have serious consequences. The appeals court could allow Google to avoid paying hundreds of millions of dollars in damages, the court said. The panel added that it could also allow Google to avoid paying large royalty payments from companies who use Java. Such a ruling would cost businesses and other parties that use Java billions of dollars in lost revenue and royalties, the court said.
+
+The appeals court said it also asked the district court for an explanation of how it reached a decision in favor of Google. It noted that there were errors in the trial, and called for the district court’s reconsideration

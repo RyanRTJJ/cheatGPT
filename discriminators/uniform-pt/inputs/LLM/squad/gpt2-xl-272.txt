@@ -1,0 +1,11 @@
+ers, not typewriter-related fonts.
+
+The letters 't' and 'h' may appear as a 'y' on today's computers. This is because these letters were placed in the'shift'-position on previous generations of typewriters (the machine was supposed to shift from the'shift'-position to the 'high'-position). The result is that 't' and 'h' may appear as a 'y' today. The same thing seems to have occurred with 'e' and 'i'. 'E' still looks like an 'e' on an early model of the Xerox Alto, but probably used the 'e' symbol from an earlier generation of early typewriters. 'i' was similarly placed using typewriter-based fonts and so looks more like a 'i' than like an 'e' on some of today's modern laptops.
+
+By far the most famous'slash' character is a letter 'i'; many computers recognize 'i' as some kind of 'i'-slash when using modern software. This indicates that the 'i'-slash was positioned after 'i' on older typewriters and thus was much more common than the other'slashes'.
+
+This list will become more extensive in the future, so let us know if you're aware of further mis-alignment glyphs. If you have a question on how to interpret the glyphs or something else along those lines, please send me an e-mail.
+
+To give you some additional insights: the 'e' is generally supposed to appear as an 'i' because it's a little lowercase, but the 'd' used to be a 'ii' because it's lowercase, and it's supposed to resemble a lowercase 'r'. Most modern computers don't recognize 'i' as an 'i'slash, however, since it's usually positioned at the end of a line or so that looks like it should be a r.
+
+Thanks again to Eric Haines for

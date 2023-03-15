@@ -1,0 +1,9 @@
+ meant Swan's vacuum pumps could be used to vacuum-can a small amount of gold from wet ore. Swan invented a special vacuum pumping apparatus which is known as the Swan Pump. It consists of two large cylinders, which rotate, and an impeller, on which small tubes are suspended and which has tubes projecting into each cylinder.
+
+Although the Swan Pump was not used for the gold recovery process until 1886, its advantages have been documented long before then. As far back as 1867, a paper describes the advantages of using the Swan Pump to process iron:
+
+The principle of vacuum-canning is that of pumping fluids through a tube until the gas pressure is reduced to a predetermined level. The principle is well known to hydraulic engineers. One of the ways of accomplishing this is by means of a vacuum. The difference in pressure between the interior space of the pipe through inlet to outlet is greater in the pipe than at the outlet. This causes the fluid to flow from the interior toward the outlet. The more the pressure increases within the pipe, the more the fluid flows. It may be taken for granted that a fluid as heavy as lead will flow at lower pressures, as against less dense liquids as iron or coke. Therefore by keeping the interior pressure of the pipe as constant as possible, the velocity of the flow may be decreased.
+
+A further description of the process was given in 1891. While the patent granted in 1878 covered the gold recovery process, in 1891 the patent covered the vacuum pump invention:
+
+The following describes the application of the principle of the construction of the vacuum pump; the object of the present invention is to make the

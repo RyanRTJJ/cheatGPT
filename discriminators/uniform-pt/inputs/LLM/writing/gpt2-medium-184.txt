@@ -1,0 +1,31 @@
+"
+
+If you use a real world name in a script, you may not want to use a random domain. If the name sounds different here, please add the address to your IPs file. Also, if you see a message like "" in front of a hostname where you registered the domain name, you may have misconfigured your DNS servers.
+
+Get Started With Your New Script By Using My Script Editor
+
+If you still have issues, use the My Script Editor. Open your My File dialog, and under Script Editor, choose Edit > New Script.
+
+You can also get started using the My Script Editor from Microsoft Scripting Guy with the following example:
+
+Create your first script with My Editor by using this command:
+
+Code: Create New Script - Name="Sample_Script" Text=Get a good weather forecast, this one is for the south west I have the first address [ip] - IPAddress=10.20.20.60 - Description=Get a good weather forecast, this one is for the south west
+
+It should have a timestamp line as shown in the example.
+
+Add Text to your script
+
+Add a new line at the end of this example. Don't forget to set the - to a space and give your script the correct name. If you get a duplicate line, it could take a while to update your script.
+
+Add Additional Requirements to Your Script
+
+A script should also tell you if your computer is on and what time of day in your area.
+
+Use a number, then leave it blank for the day in your region. Use that as the time of day; otherwise, you may lose your forecast and experience severe weather.
+
+For example, in my example script, the script would ask you if you'd be good for your forecast, then wait for the weather in your region to correct before adding that description.
+
+Script Required for this Guide
+
+To use the My Script Editor, you are required to have a My Computer account, and/or the Microsoft Scripting Guy's Scripting Pack (CMSP). You can read about how to get a script account here

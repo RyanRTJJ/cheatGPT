@@ -1,0 +1,25 @@
+ The Computer Society, which opens on Friday.
+
+The most recent report by the US National Institute of Standards and Technology in 2007 described cybercriminals with access to compromised data as "more sophisticated hackers and risk their careers".
+
+"We are seeing it very rapidly over time," says Erven, adding that security researchers from the US National Cybersecurity Center have a strong grasp across many fields.
+
+One reason, he says, is that the government's use of encryption makes it easier to access, protect and track a user's physical and financial location. "It seems that the use of a smartphone to do some sort of targeted, well-designed cyberattack against a target's personal data makes no sense at all," he concludes.
+
+While Erven, Collao and The Computer Society had their work cut out for them, security experts may come to their conclusion.
+
+The US National Institute of Standards and Technology published a report last year claiming that its cybersecurity team had "more than 1 million cyberattacks of their kind in the past 6 months".
+
+"It is no coincidence that government programs are being built in this country," Collao said. His team had been working over the past six months, he claims, on a "very solid understanding" that they were able to identify about 75,000 known and suspected cyberthreats and prevent 100 breaches by end-2013.
+
+"There is one in every two people, I believe, that has been infected [with a malware that makes its owner run for office] who are working on an identity theft. And I have one hundred more, most likely a dozen."
+
+More on security:
+
+The government's massive intrusion into US computers has infected over 20,000 computers around the world since it took the US through the end of 2014.
+
+According to The New York Times, there have been 3,000 cyber attacks since 2014. Only three new attacks have occurred, but cybercriminals have reported receiving more than one million phone calls from phone, SMS or email accounts that could be affected.
+
+Last month, The New York Times published a piece about an apparent ransomware attack that had compromised an Android phone running OS X El Capitan.
+
+It included

@@ -1,0 +1,9 @@
+ form of internet data transmission known as OCAP. In order to achieve this, the FCC should allow providers to offer unlimited data plans and provide customers with information about the actual data usage of their connections.
+
+OCAP is already in place in Canada and Australia. In order to be able to implement its version of OCAP it is proposed that the FCC reclassify broadband internet access services as a telecommunications service. The FCC claims to have broad authority over broadband, but its actions so far have led to questions about its independence.
+
+Background on Verizon-T-Mobile Merger
+
+By its own admission, Verizon Communications Inc. ("Verizon") has been unable to acquire the third largest mobile service operator in the United States, T-Mobile USA, Inc. ("T-Mobile"), despite spending more than $24 billion on it. According to the FCC, Verizon has proposed mergers only with three companies: AT&T, Inc. and SpectrumCo LLC, known in the industry as "duopoly companies" because they are in the dominant position. Verizon has offered to buy AT&T outright, which would make Verizon the second largest wireless company. Verizon has also tried to acquire Sprint Nextel Corporation ("Sprint") and a smaller wireless carrier, Leap Wireless International, Inc.
+
+Verizon's latest merger proposal was to offer to pay $26 billion to acquire the majority of Sprint's shares. Verizon also offered to buy all the shares of Leap Wireless but their price

@@ -1,0 +1,26 @@
+
+
+" I should add that the most obvious problem is that I'm just making this up. The first line of the story says we can put anything onto the screen. But the second line says we can't. I have no idea what you can ever say onto a screen without destroying it or losing it... " —Ani, on using sigils for art
+
+
+The Sigils of Destruction is a recurring quest item in Dragon Age: Inquisition.
+
+A simple silver sigil, each with the number 100 in the middle.
+
+There is also a Black Sigil that can be used to destroy the sigil. This item can be crafted for 800g at the Alchemy station.
+
+Sigil Edit
+
+The sigil is a powerful device, and as an art asset it carries with it the potential to be a life saver. Like many of these items it would be very difficult to recreate without risking the use of the device's power.
+
+A basic sigil can be found inside a treasure chest after clearing the Broken Circle quest. There is also a Master sigil in an earlier Dragon Age: Origins quest, which appears to have a longer range than the basic sigil.
+
+Master Sigils Edit
+
+The Master sigil is created by combining three other sigils to create the greatest sigil possible. Crafting the Master Sigils requires 6500 gold and an Alchemist.
+
+Master Sigil Information Edit
+
+Sigil Icon Location Image Reward Master Sigil Ani's Sigil, Vilefang Hold Ani's sigil is located in the back of the Vilefang camp, south of the gate.
+
+The Master Sigil is a powerful sigil, as it can kill any creature that enters it. Unfortunately, it only carries a 5 point bonus to Destruction, so it is rarely used effectively against mages. Using it can be as effective as using a spell, but it is not worth the

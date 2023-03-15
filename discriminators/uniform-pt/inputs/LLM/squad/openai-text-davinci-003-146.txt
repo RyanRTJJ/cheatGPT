@@ -1,0 +1,5 @@
+ homogenous transition from Motorola 68k chips (called Mixed Mode Manager). The Rosetta emulator is no longer supported in Snow Leopard or later versions of the Mac OS.
+
+The Intel products come in a variety of form factors, including laptops, tablets, and desktop computers. Apple currently produces desktop computers in two sub-families: the iMac and Mac Pro. The iMac is an all-in-one computer that typically features integrated video and audio; the Mac Pro is a modular desktop tower that allows for expansion and customizability. Apple has recently introduced a laptop computer, the MacBook Pro, which comes in both 13-inch and 15-inch models.
+
+Apple offers a range of processors from the low-end Core i3 to the top-of-the-line Xeon E5. In addition to Intel, other chip manufacturers are also used in the Mac product family, such as AMD and NVIDIA. Apple has also introduced support for Thunderbolt and USB 3.0, which can enable faster transfer speeds and faster peripheral device access.

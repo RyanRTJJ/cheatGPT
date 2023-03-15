@@ -1,0 +1,14 @@
+ [ Title ] [ Description ] [ Author ] [ Date ] Your IP (as specified in your DNS) You must write a story based on this prompt: Please enter the IP:
+Your IP may be different for each of the above prompts. Don't click anything. The prompt is required. You must edit this prompt and submit an email before you write the story. A sample email is below. Your email address will be sent to:
+Subject: Story Based prompt. [ This script has been created using HTML5 with JavaScript. You should update as needed. ] Please enter title:
+Please enter description:  
+Please enter author:  
+Please enter date:   Please enter Please enter subject:
+Please enter date:  Please enter please read:
+Please enter please read: [ IP ] Children of the Sun Please enter the IP for both prompts. Enter the IP (as specified in your DNS) [IP] If you would like to write the email using an email service, then you can use Yahoo email. Use YYYY.MMDD format. Please use your own domain name. Your domain name will be sent to:
+Email address is already registered! Please choose:
+For more information, see our email tips. Have fun!
+The script uses several HTML5 features, including JavaScript. Some of them are explained in detail below. Please click on the links in the list to learn more: Script Creation with JavaScript
+Some of these scripts require a Web Designer to create, deploy, and remove scripts.
+If you prefer to use your own script editor, you can download the Script Wizard app from Play Store. The app automatically detects scripts stored in the AD DS server and creates an index that contains them. For help, visit the Script Wizard website. Some of the script's details include:
+Please enter text from search results for 'Children of the Sun' (see sample emails). If 'Children of the Sun' is not highlighted in the example email, just type in the search term. Select one of examples in the example email. (To create a specific email

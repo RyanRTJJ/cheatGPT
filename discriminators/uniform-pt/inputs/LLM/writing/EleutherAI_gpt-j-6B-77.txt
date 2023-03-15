@@ -1,0 +1,29 @@
+ This is meant to provoke laughter and discussion.
+
+A:
+
+It's not just a black screen with a google web app version of a command. Google's home page (with the main search box) still works fine.
+I'm pretty sure this is a bug and I think you only get it when Google is having a downtime while you are trying to access it. For that time, everything related with Google just blackscreen but it still work
+(I do not know the cause of it. No issue on my end but I didn't do it nor get any information about it. This should be seen as a bug)
+
+ 
+Edit: 
+ 
+It is probably something related to Google Analytics.
+
+A:
+
+In addition to what jmac said, the "go outside" message might just be a redirect to a different URL than google.com. There should be lots of other websites out there who's website contains a message like Google's. The best place to check are the.com registrars of those websites.
+
+ 
+You mentioned twitter as the most likely candidate. Although it does have a message, there is no other website with a similar message I could find with Google, so we can rule twitter out. Also twitter seems to be working fine for me at the moment.
+If you are still convinced it's google.com this might be the easiest way: Search google for the most popular searches. Then look at the first result on the first page.
+
+  
+You could now compare it with google.com?
+
+A:
+
+This would appear to be a bug, and not something that was deliberately done on Google's part - as it will only happen to somebody that's connected to the internet while Google has had a problem, and nobody else can do it.
+
+A brief digression about google.com (as well as about.com, yahoo.com and the like) - their home page (in terms of the HTML of the page) is the google.com domain. When you get to

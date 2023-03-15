@@ -1,0 +1,11 @@
+ ShmooCon in Vancouver last month. The information was found in an XML-encoded configuration file for a software system used to collect billing for the health group. “This was just as easy as clicking an executable link through to a website,” Erven told attendees at the event. “[The attackers] went into the vendor’s system, and then downloaded this information of 68,000 patients’ identifying, non-protected data.”
+
+The researchers told attendees that they found more than 100 databases of patient information on a dedicated server, along with a custom-developed Windows program loaded with “malicious executables.” Some of those programs contained instructions that pointed people to a “bogus software update site,” they said. Erven and Collao said they were not paid for their work.
+
+The databases included patient names, last names, dates of birth, addresses, phone numbers, Social Security numbers, provider types and information about procedures, medications and the types of health insurance provider and plans. They also included information about patients with HIV, patients who smoke or are heavy drinkers, and people who have been victims of sex trafficking, Erven said.
+
+“Now, you’re saying, well, the database is very small … this is something that’s a small, niche database,” he told the attendees. “But what you also have is the ability to pull data out of these databases. So, you can then take the contents and manipulate them into whatever you want. These aren’t just one-off database dumps.”
+
+Erven stressed that even though the information was encrypted, “you can use this information to open up all kinds of accounts and do all kinds of things with it.” The pair reported the find to federal authorities earlier this month on advice from his legal counsel, who was concerned that the breach could result in an intrusion by law enforcement, he said.
+
+Asked by Threatpost about the breach, a company official said, “Healthcare data integrity is a large and important concern of ours, and we take security of our customers’ personal health information very seriously. As soon as this report was received, action

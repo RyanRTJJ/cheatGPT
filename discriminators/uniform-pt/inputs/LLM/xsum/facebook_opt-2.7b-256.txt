@@ -1,0 +1,11 @@
+ which will be available soon to all Android tablets released by the firm. While Kindle readers will still get a message every time it is updated, they "won't see their update anymore in future, except they update manually which is not the same as secret message service. This means messages will no longer become hidden or vanish", a spokesperson of Amazon said.
+
+While some companies have been providing "secret messages", it is not clear if the message to app developers is in the same category and how secure it would be. For instance, some app developers might try and hack into your tablet via a hidden message or your data will be accessible to anyone through a hidden message that is not encrypted.
+
+Amazon is yet to confirm if its secret message to developers works on other tablets. It says that it would be more than happy to include the service in other tablets, when it is available. As for now, Amazon says that it is focusing on making Amazon Fire tablets the best possible product they are offering.
+
+The new "Secret Messages" comes as Amazon is making some major changes in Fire tablets, including the release of Fire TV. The Fire TV, which will be the first truly smart TV available in India, comes with some unique features and offers live content from Amazon Prime Video, i.e. video content, on the big screen.
+
+Amazon Fire TV comes with a quad-core ARM Cortex A7 processor clocked at 1.2GHz and is paired with 2GB of RAM. Like the Fire tablets, Fire TV has also got a dedicated Netflix button and is preloaded with popular subscription apps.
+
+To recall, Amazon announced last week that it was going to launch four new tablets, the Fire HD 10, Fire 7, Fire HD 8 and Fire HD 8 Kids Edition. Fire HD 8 and Fire HD 8 Kids Edition are 8-inch and 7-inch tablets; Fire HD 10 and Fire HD 10

@@ -1,0 +1,17 @@
+ more personalized therapies for cancer.
+
+Scientists at the Buck Institute for Research on Aging collected urine samples from healthy volunteers and diagnosed them as cancer-free. Their data suggests that some tumors contain cancer-fighting substances, which is good news for patients. But the study doesn’t tell us which tumors are good for the patient and which are not.
+
+For example, is lung cancer responding to low doses of a new drug? Is lymphoma responding to a protein that’s part of a new medication?
+
+The researchers used these types of questions to “design” a new, testable method that can potentially be used to help cancer patients. With this method, your kidney cells will be exposed to a fluorescent dye to mark genes that are being turned on. The next question for your doctor is: Which genes are turned on? You might discover a new treatment or a side effect.
+
+The method should allow doctors to “design” a new treatment more effectively than other, “untested,” methods.
+
+One example is that you’re not necessarily the only person to be treated by a new medication unless both you and the person who comes in for your screening have mutations in the same genes. Another example is that if your doctors discover that one type of treatment is effective in some but not others, you might have a “trial-and-error” patient, because you’re the only person who is the target of the trial.
+
+Researchers hope this method will be useful in screening large amounts of cancer genes to determine whether new treatments work. It will be easy to combine the gene screening with existing tumor samples to see whether the new treatment will work even in individuals that had tumors that respond badly to existing treatments.
+
+This method should reduce the trial-and-error nature of cancer treatment by eliminating the need for hundreds of tumor samples, and by determining the gene-dosage for a trial treatment based on the effectiveness of the treatment in one person.
+
+“We will be able to have a huge increase in the efficiency of these trials,” says lead investigator Mark Blagosklonny, PhD. “This will enable doctors to better design these trials — from the first time that a

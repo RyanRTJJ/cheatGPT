@@ -1,0 +1,18 @@
+Section 2.3, "Varying Feeder Equipment Requirements"). In order to prevent interference from out-of-phase systems to other supply systems in a given station it is necessary to reduce current flow of out-of-phase feeder equipment to prevent disruptions in supply of out-of-phase products. The following diagram demonstrates the current flow of out-of-phase equipment at different feeder stations that are linked to a feeding system at their inputs.
+
+Figure 3 demonstrates a schematic diagram of a system linked to an out-of-phase feeder at a different feeder station.
+
+Elements of such a feeder system can be either a system mounted at a feeder station and then used to switch into a different feeder station, or another equipment station (Section 3.4, "Feeder Line Feeder Equipment Requirements"). Both feedser systems must be equipped in all stages of operation to allow for adequate switching. It is also useful for the customer to calculate the quantity (frequency) and duration (hours and minutes) of feed from any feeder. The supply system must satisfy all conditions for the order (or supply to customers) in order to receive (or obtain) a product.
+
+The following diagram illustrates the current flow of feeder equipment on a two feeder station.
+
+
+Figure 3: System mounted at feeder station, to switch into feeder feeder system
+
+Referring now to the following diagram, the supply system is attached to another feeder station. The customer is able to adjust the feeder level from a specific feeder in the feeder system to feed in order to change feed efficiency.
+
+
+Figure 4 illustrates the current flow of feeder equipment on an internal feeder at a different feeder station.
+
+
+In Figure 4, feeder equipment in a two feeder station is divided into several feeder segments. All feeders within those feedser segments have different feeding characteristics. The feeder segments in the feeder segments are usually identical, and the feeder level determines

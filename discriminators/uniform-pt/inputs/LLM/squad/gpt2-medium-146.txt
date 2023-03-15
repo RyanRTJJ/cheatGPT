@@ -1,0 +1,9 @@
+ transition from PowerPC hardware (called Sierra). This emulation uses the same system architecture (with slightly different data) as the actual hardware implementation with the exception that it uses the XPC model.
+
+Apple does not provide support for all CPUs, but its emulation supports most of them (well, almost all). The only difference in use is that Mac OS X will not load the kernel image directly. Therefore when an application uses an earlier version of Apple's XPC kernel, then it will need to load the image from Apple's web page and use it to emulate the CPU implementation of the particular CPU model.
+
+How do we install the latest XPC kernel for Apple's Mac OS X 10.6.4 for PowerPC models?
+
+As long as Apple is offering this option then an application must first determine if the current macOS version is compatible with that particular PowerPC implementation. On systems with older kernels then this is a relatively simple task as there is nothing special to do for the application to identify that particular kernel, but the exact approach must be carefully crafted to avoid possible conflicts with other applications that require other XPC versions.
+
+Once an application wishes to be able to use older XPC kernels, however, it must first determine whether the old kernel is compatible with the Mac OS X 10.6.4 system architecture. The simplest way is to simply copy the.app file from the PowerPC version of Mac OS X to macOS and run a program to search the directory of the XPC kernel. A second approach is more challenging and is

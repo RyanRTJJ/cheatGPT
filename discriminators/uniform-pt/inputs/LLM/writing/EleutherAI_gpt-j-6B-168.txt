@@ -1,0 +1,10 @@
+ 
+To make it more interesting, the NPC has a character sheet with an average of what the character would be (since the player never knew). The NPC uses it, and tries to beat the "character". 
+One of their stats is something that really matters, for example, they have +5 to Initiative, or +10 to Perception? Or maybe they have +100 on a skill?  
+How would you make the NPC succeed in beating the "character" if they are just based on average stats, if you were the player you would probably throw everything at one stat and win.
+
+A:
+
+You should try and make it work the other way, not for the NPC to beat the player character.  Instead the player should beat the NPC.
+Imagine you have an NPC that has +20 to your single stat.  The NPC is trying to beat you.  You're the player:
+Let's say that one stat that the NPC maxes out is Perception.  You're getting a Perception roll every turn.  They get a Perception roll every turn.  You notice them, what does that NPC do?  You know they will roll a 9 at their next Perception roll and realize your character got a 9 the entire way through the mission, and your character could beat every NPC's Perception rolled this entire mission too.  But your NPC still has to roll Perception before your NPC does.  If they beat your roll, they win.  If not, your character won.  Then what happens if the NPC rolls another Perception roll?  That's your game over.  You will not win with that NPC's Perception.  What happens if the NPC rolls Perception every single turn?  That's when they'll go down a notch, hopefully without you noticing.  They may go to 5, at which point they'll just never beat you.  But it's going to get tiresome for the NPC.  So what happens if on

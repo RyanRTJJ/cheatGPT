@@ -1,0 +1,19 @@
+an electromagnetically operated coil) which is then discharged through a trolley pole, located near to the top of the tram. Another coil, located a distance away, and connected to the trolley pole, completes the circuit used to raise the current level.
+
+The trams are equipped with electrical interlock system on both ends to stop them during a collision by means of a similar system of brakes.
+
+The third rail of the new street trams is electrically powered through induction, by connecting the third rail of the street tram with the third rail of the third-rail electrically powered underground railway.
+
+The system is called “interlocking” since an electric current flows from one rail to another, thus it is not a simple electrical connection, but part of the power system, where electricity works through transmission and distribution.
+
+Electrotechnology
+
+What is the difference between electrical and non-electric traction?
+
+In principle, any form of mechanical power transmission exists. Mechanical transmissions of different types are characterized by whether the energy source is a continuous force (e.g., the human energy) or a pressure force which allows the transmission of energy only when the force is constant.
+
+Traction between a source of mechanical power and a load is called mechanical transmission of power (not “non-electric transmission of power”).
+
+Traction between two points of any form of mechanical power is called electrical transmission of power. In this case, the transmitting force acts only when the source of force is constant. Thus there is mechanical connection between the points of force transmission and not “non-electrical transmission of tension”, as electrical transmission is between two points of electrical impulse.
+
+The basic difference between electric traction (electric current) and mechanical traction is that electricity transmits both electric and mechanical energy. Electricity is always

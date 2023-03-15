@@ -1,0 +1,17 @@
+ attackers can exploit this flaw for an extended period of time due to the fact that many organizations don't carry out patching cycles.
+
+In a security alert sent to corporate customers Thursday, Microsoft advised organizations to set up automatic security software updates using Windows Update.
+
+"If you don't have Windows Update, make sure you set it up so that your security software automatically updates and reboots systems and servers periodically," read the Microsoft advisory. "Use the 'Update and Security Tools' section of the Control Panel or the 'System and Security' portion of the Run box to update." The company also encouraged users to consider updating to the Windows 7 SP1, as part of the company's recommended service pack 2 upgrade path.
+
+In recent weeks, Microsoft has released more than 20 updates for security vulnerabilities in Windows 7. Additionally, updates for Internet Explorer 11 are being rolled out. According to security firm McAfee, two million computers are still vulnerable to this zero-day vulnerability.
+
+In this same timeframe, a large amount of software upgrades have also been pushed out, including the recently released Windows 8.1 and Office 2013. Also, Windows 8.1 has started receiving updates for performance and security issues.
+
+In addition, security updates are going out for Microsoft's Lync enterprise phone calls in Windows 8 and Windows Phone 8. The security updates should block calls from automatically connecting to a call center. This should help to solve the problem of malware and malicious spam calls, which have become an increasingly prevalent issue. Microsoft is currently working to fix the vulnerability.
+
+Security researcher Brian Krebs wrote that attackers can exploit the "Microsoft Word" bug for up to 36 days, making it one of Microsoft's longest-lasting zero-days. This means that hackers will get a higher return on their investment for exploiting this vulnerability than they would have if they had exploited it earlier, before many organizations updated their software.
+
+Krebs noted that some organizations have even gone to the extreme of keeping unpatched zero-days in their security environments, "to guard against an onslaught of attacks, including one by Anonymous."
+
+"The problem is that

@@ -1,0 +1,19 @@
+a gift from God for the government authorities".
+
+The online security company McAfee also said on Friday that it had found a new attack that could lead to the loss of passwords and other unencrypted information for 20 million US customers.
+
+The latest hacking was detected when some of the firm's customers' names and credit card numbers were stolen last year.
+
+McAfee said on its blog that it was investigating the new attack and that it was certain that users who had clicked on links it had broadcast when the security breach last year had not been at risk.
+
+The company has also taken measures to improve its security software and processes. It has asked users of its McAfee AntiVirus 2011 and McAfee OneSafe software to re-install both at once to protect their accounts. Users who have no antivirus software to install the software can use McAfee SafePC to make sure their account is safe.
+
+McAfee is the latest company, apart from Yahoo and other US banks. to warn consumers about the risks from attacks that might be made possible by so-called "malware" software - programs designed to steal private data.
+
+Yahoo said last Thursday it was investigating a breach of its accounts and data that could allow hackers to access confidential information and even to change users' details. The company offered credit monitoring and identity theft protection for three years for those affected.
+
+McAfee has found in the recent years that more people have their security information compromised by unauthorised programmes than by bank and credit card fraud.
+
+Last year, it uncovered a new type of attack, dubbed "zero-day malware", which meant malware was able to spy on systems for the first time. It also found "backdoor malware", which enabled hackers to infiltrate a system in complete secrecy.
+
+These programs - that are designed to go unnoticed by the programs that would normally be used to analyse the data on a computer - have allowed criminals to steal the data of as many as half a billion people.

@@ -1,0 +1,31 @@
+" -Nerdygirl
+
+The name you've always hated. This will definitely help people avoid your page or page hijacking, or help those who like to get a real-life look at you. You want to know what it'll get you? The answer is an image in the header, as well as a button that says "Learn more about me" when clicked. If the name you have always hated is written as "Devin" in the header, you'll get a picture of "The Debut Killer" holding his infamous gun.
+
+How to do it:
+
+Follow the instructions above.
+
+1) Set the title to anything or nothing (for the background of the page).
+
+2) Choose one of the image options above.
+
+3) Save your changes to your web site.
+
+4) Make sure you delete the "User" link.
+
+5) You're done! All users will see the picture. You may even have to adjust the font size.
+
+Bonus Tips
+
+If you'd prefer an old-fashioned method of name hijacking, you can do it using the following two commands in your terminal.
+
+$ sudo apt-get install -y xrdb-util ctlsh $ wget -O /etc/lightdm/lightdm-gtk/autostart $ sudo chmod 755 /etc/lightdm/lightdm-gtk/autostart
+
+Note that you'd still have to make sure the user you created with the above two commands has permission to launch the application.
+
+Here's a bit more about Xrdb:
+
+Xrdb is a terminal emulator that uses the X Toolkit and the X server to provide a native look at X11.
+
+It is fully accessible via the xrdb utility available as a package in any Linux or FreeBSD installation. It uses xrdbterm to provide graphical user interfaces for the X Window System (X11) and applications. Xterm is a popular X11 terminal emulator, but some terminal emulators have improved their

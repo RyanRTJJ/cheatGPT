@@ -1,0 +1,35 @@
+!!
+
+What is the average amount of money a person has in their bank account?
+
+You're a college student and want to know how much money someone spent on the education they'll receive this fall.
+
+You're an executive looking to do some good (but don't have a lot of money) and want to know how many hours they saved in 2016 from not having a job.
+
+You're a mother of two and are planning a holiday shopping trip and want to look up the average cost for gifts for her family.
+
+You have a question about your state income tax rates, and need to find out the average amount of taxes a person paid in that state in 2016.
+
+You're just feeling blue, like we all do, and want to do something nice for someone. No, not to yourself or your spouse, but to someone else in need.
+
+We want to give you the chance to be part of a discussion or challenge (either social or academic) that's centered around the data you will be using, your knowledge of how to interpret and use the data and your willingness to share or open source any findings you make.
+
+You'll provide the data! You'll give us questions! All for us to solve together!
+
+Note: Our open-source challenge is now available for all to participate in.
+
+Challenge Requirements
+
+Participants should have an internet connection and be willing to provide a GitHub account and make their data available on GitHub.
+
+Participants will be provided with a Google Sheets spreadsheet to facilitate the challenge, and all challenge participants will be given access to the results as well as the results they can make into their original posts on their own websites.
+
+Here's what we're looking for, to make sure we get the best information and solution:
+
+Data Sets
+
+A good data set for this challenge includes (but is not limited to):
+
+Sales Data (i.e. how much was the average individual's annual sales for the past year compared to the sales of all other individuals)
+
+Monthly Income Data (i.e. an estimate if a person's

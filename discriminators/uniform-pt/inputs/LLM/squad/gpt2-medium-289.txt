@@ -1,0 +1,9 @@
+. While Secure Boot appears to make it easier for devices to obtain the updates (via a mechanism called "Microsoft Update Assurance"), others argued that the policy was flawed and that Microsoft's goal for universal deployment was not to prevent attacks.
+
+Microsoft responded by saying that it wanted devices to be able to receive updates — and with those updates being "non-volatile," an upgrade wouldn't require a reboot or any other configuration necessary to take effect.
+
+And yet in some ways, this approach works well: with any kind of trusted storage such as USB sticks and SD cards, installing an update to a device can take a long time, depending on the hardware. And a device running Windows 8 can update itself without needing a reboot when needed — but a device running a legacy version of Windows will still need to be rebooted whenever needed.
+
+On the negative side of boot update technology, it still has drawbacks: the update can only be applied when the device is connected, and it cannot be applied at any other time, such as from different places as your device and PC.
+
+But these drawbacks have been largely mitigated by the new Windows 8. It adds a new feature called Continuum, which allows you to see your desktop screen on other types of computers while you are simultaneously using your
