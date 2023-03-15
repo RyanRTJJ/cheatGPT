@@ -6,6 +6,7 @@ import torch.nn.functional as F
 import re
 import os
 import argparse
+import pickle
 
 def print_list_nice(some_list):
     for thing in some_list:
@@ -41,11 +42,11 @@ class Perturber:
         # Sanity check that the necessary args have been given
         assert args.folder_to_perturb != None, "Where are your texts to perturb? Usage: --folder_to_perturb [DIR_NAME]"
         assert args.ll_save_loc != None, "Where to save your loglikelihoods? Usage: --ll_save_loc [DIR_NAME]"
-        assert args.folder_to_save_perturbs != None, "Where to save your perturbed texts? Usage: --folders_to_save_perturbed [DIR_NAME]"
+        assert args.folder_of_perturbs != None, "Where to save your perturbed texts? Usage: --folder_of_perturbs [DIR_NAME]"
         
         self.FOLDER_TO_PERTURB = args.folder_to_perturb
         self.LL_SAVE_LOC = args.ll_save_loc
-        self.FOLDER_TO_SAVE_PERTURBS = args.folder_to_save_perturbs
+        self.FOLDER_OF_PERTURBATIONS = args.folder_of_perturbs
 
         self.DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -323,7 +324,7 @@ class Perturber:
                     ll_grid[set_idx, segment_idx] = -self.scoring_model(**tokenized, labels=labels).loss.item()
         return ll_grid
 
-    def perturb_and_score_dir_of_stories(self):
+    def perturb_and_save_dir_of_stories(self):
         """
         +---------------+
         | Functionality |
@@ -347,24 +348,33 @@ class Perturber:
         segmented_stories = self.segment_texts(texts)
         for idx, segmented_story in enumerate(segmented_stories):
             print(f"\nPROCESSING STORY {idx}...")
-
-            # Save OG story likelihood
-            og_story_grid_ll = self.get_ll_of_grid([segmented_story])
-            os.makedirs(self.LL_SAVE_LOC, exist_ok=True)
-            np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}_og.npy", og_story_grid_ll)
-
             perturb_grid = self.perturb_story_n_times(segmented_story) # a (N_PERTURBS, N_SEGMENTS) grid.
+            os.makedirs(self.FOLDER_OF_PERTURBATIONS, exist_ok=True)
+            # Save og
+            with open(f'{self.FOLDER_OF_PERTURBATIONS}/{story_names[idx]}_og.pkl', 'wb+') as f:
+                pickle.dump([segmented_story], f)
             # Save perturbations
-            for perturbation_idx, perturbed_segments in enumerate(perturb_grid):
-                perturbed_text = ' '.join(perturbed_segments)
-                os.makedirs(self.FOLDER_TO_SAVE_PERTURBS, exist_ok=True)
-                f = open(f'{self.FOLDER_TO_SAVE_PERTURBS}/{story_names[idx]}_p_{perturbation_idx}.txt', 'w+')
-                f.write(perturbed_text)
-                f.close()
+            with open(f'{self.FOLDER_OF_PERTURBATIONS}/{story_names[idx]}_pgrid.pkl', 'wb+') as f:
+                pickle.dump(perturb_grid, f)
+    
+    def load_and_score_dir_of_stories(self):
+        """
+        Loads in .pkl files from self.FOLDER_OF_PERTURBATIONS.
+        Such a folder will be in the form: "results/{human or LLM}/{dataset}"
+        """
+        subdirs = os.listdir(self.FOLDER_OF_PERTURBATIONS)
+        files = [self.FOLDER_OF_PERTURBATIONS + '/' + subdir for subdir in subdirs if subdir.endswith('.pkl')]
+        story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.pkl')]
+        os.makedirs(self.LL_SAVE_LOC, exist_ok=True)
+    
+        for idx, file in enumerate(files):
+            perturb_grid = None
+            with open(file, 'rb') as f:
+                perturb_grid = pickle.load(f)
+            print(f"\nGrading story {file}...")
+            ll_grid = self.get_ll_of_grid(perturb_grid)
+            np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}.npy", ll_grid)
 
-            # Save perturbed stories' likelihoods
-            perturbation_grid_ll = self.get_ll_of_grid(perturb_grid)
-            np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}_pgrid.npy", perturbation_grid_ll)
         
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -385,8 +395,14 @@ if __name__ == '__main__':
     parser.add_argument('--num_perturbations', type=int, default=20)
     parser.add_argument('--folder_to_perturb', type=str, default=None)          # Something like "eda/human_stories"
     parser.add_argument('--ll_save_loc', type=str, default=None)                # Something like "eda/human_results"
-    parser.add_argument('--folder_to_save_perturbs', type=str, default=None)    # Something like "eda/human_stories_perturbed"
+    parser.add_argument('--folder_of_perturbs', type=str, default=None)         # Something like "eda/human_stories_perturbed"
+    parser.add_argument('--mode', type=str, default='perturb')                  # 'perturb' or 'score'
     args = parser.parse_args()
 
     perturber = Perturber(args)
-    perturber.perturb_and_score_dir_of_stories()
+    if args.mode == 'perturb':
+        perturber.perturb_and_save_dir_of_stories()
+    elif args.mode == 'score':
+        perturber.load_and_score_dir_of_stories()
+    else:
+        print("Mode can either be 'perturb' or 'score'")

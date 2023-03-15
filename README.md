@@ -199,4 +199,37 @@ LLM texts are just the `"{LLM_RESPONSE}"` parts **without** the scaffolding, and
 4. Human text consists of **only** the part that came after the 30 tokens.
 
 # Perturbing Pipeline
-`python perturb.py --folder_to_perturb inputs/human --ll_save_loc results/gpt2-medium-scorer/human --folder_to_save_perturbs perturbations/human --num_perturbations 50`
+`python perturb.py --folder_to_perturb inputs/human --ll_save_loc results/gpt2-medium-scorer/human --folder_of_perturbs perturbations/human --mode perturb --num_perturbations 50`
+
+## Data Organization (`inputs`)
+- `inputs`
+  - `human`
+    - `squad`
+    - `xsum`
+    - `writing`
+  - `LLM`
+    - `squad`
+    - `xsum`
+    - `writing`
+  - `prompt`
+    - `squad`
+    - `xsum`
+    - `writing`
+  - `args`
+
+## Data Organization (`results` and `perturbations`)
+- `results`
+  - `{scoring_model_name}`
+    - `{human or LLM}`
+      - `{dataset}`
+- `perturbations`
+  - `{human or LLM}`
+    - `{dataset}`
+    
+
+# Progress
+## Data Generation
+Done.
+
+## Perturbation
+- [ ] `human/squad`
