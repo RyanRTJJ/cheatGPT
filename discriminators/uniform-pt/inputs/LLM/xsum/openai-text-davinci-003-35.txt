@@ -1,3 +1,9 @@
-he House of Lords Constitution Committee in October 2011:
+ order, citing privacy concerns.
 
-"A Written Constitution could set out rights and responsibilities, reflecting our changing society and protect those less able to defend themselves. It could make explicit our shared values and rights and help us to define what it is to be British. However, I believe such a document must be drafted with great care, in line with our culture and traditions, and should remain consistent with the essential values and principles of our unwritten constitution. It should be approved by Parliament, as the voice of the people."
+Apple is concerned that helping the DOJ access the phone would open a dangerous path of precedent, that the government could force tech companies to compromise the security of their devices in the future. Apple has also expressed concern that it could curtail the public's trust in their products and has suggested that the DOJ should focus its efforts on creating additional legislative support for accessing devices, such as introducing new laws, rather than relying on court orders. 
+
+The battle between Apple and the DOJ is an important one for the future of technology and privacy. If Apple complies with the DOJ's order, it could set a dangerous legal precedent that could place the privacy of individuals at risk, and could potentially open the door for government requests for access to devices. It could also set a worrying precedent of government interference in private product developments and could significantly damage the trust that consumers have in tech companies. 
+
+At the same time, the DOJ has argued that compliance with the order is essential for the security and safety of American citizens, and that access to the iPhone could provide authorities with vital evidence regarding the San Bernardino attack. This has raised the question of whether the security and safety of the public should take precedence over the privacy of individuals.
+
+Ultimately, this case highlights the increasing importance of data privacy and the difficulty of navigating the new and ever-changing tenuous balance between security, privacy, and safety. It is important for both Apple and the DOJ to consider the long-term implications of their decisions and create a compromise that protects both the safety of the public and the privacy of individuals.

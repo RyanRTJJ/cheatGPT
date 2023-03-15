@@ -62,6 +62,11 @@ def _openai_sample(p, min_words=375):
         kwargs['top_p'] = args.top_p
     
     r = openai.Completion.create(prompt=f"{p}", **kwargs)
+
+    for _ in range(2):
+        if len(p.split()) + len(r['choices'][0].text.split()) > min_words - 75:
+            break
+        r = openai.Completion.create(prompt=f"{p}", **kwargs)
     return p + r['choices'][0].text
 
 # sample from base_model using ****only**** the first 30 tokens in each example as context
@@ -122,6 +127,13 @@ def sample_from_model(texts, base_tokenizer, gpt2_tokenizer, min_words=300, prom
         total_tokens = sum(len(gpt2_tokenizer.encode(x)) for x in decoded)
         API_TOKEN_COUNTER += total_tokens
 
+        # remove prompt, original, and decoded if they are too short
+        mask = [len(d.split()) >= (min_words - 75) for d in decoded]
+        print(f'kept {sum(mask)}/{len(mask)} samples')
+        decoded = [d for d, m in zip(decoded, mask) if m]
+        original = [t for t, m in zip(original, mask) if m]
+        prompts = [p for p, m in zip(prompts, mask) if m]
+
     # eliminate the prefix from the output
     decoded = [d[len(p):] for d, p in zip(decoded, prompts)]
     original = [t[len(p):] for t, p in zip(original, prompts)]
@@ -172,6 +184,9 @@ def generate_samples(raw_data, base_tokenizer, gpt2_tokenizer, batch_size):
             data["human"].append(o)
             data["LLM"].append(s)
             data["prompt"].append(p)
+
+    if args.openai_model:
+        print(f'data has {len(data["human"])} samples as {len(raw_data) - len(data["human"])} were too short')
 
     return data
 

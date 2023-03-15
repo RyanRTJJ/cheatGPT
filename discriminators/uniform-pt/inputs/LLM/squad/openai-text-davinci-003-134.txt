@@ -1,14 +1,7 @@
-, protested certain speeches by Chinese leaders during the relay. There was also a large demonstration of Falun Gong practitioners in Macau. In Chile, Tibetan protesters waved flags and banners in the path of the torch, calling for "freedom for Tibetan people", and a group of French protesters tried to extinguish the flame when it stopped for a ceremony in Paris. There were also protesters in San Francisco, some carrying Tibetan flags and others wearing T-shirts with slogans in English and Chinese. In Canberra, there were also anti-Chinese demonstrators who gathered outside Parliament House during the flame's visit. There were also protests in London against China's policies in Darfur, Tibet, and its human rights record. In many cities during the torch relay, the path of the flame was changed or altered in order to avoid conflicts with protesters.
+, with no option for the user to disable secure boot.
 
-See also
+Microsoft's decision to enable secure boot by default in Windows 8 has been heavily criticized by the free software community and other computer users, who argue that secure boot restricts the user's control over the device, prohibiting them from running operating systems or other software of their choosing. This has raised worries that manufacturers may choose to collude with Microsoft to restrict the range of software their devices will run. 
 
-* 2008 Summer Olympics
-* 2008 Summer Paralympics
+The main criticisms of Microsoft's decision to enable secure boot are that it limits user freedom, creates an unnecessary barrier to entry for non-Windows operating systems and software, and creates a potential for manufacturers to collude with Microsoft to limit what software their products will run. These criticisms have led some advocates of free and open source software to call for an end to the Windows 8 certification program and secure boot. 
 
-
-External links
-
-* The official website of the 2008 Summer Olympics flame relay (https://web.archive.org/web/20071202011050/http://en.beijing2008.cn/news/torch_relay/index.shtml)
-Category:History of the Olympic Torch Relay
-Olympic Torch Relay, 2008 Summer
-Category:2008 Summer Olympics
+Microsoft has attempted to address these criticisms by providing clear guidelines regarding secure boot and allowing users to turn it off or customize it. Microsoft has also introduced a process for creating a special key for users to add their own signed code, allowing users to run their own software. Microsoft has also said that it won't take any steps to block non-Windows systems from running on Windows 8 certified

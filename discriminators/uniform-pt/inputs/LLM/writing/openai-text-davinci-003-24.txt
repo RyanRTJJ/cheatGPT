@@ -1,10 +1,14 @@
 
-She had been coming to the same cafe every Thursday night, month after month and year after year. Nobody knew her name and she only spoke to the cafe worker to order her coffee. She seemed to be in a daze when she entered, taking off her shawl and hat and she always seemed the same -- eyes wide and face almost expressionless.
+The morning of July 8, 2015 began like any other for the employees of both United Airlines and New York Stock Exchange. Little did they know that their day would end quite differently.
 
-Her coffee order never changed, a coffee with two sugars. Even if the cafe ran out of sugar, she seemed almost relieved. She slowly sipped her coffee, her gaze a million miles away. Nobody knew what was on her mind as she stared out the window.
+Following the usual morning routine, mechanics worked on planes, customer service agents checked in passengers, and stockbrokers traded assignments. Everything suddenly came to a grinding halt at precisely 10:15 a.m. without warning, as the computer systems of both United Airlines and the NYSE crashed simultaneously.
 
-They were her own sort of sanctuary - the clouds from the thunder outside reminding her of rainy days and the warm lights of the cafe- and they seemed to calm her spirit. But deep within her, something was awakening, a need and a thirst that no coffee or beverage could quench.
+A shell-shocked silence filled the entire building as no one knew what was going on. It took a few moments for things to get back to normal, but it soon became clear that the outages were no coincidence.
 
-At the end of the night, the last sip of coffee would bring the slightest excitement to her eyes and the cafe workers knew it was time for her to go. She would carefully wrap up her hat and shawl, give a gentle nod to the workers, and walk out into the night.
+The truth began to emerge later in the day as reports of a massive cyberattack began to make headlines. Cybersecurity professionals had detected the presence of malicious software on the computer systems of both United Airlines and the New York Stock Exchange. This had caused the simultaneous crash and remained undetected until the attack happened.
 
-The look in her eyes and her unexplainable joy made it clear to all - she was a person without purpose, without excitement and without a destination, she was an addict, too preoccupied with her search for something that could never be found.
+The hackers had been planning this attack for weeks, targeting these two organizations specifically. Their malicious software was designed to give them access to sensitive financial and customer data, and they had been successful in their mission.
+
+The damage was widespread and had a significant impact on both organizations. It took days for the systems to be restored, costing United Airlines and the NYSE a huge amount of money in the process. Even after the systems were restored, the hackers had still obtained the sensitive data they had been after.
+
+The July 8 outages at United Airlines and the New York Stock Exchange will always be remembered as the first serious cyberattack of its kind. It highlighted the vulnerability of computer systems and the serious consequences of not properly protecting them.

@@ -1,5 +1,11 @@
-e was sentenced to four years and nine months in prison, banned from driving for eight years and four months, and ordered to pay a £120 victim surcharge.
+ed, were found to be jointly responsible.
 
-In court, Judge Eamon King said: "You are 41-years-of-age. You have a bright future before you and clearly a responsible position in the community. However this is an extremely serious offence.”
+The case against TAV Engineering Ltd related to incidents in late 2011, when two of its employees received electric shocks while working on a fuel-oil storage tank at a Hertfordshire Oil Storage Limited site. The company had failed to properly isolate the electricity supply and had also failed to check the electrical system or ensure that the employees had suitable protective equipment.
 
-He went on to describe the impact of the offence, saying: "The death of  Mr Mills has had a devastating effect on his family, and they have been dealt a life sentence of suffering by your actions.”
+The Health and Safety Executive (HSE) found that the company had not put in place the necessary procedures to provide effective electrical safety and had failed to adequately assess the risks associated with the work when it opened the tank. In addition, the company had not provided sufficient electrical know-how to the employees who were asked to do the work.
+
+Motherwell Control Systems Limited was found to have failed to ensure that the electricity supply to the tank was properly isolated, as well as failing to provide technical guidance on how to work safely with electricity on the site.
+
+HSE said: "Both firms fell short of the high safety standards expected of them, failing to protect the employees who were injured. It is vital that employers are fully aware of the electrical risks associated with tank installation – and that they take appropriate steps to protect their workers."
+
+Both companies were fined after pleading guilty to health and safety breaches. TAV Engineering Ltd was fined £45,800 and ordered to pay costs of £11,407, while Motherwell Control Systems Ltd was fined £1,000 and ordered to pay costs of £6,173.
