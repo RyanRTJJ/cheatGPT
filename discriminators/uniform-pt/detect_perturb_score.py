@@ -134,6 +134,10 @@ def perturb_texts_(texts, span_length, pct, ceil_pct=False):
     while '' in perturbed_texts:
         idxs = [idx for idx, x in enumerate(perturbed_texts) if x == '']
         print(f'WARNING: {len(idxs)} texts have no fills. Trying again [attempt {attempts}].')
+        if attempts > 1:
+            for idx in idxs:
+                perturbed_texts[idx] = "<<<FAILED>>>"
+            break
         masked_texts = [tokenize_and_mask(x, span_length, pct, ceil_pct) for idx, x in enumerate(texts) if idx in idxs]
         raw_fills = replace_masks(masked_texts)
         extracted_fills = extract_fills(raw_fills)
@@ -520,7 +524,7 @@ if __name__ == '__main__':
     parser.add_argument('--scoring_model_name', type=str, default="gpt2-medium")
     parser.add_argument('--mask_filling_model_name', type=str, default="t5-large")
     parser.add_argument('--batch_size', type=int, default=50)
-    parser.add_argument('--chunk_size', type=int, default=20)
+    parser.add_argument('--chunk_size', type=int, default=35)
     parser.add_argument('--openai_model', type=str, default=None)
     parser.add_argument('--mask_top_p', type=float, default=1.0)
     parser.add_argument('--cache_dir', type=str, default="~/.cache")
@@ -557,11 +561,11 @@ if __name__ == '__main__':
         os.makedirs(cache_dir)
     print(f"Using cache dir {cache_dir}")
 
-    PERTURBATIONS_FOLDER = f"detect/perturbations/{base_model_name}/{args.dataset}/"
+    PERTURBATIONS_FOLDER = f"/content/drive/MyDrive/cheatGPT/discriminators/uniform-pt/detect/perturbations/{base_model_name}/{args.dataset}/"
     if not os.path.exists(PERTURBATIONS_FOLDER):
         os.makedirs(PERTURBATIONS_FOLDER)
 
-    SAVE_FOLDER = f'detect/results/{base_model_name}/{scoring_model_string}/{args.dataset}/'
+    SAVE_FOLDER = f'/content/drive/MyDrive/cheatGPT/discriminators/uniform-pt/detect/results/{base_model_name}/{scoring_model_string}/{args.dataset}/'
     if not os.path.exists(SAVE_FOLDER):
         os.makedirs(SAVE_FOLDER)
 
@@ -569,21 +573,23 @@ if __name__ == '__main__':
     data = {}
     for key in ['LLM', 'human']:
         data[key] = []
-        LOAD_FOLDER = f"inputs/{key}/{args.dataset}"
-        for filename in os.listdir(LOAD_FOLDER):
-            if filename.startswith(base_model_name):
-                with open(os.path.join(LOAD_FOLDER, filename), "r") as f:
-                    data[key].append(f.read())
-
+        LOAD_FOLDER = f"/content/drive/MyDrive/inputs/inputs/{key}/{args.dataset}/"
+        for filename in sorted(os.listdir(LOAD_FOLDER)):
+          if filename.startswith(base_model_name):
+              with open(os.path.join(LOAD_FOLDER, filename), "r") as f:
+                  data[key].append(f.read())
+  
+    print(f'loaded in {len(data["LLM"])} stories')
+    
     if args.perturb:
         print(f"Loading mask filling model {mask_filling_model_name}...")
-        mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(mask_filling_model_name, cache_dir=cache_dir)
+        mask_model = transformers.AutoModelForSeq2SeqLM.from_pretrained(mask_filling_model_name)
         try:
             n_positions = mask_model.config.n_positions
         except AttributeError:
             n_positions = 512
 
-        mask_tokenizer = transformers.AutoTokenizer.from_pretrained(mask_filling_model_name, model_max_length=n_positions, cache_dir=cache_dir)
+        mask_tokenizer = transformers.AutoTokenizer.from_pretrained(mask_filling_model_name, model_max_length=n_positions)
     
         perturbations_list = []
         for n_perturbations in n_perturbation_list:
