@@ -28,7 +28,9 @@ class BERT(Discriminator):
         # defines underlying huggingface classification pipeline
         self.classifier = pipeline('sentiment-analysis',
                                    model='roberta-base-openai-detector',
-                                   return_all_scores=True)
+                                   return_all_scores=True,
+                                   device = 0
+                                   )
 
     # redefines discriminator methods
     # invokes huggingface pipeline thru self.classifier

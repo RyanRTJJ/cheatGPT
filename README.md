@@ -2,10 +2,7 @@
 ### Adversarial prompt-generation to test robustness of human/LLM text classifiers
 
 ## Bulletin
-- conda env currently nonfunctional
-    - existing env creation works
-    - detect-gpt seems to require CUDA, which is incompatible with macOS
-    - only submodule so far is detect-gpt, so submodule infrastructure is currently unused
+This is the `ec2` branch, which runs on our gpu-equipped cloud machine. Feel free to pull changes into it, but be careful pushing changes out for gpu compatibility reasons. Use the `proj` conda env (`conda activate proj`).
 
 ## Requirements
 
