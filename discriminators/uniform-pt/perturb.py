@@ -259,7 +259,7 @@ class Perturber:
         while '' in perturbed_texts:
             idxs = [idx for idx, x in enumerate(perturbed_texts) if x == '']
             print(f'WARNING: {len(idxs)} texts have no fills. Trying again [attempt {attempts}].')
-            masked_texts = [self.tokenize_and_mask(x, self.SPAN_LENGTH, self.PCT, self.CEIL_PCT) for idx, x in enumerate(texts) if idx in idxs]
+            masked_texts = [self.tokenize_and_mask(x) for idx, x in enumerate(texts) if idx in idxs]
             raw_fills = self.replace_masks(masked_texts)
             extracted_fills = self.extract_fills(raw_fills)
             new_perturbed_texts = self.apply_extracted_fills(masked_texts, extracted_fills)
@@ -285,6 +285,12 @@ class Perturber:
 
         text_lengths = np.array([len(tokenized_text) for tokenized_text in tokenized_texts])
         n_segments = np.floor(text_lengths / self.SEGMENT_LENGTH).astype(int)
+        print(f"min_n_segments {np.min(n_segments)}")
+        print(f"min_text_length: {np.min(text_lengths)}")
+        print(f"min_text_files: {np.argwhere(text_lengths < 200)}")
+        failed_length_idxs = np.argwhere(text_lengths < 200)
+        
+        print(f"SEGMENT_LENGTH: {self.SEGMENT_LENGTH}\n\n")
         segment_lengths = np.ceil(text_lengths / n_segments).astype(int)
         segmented_texts = []
         for idx, tokenized_text in enumerate(tokenized_texts):
@@ -332,22 +338,20 @@ class Perturber:
         What the function name suggests.
         """
         subdirs = os.listdir(self.FOLDER_TO_PERTURB)
-        files = [self.FOLDER_TO_PERTURB + '/' + subdir for subdir in subdirs if subdir.endswith('.txt')]
+        files = [self.FOLDER_TO_PERTURB + '/' + subdir for subdir in subdirs if subdir.endswith('.txt') and not subdir.startswith('openai')]
         story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.txt')]
-        print("\nfilenames:")
-        print("-" * 30)
-        print_list_nice(files)
-
+    
         texts = []
         for file in files:
             f = open(file, "r")
             text = f.read()
             texts.append(text)
             f.close()
-        
+
+        N_files = len(files)        
         segmented_stories = self.segment_texts(texts)
         for idx, segmented_story in enumerate(segmented_stories):
-            print(f"\nPROCESSING STORY {idx}...")
+            print(f"\nPROCESSING STORY {idx}/{N_files}...")
             perturb_grid = self.perturb_story_n_times(segmented_story) # a (N_PERTURBS, N_SEGMENTS) grid.
             os.makedirs(self.FOLDER_OF_PERTURBATIONS, exist_ok=True)
             # Save og
