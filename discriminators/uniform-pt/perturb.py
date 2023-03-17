@@ -339,7 +339,10 @@ class Perturber:
         """
         subdirs = os.listdir(self.FOLDER_TO_PERTURB)
         files = [self.FOLDER_TO_PERTURB + '/' + subdir for subdir in subdirs if subdir.endswith('.txt') and not subdir.startswith('openai')]
-        story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.txt')]
+        story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.txt') and not subdir.startswith('openai')]
+
+        files = files[48:]
+        story_names = story_names[48:]
     
         texts = []
         for file in files:
@@ -360,25 +363,32 @@ class Perturber:
             # Save perturbations
             with open(f'{self.FOLDER_OF_PERTURBATIONS}/{story_names[idx]}_pgrid.pkl', 'wb+') as f:
                 pickle.dump(perturb_grid, f)
-    
+
+
     def load_and_score_dir_of_stories(self):
-        """
-        Loads in .pkl files from self.FOLDER_OF_PERTURBATIONS.
-        Such a folder will be in the form: "results/{human or LLM}/{dataset}"
-        """
+        """                                                                                                                                 
+        Loads in .pkl files from self.FOLDER_OF_PERTURBATIONS.                                                                              
+        Such a folder will be in the form: "results/{human or LLM}/{dataset}"                                                                       """
         subdirs = os.listdir(self.FOLDER_OF_PERTURBATIONS)
-        files = [self.FOLDER_OF_PERTURBATIONS + '/' + subdir for subdir in subdirs if subdir.endswith('.pkl')]
-        story_names = [subdir[:-4] for subdir in subdirs if subdir.endswith('.pkl')]
+        files = [self.FOLDER_OF_PERTURBATIONS + '/' + subdir for subdir in subdirs if \
+                subdir.endswith('.pkl') and \
+                (subdir.startswith('EleutherAI') or subdir.startswith('facebook') or subdir.startswith('gpt2-xl'))
+        ]
+        story_names = [subdir[:-4] for subdir in subdirs  if \
+                subdir.endswith('.pkl') and \
+                (subdir.startswith('EleutherAI') or subdir.startswith('facebook') or subdir.startswith('gpt2-xl'))
+        ]
+        print(story_names)
+        print(f"Number of files: {len(story_names)}")
         os.makedirs(self.LL_SAVE_LOC, exist_ok=True)
-    
+
         for idx, file in enumerate(files):
             perturb_grid = None
             with open(file, 'rb') as f:
                 perturb_grid = pickle.load(f)
-            print(f"\nGrading story {file}...")
+            print(f"\nGrading story {idx}/{len(files)}...")
             ll_grid = self.get_ll_of_grid(perturb_grid)
             np.save(f"{self.LL_SAVE_LOC}/{story_names[idx]}.npy", ll_grid)
-
         
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
