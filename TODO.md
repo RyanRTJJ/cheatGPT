@@ -24,23 +24,31 @@
 - [ ] Enumerate over known prompts
 - [ ] RLHF
 6. Define adversarial agent A
-- Jacob doesn't wanna do this part
-- maybe nobody's doing this part?
+- [ ] "adversary" class
+    - train method to optimize current promp
+    - generate_prompt gives current best prompt
+    - looklike on/offline training for RL
 7. pipelining of UPT
-- [ ] stress-testing on more data (Raghav)
-- [ ] defining a statistically rigorous test (Ryan)
+- [x] stress-testing on more data (Raghav)
+- [x] defining a statistically rigorous test (Ryan)
+<!--
+no time to do these 
 - [ ] converting to Discriminator class (not Jacob)
 - [ ] testing using existing framework (Jacob)
+-->
 8. Define more generators
 - [ ] GPT-3
-    - use OpenAI API
-    - is Raghav already doing this for pipelining UPT?
-- [ ] other stuff?
+    - generation
+    - Pr[generation] (for FF)
+    - detection
+<!-- no time
+    - [ ] other stuff?
     - probably needs to be via API
-    - how to integrate w fitness fn?
+    - how to integrate w fitness fn? -->
 9. Remote compute
 - [x] get remote server working
 - [ ] write gpu-efficient code
+- [ ] wrangle gpu from ryan >:()
 10. Experiments
 - [ ] can we break dumb discriminators (OpenAI?)
 - [ ] can we break smart discriminators (DetectGPT, UPT)
