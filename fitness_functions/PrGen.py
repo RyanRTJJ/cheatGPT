@@ -35,7 +35,7 @@ class PrGen(FitnessFunction):
         return cls.m * x + cls.b
 
     # sets device default for gpu parallelization
-    DEVICE = 'cpu'
+    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # LM
     base_tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
