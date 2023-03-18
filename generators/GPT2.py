@@ -27,9 +27,16 @@ class GPT2(Generator):
     # redefines generator methods
     # invokes huggingface pipeline thru self.generator
     def generate(self, prompt):
-        passage_unformatted = self.generator(prompt, max_length=Generator.PASSAGE_LENGTH, do_sample=True)
+        passage_unformatted = self.generator(prompt, 
+                                             min_length = Generator.PASSAGE_LENGTH,
+                                             max_length = Generator.PASSAGE_LENGTH, 
+                                             do_sample = True)
         return passage_unformatted[0]['generated_text']
 
     def generate_batch(self, prompt, num_responses):
-        passages_unformatted = self.generator(prompt, max_length=Generator.PASSAGE_LENGTH, do_sample=True, num_return_sequences=num_responses)
+        passages_unformatted = self.generator(prompt, 
+                                              min_length = Generator.PASSAGE_LENGTH,
+                                              max_length = Generator.PASSAGE_LENGTH, 
+                                              do_sample = True, 
+                                              num_return_sequences=num_responses)
         return [passage_unformatted['generated_text'] for passage_unformatted in passages_unformatted]
