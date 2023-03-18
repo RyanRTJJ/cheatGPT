@@ -1,9 +1,10 @@
 name: proj
 channels:
+  - huggingface
   - pytorch
   - nvidia
   - defaults
-  - conda-forge
+  # - conda-forge
 dependencies:
 - nvidia::cudatoolkit
 - torchvision
@@ -11,7 +12,9 @@ dependencies:
 - numpy
 - transformers
 - datasets
+- evaluate
 - matplotlib
 - tqdm
 - scikit-learn
-- openai
+- conda-forge::openai
+- ipykernel

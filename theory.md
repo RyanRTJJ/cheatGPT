@@ -3,11 +3,11 @@
     - *prompt-agnostic*: **doesn't** take in a prompt
     - *prompt-specific*: **does** take in a prompt
 - component functions are represented by letters
-    - L: language model
-    - D: discriminator
-    - f: fitness function
-    - u: utility function
-    - A: adversarial agent
+    - L(p): language model
+    - D(Lp): discriminator
+    - f(p, LAp): fitness function
+    - u(D, L): utility function
+    - A(p): adversarial agent
 - function concatenation omits parenthesis for simplicity
     - ex: LAp = L(A(p))
     - "the language model applied to the adversarial modification of the original prompt"

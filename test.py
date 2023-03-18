@@ -65,18 +65,21 @@ def test_discriminators():
 def test_fitness_functions():
     
     # initializes fitness function
-    fitness_function = fitness_functions.TrivialFitnessFunction.TrivialFitnessFunction()
+    fitness_function = fitness_functions.PrGen.PrGen()
+
+    # dummy prompt for prompt-specific fitness functions
+    null_prompt = "write a binary string of length 10000: "
 
     # tests fitness function on reference passages
     for filename, passage in passages.items():
         print("\n\t FILENAME: " + filename)
         # print("\t PASSAGE: " + passage)
         # print("\t PASSAGE LENGTH: " + str(len(passage)))
-        fitness = fitness_function.evaluate(passage)
+        fitness = fitness_function.evaluate(null_prompt, passage)
         print("\t FITNESS: ", fitness)
 
     # tests fitness function on batch of passages
-    fitnesses = fitness_function.evaluate_batch(list(passages.values()))
+    fitnesses = fitness_function.evaluate_batch(null_prompt, list(passages.values()))
 
 # test harness for utility function
 def test_utility_function():
