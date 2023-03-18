@@ -4,13 +4,17 @@ combined testing harness for component packages
 provides test method for each component package
 """
 
+# imports
+import pprint
+
 # component imports
 import generators
 import discriminators
 import fitness_functions
 import utility_functions
+import adversaries
 
-# for reading in reference passages
+# for reading in reference passages + prompts
 import os
 import json
 
@@ -24,14 +28,30 @@ INPUT_FILE = "reference_passages.json"
 INPUT_PATH = os.path.join(proj_path, INPUT_FILE)
 passages = json.load(open(INPUT_PATH, 'r'))
 
+# defines path to reference_prompts
+FILENAME = "jacob.txt"
+INPUT_FILE = f"reference_prompts/{FILENAME}"
+INPUT_PATH = os.path.join(proj_path, INPUT_FILE)
+
+# reads input file line by line
+with open(INPUT_PATH, 'r') as f:
+    prompts = f.readlines()
+
+# initializes default components
+generator = generators.GPT2()
+discriminator = discriminators.BERT()
+fitness_function = fitness_functions.TrivialFitnessFunction()
+utility_function = utility_functions.PFUF(generator, discriminator, fitness_function)
+adversary = adversaries.UninformedSearch(utility_function, prompts)
+
 # test harness for generator package
 def test_generators():
 
     # initializes generator
-    generator = generators.GPT2.GPT2()
+    # generator = generators.GPT2.GPT2()
 
     # defines prompt
-    prompt = ""
+    prompt = "what do you get when you multiply six by nine?"
     print("\n\t PROMPT: " + prompt)
 
     # generates passage
@@ -48,7 +68,7 @@ def test_generators():
 def test_discriminators():
     
     # initializes discriminator
-    discriminator = discriminators.BERT.BERT()
+    # discriminator = discriminators.BERT.BERT()
 
     # tests discriminator on reference passages
     for filename, passage in passages.items():
@@ -65,7 +85,7 @@ def test_discriminators():
 def test_fitness_functions():
     
     # initializes fitness function
-    fitness_function = fitness_functions.PrGen.PrGen()
+    # fitness_function = fitness_functions.PrGen.PrGen()
 
     # dummy prompt for prompt-specific fitness functions
     null_prompt = "write a binary string of length 10000: "
@@ -85,17 +105,32 @@ def test_fitness_functions():
 def test_utility_functions():
     
     # initializes components
-    generator = generators.GPT2.GPT2()
-    discriminator = discriminators.BERT.BERT()
-    fitness_function = fitness_functions.TrivialFitnessFunction.TrivialFitnessFunction()
-    utility_function = utility_functions.PFUF.PFUF(generator, discriminator, fitness_function)
+    # generator = generators.GPT2.GPT2()
+    # discriminator = discriminators.BERT.BERT()
+    # fitness_function = fitness_functions.TrivialFitnessFunction.TrivialFitnessFunction()
+    # utility_function = utility_functions.PFUF.PFUF(generator, discriminator, fitness_function)
 
     # evaluates utility of test prompt
     prompt = ""
-    num_samples = 1
-    utility = utility_function.PA_u(prompt)
-    print("\n\t UTILITY: ", utility)
+    # num_samples = 1
+    ui = utility_function.PA_u_interpretable(prompt)
+    
+    # pretty prints utility json ui
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(ui)
 
 # test harness for adversaries
 def test_adversaries():
-    pass
+    
+    # trains & tests adversary
+    # gets optimal prompt
+    adversary.train()
+    optimal_prompt = adversary.test()
+
+    # evaluates returned prompt
+    print("\n\t OPTIMAL PROMPT: " + optimal_prompt)
+    ui = utility_function.PA_u_interpretable(optimal_prompt)
+    
+    # pretty prints utility json ui
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(ui)

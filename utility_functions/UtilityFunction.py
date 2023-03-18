@@ -8,7 +8,7 @@ objective function in approaches 1, 2
 import numpy as np
 from utility_functions.synthesis_functions import DEFAULT_SYNTHESIS_FN
 
-class UtilityFunction():
+class UtilityFunction:
 
     # default number of samples p -> L(p) taken by utility fn
     NUM_SAMPLES = 10
@@ -39,3 +39,23 @@ class UtilityFunction():
         # synthesize D, f scores
         utility_batch = np.vectorize(self.synthesizer)(DLp_batch, fLp_batch)
         return np.average(utility_batch)
+
+    # interpretable version - returns metadata
+    def u_interpretable(self, p, p_0):
+            
+        Lp_batch = self.L.generate_batch(p, self.NUM_SAMPLES)
+        DLp_batch = self.D.discriminate_batch(Lp_batch)
+        fLp_batch = self.f.evaluate_batch(p, Lp_batch)
+
+        # synthesize D, f scores
+        utility_batch = np.vectorize(self.synthesizer)(DLp_batch, fLp_batch)
+
+        # returns everything!
+        return {
+            "prompt": p,
+            "Lp_batch": Lp_batch,
+            "DLp_batch": DLp_batch,
+            "fLp_batch": fLp_batch,
+            "utility_batch": utility_batch,
+        }
+    

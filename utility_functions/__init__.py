@@ -3,5 +3,5 @@ instantiates utility functions package
 imports components for package use
 """
 
-from . import PDUF
-from . import PFUF
+from utility_functions.PFUF import PFUF
+from utility_functions.PDUF import PDUF
