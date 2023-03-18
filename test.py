@@ -8,7 +8,7 @@ provides test method for each component package
 import generators
 import discriminators
 import fitness_functions
-import utility_function
+import utility_functions
 
 # for reading in reference passages
 import os
@@ -82,16 +82,16 @@ def test_fitness_functions():
     fitnesses = fitness_function.evaluate_batch(null_prompt, list(passages.values()))
 
 # test harness for utility function
-def test_utility_function():
+def test_utility_functions():
     
     # initializes components
     generator = generators.GPT2.GPT2()
     discriminator = discriminators.BERT.BERT()
     fitness_function = fitness_functions.TrivialFitnessFunction.TrivialFitnessFunction()
-    u = utility_function.u
+    utility_function = utility_functions.PFUF.PFUF(generator, discriminator, fitness_function)
 
     # evaluates utility of test prompt
     prompt = ""
     num_samples = 1
-    utility = u(prompt, generator, discriminator, fitness_function, num_samples)
+    utility = utility_function.PA_u(prompt)
     print("\n\t UTILITY: ", utility)

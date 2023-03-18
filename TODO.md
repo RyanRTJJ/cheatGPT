@@ -1,3 +1,17 @@
+# Jacob's Small and Urgent TODO
+- [ ] theoretical foundation for PrGen
+    - [ ] superlcass w handler methods (get_ll) for optionality?
+    - [ ] write up methods for paper
+- [ ] define adversary classes
+    - [ ] random search
+    - [ ] RLHF
+    - [ ] prompt-specific vs agnostic?!
+- [ ] robust prompt-specific vs agnostic framework
+    - [ ] utility fns
+        - implement class structure
+    - [ ] adversaries
+        - given a prompt-s/a utility fn
+
 # Big TODO
 1. set up prebuilt LLM components
     - [x] generator: [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model (specifically [HuggingFace](https://huggingface.co/gpt2))

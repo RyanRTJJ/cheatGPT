@@ -10,7 +10,7 @@ from .FitnessFunction import FitnessFunction
 class PAFitnessFunction(FitnessFunction):
 
     # defines a prompt-agnostic fitness functions
-
+    # QN: how do callers (utility fns) handle prompt-agnostic case?
 
     # evaluates a single passage
     def PA_evaluate(self, passage):
