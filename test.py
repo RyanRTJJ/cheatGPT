@@ -95,3 +95,7 @@ def test_utility_functions():
     num_samples = 1
     utility = utility_function.PA_u(prompt)
     print("\n\t UTILITY: ", utility)
+
+# test harness for adversaries
+def test_adversaries():
+    pass

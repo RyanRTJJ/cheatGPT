@@ -7,9 +7,9 @@
     - [ ] RLHF
     - [ ] prompt-specific vs agnostic?!
 - [ ] robust prompt-specific vs agnostic framework
-    - [ ] utility fns
+    - [x] utility fns
         - implement class structure
-    - [ ] adversaries
+    - [x] adversaries
         - given a prompt-s/a utility fn
 
 # Big TODO
