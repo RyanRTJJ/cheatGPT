@@ -16,7 +16,7 @@
 - [x] trivial
 - [x] as described in milestone report (`fitness_functions/PrGen.py`)
 - [ ] other things?
-    - [ ] MAUVE (JACOB: MAUVE seems bas)
+    - [ ] MAUVE (JACOB: MAUVE seems bad)
     - [ ] n-gram
 5. Implement search over prompts
 - [x] Try Things
@@ -27,10 +27,13 @@
 - Jacob doesn't wanna do this part
 - maybe nobody's doing this part?
 7. pipelining of UPT
-- [ ] stress-testing on more data (Raghav)
-- [ ] defining a statistically rigorous test (Ryan)
+- [x] stress-testing on more data (Raghav)
+- [x] defining a statistically rigorous test (Ryan)
+<!--
+no time to do these 
 - [ ] converting to Discriminator class (not Jacob)
 - [ ] testing using existing framework (Jacob)
+-->
 8. Define more generators
 - [ ] GPT-3
     - use OpenAI API
