@@ -40,7 +40,7 @@ with open(INPUT_PATH, 'r') as f:
 # initializes default components
 generator = generators.GPT2()
 discriminator = discriminators.BERT()
-fitness_function = fitness_functions.TrivialFitnessFunction()
+fitness_function = fitness_functions.PaperPrGen()
 utility_function = utility_functions.PFUF(generator, discriminator, fitness_function)
 adversary = adversaries.UninformedSearch(utility_function, prompts)
 
@@ -88,7 +88,7 @@ def test_fitness_functions():
     # fitness_function = fitness_functions.PrGen.PrGen()
 
     # dummy prompt for prompt-specific fitness functions
-    null_prompt = "write a binary string of length 10000: "
+    null_prompt = ""
 
     # tests fitness function on reference passages
     for filename, passage in passages.items():

@@ -4,4 +4,4 @@ imports components for package use
 """
 
 from fitness_functions.TrivialFitnessFunction import TrivialFitnessFunction
-from fitness_functions.PrGen import PrGen
+from fitness_functions.PaperPrGen import PaperPrGen

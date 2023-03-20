@@ -20,6 +20,20 @@ class PrGen(FitnessFunction):
 
     # global constants
 
+    # compares given prompt to baseline prompt pb
+    # we choose null prompt as modeling decision
+    baseline_prompt = ""
+
+    # linear transformation from probability to score
+    m = 1
+    b = 0
+
+    # converts probability to score
+    # y = m * x + b from class constants
+    @classmethod
+    def LT(cls, x):
+        return cls.m * x + cls.b
+
     # sets device default for gpu parallelization
     DEVICE = 'cpu'
 
@@ -48,5 +62,24 @@ class PrGen(FitnessFunction):
             # scales by number of tokens
             n_tokens = labels.shape[1]
             return avg_ll * n_tokens
+
+    # evaluates a single passage
+    def evaluate(self, prompt, passage):
+
+        # computes needed log probabilities
+        # returns positive log loss!!!
+
+        # computes Pr[passage | prompt]
+        Lp_given_p0 = self.get_ll(prompt + passage) - self.get_ll(prompt)
+
+        # computes Pr[passage | baseline prompt]
+        Lp_given_pb = self.get_ll(self.baseline_prompt + passage) - self.get_ll(self.baseline_prompt)
+
+        # computes delta log probability
+        # positive DLP <-> p_0 is more explanatory
+        delta_log_prob = Lp_given_p0 - Lp_given_pb
+
+        # converts delta probability to score
+        return sigmoid(self.LT(delta_log_prob))
 
 
