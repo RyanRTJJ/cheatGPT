@@ -2,3 +2,6 @@
 	path = discriminators/detect-gpt
 	url = https://github.com/eric-mitchell/detect-gpt
 	ignore = dirty
+[submodule "trlx"]
+	path = trlx
+	url = https://github.com/CarperAI/trlx

@@ -1,10 +1,25 @@
+# Jacob's Small and Urgent TODO
+- [x] theoretical foundation for PrGen
+    - [x] superlcass w handler methods (get_ll) for optionality?
+    - [x] write up methods for paper
+- [x] define adversary classes
+    - [x] random search
+    - [ ] RLHF
+    - [x] prompt-specific vs agnostic?!
+- [x] robust prompt-specific vs agnostic framework
+    - [x] utility fns
+        - implement class structure
+    - [x] adversaries
+        - given a prompt-s/a utility fn
+    - it's awful and i hate it
+
 # Big TODO
 1. set up prebuilt LLM components
     - [x] generator: [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model (specifically [HuggingFace](https://huggingface.co/gpt2))
     - discriminators
         - [x] [detectGPT](https://github.com/eric-mitchell/detect-gpt)
         - [x] [OpenAI](https://huggingface.co/roberta-base-openai-detector)
-        - [ ] [GROVER](https://blog.allenai.org/counteracting-neural-disinformation-with-grover-6cf6690d463b)
+        <!-- - [ ] [GROVER](https://blog.allenai.org/counteracting-neural-disinformation-with-grover-6cf6690d463b) -->
 2. Define domain of prompts p
 - [x] Jacob thinks this should be in terms of a fitness fn
     - also need a length constraint? infinite search space seems unstructured
@@ -15,17 +30,19 @@
 4. Define fitness fns
 - [x] trivial
 - [x] as described in milestone report (`fitness_functions/PrGen.py`)
-- [ ] other things?
-    - [ ] MAUVE (JACOB: MAUVE seems bad)
-    - [ ] n-gram
+<!-- - [ ] other things?
+    - [ ] MAUVE (JACOB: MAUVE seems bas)
+    - [ ] n-gram -->
 5. Implement search over prompts
 - [x] Try Things
 - [ ] Random search?
-- [ ] Enumerate over known prompts
+- [x] Enumerate over known prompts
 - [ ] RLHF
 6. Define adversarial agent A
-- Jacob doesn't wanna do this part
-- maybe nobody's doing this part?
+- [x] "adversary" class
+    - train method to optimize current promp
+    - generate_prompt gives current best prompt
+    - looklike on/offline training for RL
 7. pipelining of UPT
 - [x] stress-testing on more data (Raghav)
 - [x] defining a statistically rigorous test (Ryan)
@@ -36,14 +53,17 @@ no time to do these
 -->
 8. Define more generators
 - [ ] GPT-3
-    - use OpenAI API
-    - is Raghav already doing this for pipelining UPT?
-- [ ] other stuff?
+    - generation
+    - Pr[generation] (for FF)
+    - detection
+<!-- no time
+    - [ ] other stuff?
     - probably needs to be via API
-    - how to integrate w fitness fn?
+    - how to integrate w fitness fn? -->
 9. Remote compute
 - [x] get remote server working
 - [ ] write gpu-efficient code
+- [x] wrangle gpu from ryan >:()
 10. Experiments
 - [ ] can we break dumb discriminators (OpenAI?)
 - [ ] can we break smart discriminators (DetectGPT, UPT)

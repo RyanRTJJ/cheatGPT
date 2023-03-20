@@ -8,6 +8,7 @@ class Discriminator:
 
     # classifies a single passage
     # predicts Pr \in [0, 1] that passage is HUMAN-generated
+    # returns log pr
     # to be maximized by adversary
     def discriminate(self, passage):
         raise NotImplementedError

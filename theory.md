@@ -26,6 +26,8 @@
         - utility is analogous to (1) above
 - fitness fn (and thus utility) is NO LONGER prompt-agnostic
     - utility is now prompt-specific
+- notion of "target prompt" p_0
+    - seen by everything prompt-specific
 
 ## Open questions/debates
 - does utility factor through L?
