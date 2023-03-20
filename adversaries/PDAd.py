@@ -11,13 +11,13 @@ from adversaries.PAdversary import PAdversary
 class PDAd(PAdversary):
 
     # initializes PDAd
-    def __init__(self, utility_function, p_0):
+    def __init__(self, utility_function, p):
         super().__init__(utility_function)
-        self.p_0 = p_0
+        self.p = p
 
     # defines train, test in terms of p_0
     # def PA_train(self):
     #     return self.train(self.p_0)
     
     def PA_test(self):
-        return self.test(self.p_0)
+        return self.test(self.p)

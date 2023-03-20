@@ -16,7 +16,7 @@ class Adversary:
         self.utility_function = utility_function
 
     # stubs for train, test methods
-    def train(self, ):
+    def train(self):
         raise NotImplementedError
 
     def test(self, prompt):

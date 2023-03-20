@@ -24,10 +24,12 @@ class PrGen(FitnessFunction):
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # LM
+    # sends everything to DEVICE by default
     base_tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
     base_tokenizer.pad_token_id = base_tokenizer.eos_token_id
 
     base_model = transformers.AutoModelForCausalLM.from_pretrained('gpt2')
+    base_model.to(DEVICE)
 
     # base method for computing Pr[Lp | p_0]
     # adapted from DetectGPT

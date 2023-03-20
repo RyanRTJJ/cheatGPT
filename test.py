@@ -64,8 +64,9 @@ def test_generators():
     print("\n\t PASSAGE: " + passage)
 
     # generates batch of passages
-    N_PASSAGES = 2
+    N_PASSAGES = 10
     passages = generator.generate_batch(prompt, N_PASSAGES)
+    return passages
 
 # test harness for discriminator package
 def test_discriminators():
@@ -83,6 +84,7 @@ def test_discriminators():
 
     # tests discriminator on batch of passages
     classifications = discriminator.discriminate_batch(list(passages.values()))
+    return classifications
 
 # test harness for fitness function package
 def test_fitness_functions():
@@ -103,6 +105,7 @@ def test_fitness_functions():
 
     # tests fitness function on batch of passages
     fitnesses = fitness_function.evaluate_batch(null_prompt, list(passages.values()))
+    return fitnesses
 
 # test harness for utility function
 def test_utility_functions():
