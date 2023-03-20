@@ -28,34 +28,30 @@ class UtilityFunction:
         # sets synthesis function
         self.synthesizer = synthesizer
 
-    # p -> u
-    # fn of target prompt p_0
-    def u(self, p, p_0):
-
-        Lp_batch = self.L.generate_batch(p, self.NUM_SAMPLES)
-        DLp_batch = self.D.discriminate_batch(Lp_batch)
-        fLp_batch = self.f.evaluate_batch(p, Lp_batch)
-
-        # synthesize D, f scores
-        utility_batch = np.vectorize(self.synthesizer)(DLp_batch, fLp_batch)
-        return np.average(utility_batch)
-
     # interpretable version - returns metadata
-    def u_interpretable(self, p, p_0):
+    def u_interpretable(self, Ap, p):
             
-        Lp_batch = self.L.generate_batch(p, self.NUM_SAMPLES)
-        DLp_batch = self.D.discriminate_batch(Lp_batch)
-        fLp_batch = self.f.evaluate_batch(p, Lp_batch)
+        LAp_batch = self.L.generate_batch(Ap, self.NUM_SAMPLES)
+        DLAp_batch = self.D.discriminate_batch(LAp_batch)
+        fLAp_batch = self.f.evaluate_batch(p, LAp_batch)
 
         # synthesize D, f scores
-        utility_batch = np.vectorize(self.synthesizer)(DLp_batch, fLp_batch)
+        utility_batch = np.vectorize(self.synthesizer)(DLAp_batch, fLAp_batch)
 
         # returns everything!
         return {
-            "prompt": p,
-            "Lp_batch": Lp_batch,
-            "DLp_batch": DLp_batch,
-            "fLp_batch": fLp_batch,
+            "prompt": Ap,
+            "Lp_batch": LAp_batch,
+            "DLp_batch": DLAp_batch,
+            "fLp_batch": fLAp_batch,
             "utility_batch": utility_batch,
         }
+    
+    # Ap -> u
+    # fn of target prompt p
+    def u(self, Ap, p):
+
+        # calls u_interpretable
+        utility_batch = self.u_interpretable(Ap, p)["utility_batch"]
+        return np.average(utility_batch)
     

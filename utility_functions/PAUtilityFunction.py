@@ -11,7 +11,7 @@ from utility_functions.synthesis_functions import DEFAULT_SYNTHESIS_FN
 class PAUtilityFunction(UtilityFunction):
 
     # template method
-    def PA_u(self, p): raise NotImplementedError
+    def PA_u(self, Ap): raise NotImplementedError
 
     # interpretable version - returns metadata
-    def PA_u_interpretable(self, p): raise NotImplementedError
+    def PA_u_interpretable(self, Ap): raise NotImplementedError

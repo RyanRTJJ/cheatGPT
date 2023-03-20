@@ -37,11 +37,14 @@ INPUT_PATH = os.path.join(proj_path, INPUT_FILE)
 with open(INPUT_PATH, 'r') as f:
     prompts = f.readlines()
 
+# default (target) prompt
+prompt = "write me a college essay"
+
 # initializes default components
 generator = generators.GPT2()
 discriminator = discriminators.BERT()
 fitness_function = fitness_functions.PaperPrGen()
-utility_function = utility_functions.PFUF(generator, discriminator, fitness_function)
+utility_function = utility_functions.PDUF(generator, discriminator, fitness_function, prompt)
 adversary = adversaries.UninformedSearch(utility_function, prompts)
 
 # test harness for generator package
@@ -118,6 +121,7 @@ def test_utility_functions():
     # pretty prints utility json ui
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(ui)
+    return ui
 
 # test harness for adversaries
 def test_adversaries():
@@ -134,3 +138,4 @@ def test_adversaries():
     # pretty prints utility json ui
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(ui)
+    return ui

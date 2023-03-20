@@ -1,16 +1,17 @@
 # Jacob's Small and Urgent TODO
-- [ ] theoretical foundation for PrGen
-    - [ ] superlcass w handler methods (get_ll) for optionality?
-    - [ ] write up methods for paper
+- [x] theoretical foundation for PrGen
+    - [x] superlcass w handler methods (get_ll) for optionality?
+    - [x] write up methods for paper
 - [ ] define adversary classes
-    - [ ] random search
+    - [x] random search
     - [ ] RLHF
-    - [ ] prompt-specific vs agnostic?!
-- [ ] robust prompt-specific vs agnostic framework
+    - [x] prompt-specific vs agnostic?!
+- [x] robust prompt-specific vs agnostic framework
     - [x] utility fns
         - implement class structure
     - [x] adversaries
         - given a prompt-s/a utility fn
+    - it's awful and i hate it
 
 # Big TODO
 1. set up prebuilt LLM components

@@ -1,6 +1,11 @@
 """
 prompt-free utility fn
 uses prompt-agnostic components (f)
+
+PROBABLY SHOULDN'T BE USED
+PDUF w null prompt probably suffices
+j call prompt-specific ff methods;
+they'll auto-call relevant prompt-agnostic methods
 """
 
 # imports

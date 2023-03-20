@@ -1,6 +1,6 @@
 """
 trivial fitness function
-assigns fitness 1 to any passage
+assigns fitness 0 to any passage
 prompt-agnostic (trivially...)
 used for testing purposes
 """
@@ -10,6 +10,6 @@ from .PAFitnessFunction import PAFitnessFunction
 
 class TrivialFitnessFunction(PAFitnessFunction):
 
-    # fitness of any passage is 1
+    # fitness of any passage is 0
     def PA_evaluate(self, passage):
-        return 1
+        return 0

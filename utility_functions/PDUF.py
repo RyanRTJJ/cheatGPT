@@ -10,13 +10,16 @@ from utility_functions.PAUtilityFunction import PAUtilityFunction
 class PDUF(PAUtilityFunction):
 
     # takes in prompt p_0
-    def __init__(self, L, D, f, p_0):
+    def __init__(self, L, D, f, p):
         # calls superclass constructor
         super().__init__(L, D, f)
 
         # sets default prompt
-        self.p_0 = p_0
+        self.p = p
 
     # eval.s utility fn using default prompt
-    def PA_u(self, p):
-        return self.evaluate(p, self.p_0)
+    def PA_u(self, Ap):
+        return self.u(Ap, self.p)
+
+    def PA_u_interpretable(self, Ap):
+        return self.u_interpretable(Ap, self.p)
