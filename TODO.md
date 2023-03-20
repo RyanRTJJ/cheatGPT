@@ -2,7 +2,7 @@
 - [x] theoretical foundation for PrGen
     - [x] superlcass w handler methods (get_ll) for optionality?
     - [x] write up methods for paper
-- [ ] define adversary classes
+- [x] define adversary classes
     - [x] random search
     - [ ] RLHF
     - [x] prompt-specific vs agnostic?!
@@ -19,7 +19,7 @@
     - discriminators
         - [x] [detectGPT](https://github.com/eric-mitchell/detect-gpt)
         - [x] [OpenAI](https://huggingface.co/roberta-base-openai-detector)
-        - [ ] [GROVER](https://blog.allenai.org/counteracting-neural-disinformation-with-grover-6cf6690d463b)
+        <!-- - [ ] [GROVER](https://blog.allenai.org/counteracting-neural-disinformation-with-grover-6cf6690d463b) -->
 2. Define domain of prompts p
 - [x] Jacob thinks this should be in terms of a fitness fn
     - also need a length constraint? infinite search space seems unstructured
@@ -30,16 +30,16 @@
 4. Define fitness fns
 - [x] trivial
 - [x] as described in milestone report (`fitness_functions/PrGen.py`)
-- [ ] other things?
+<!-- - [ ] other things?
     - [ ] MAUVE (JACOB: MAUVE seems bas)
-    - [ ] n-gram
+    - [ ] n-gram -->
 5. Implement search over prompts
 - [x] Try Things
 - [ ] Random search?
-- [ ] Enumerate over known prompts
+- [x] Enumerate over known prompts
 - [ ] RLHF
 6. Define adversarial agent A
-- [ ] "adversary" class
+- [x] "adversary" class
     - train method to optimize current promp
     - generate_prompt gives current best prompt
     - looklike on/offline training for RL
@@ -63,7 +63,7 @@ no time to do these
 9. Remote compute
 - [x] get remote server working
 - [ ] write gpu-efficient code
-- [ ] wrangle gpu from ryan >:()
+- [x] wrangle gpu from ryan >:()
 10. Experiments
 - [ ] can we break dumb discriminators (OpenAI?)
 - [ ] can we break smart discriminators (DetectGPT, UPT)
