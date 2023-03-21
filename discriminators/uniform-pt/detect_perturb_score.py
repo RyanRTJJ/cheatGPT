@@ -16,6 +16,7 @@ import functools
 import custom_datasets
 from multiprocessing.pool import ThreadPool
 import time
+import math
 
 
 
@@ -444,7 +445,7 @@ def load_base_model_and_tokenizer(name):
         base_model_kwargs.update(dict(torch_dtype=torch.float16))
     if 'gpt-j' in name:
         base_model_kwargs.update(dict(revision='float16'))
-    base_model = transformers.AutoModelForCausalLM.from_pretrained(name, **base_model_kwargs, cache_dir=cache_dir)
+    base_model = transformers.AutoModelForCausalLM.from_pretrained(name, **base_model_kwargs)
 
     optional_tok_kwargs = {}
     if "facebook/opt-" in name:
@@ -452,22 +453,22 @@ def load_base_model_and_tokenizer(name):
         optional_tok_kwargs['fast'] = False
     if args.dataset in ['pubmed', 'writing']:
         optional_tok_kwargs['padding_side'] = 'left'
-    base_tokenizer = transformers.AutoTokenizer.from_pretrained(name, **optional_tok_kwargs, cache_dir=cache_dir)
+    base_tokenizer = transformers.AutoTokenizer.from_pretrained(name, **optional_tok_kwargs)
     base_tokenizer.pad_token_id = base_tokenizer.eos_token_id
 
     return base_model, base_tokenizer
 
 def eval_supervised(data, model):
     print(f'Beginning supervised evaluation with {model}...')
-    detector = transformers.AutoModelForSequenceClassification.from_pretrained(model, cache_dir=cache_dir).to(DEVICE)
-    tokenizer = transformers.AutoTokenizer.from_pretrained(model, cache_dir=cache_dir)
+    detector = transformers.AutoModelForSequenceClassification.from_pretrained(model).to(DEVICE)
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model)
 
     real, fake = data['human'], data['LLM']
 
     with torch.no_grad():
         # get predictions for real
         real_preds = []
-        for batch in tqdm.tqdm(math.ceil(range(len(real) / batch_size)), desc="Evaluating real"):
+        for batch in tqdm.tqdm(range(math.ceil(len(real) / batch_size)), desc="Evaluating real"):
             batch_real = real[batch * batch_size:(batch + 1) * batch_size]
             batch_real = tokenizer(batch_real, padding=True, truncation=True, max_length=512, return_tensors="pt").to(DEVICE)
             real_preds.extend(detector(**batch_real).logits.softmax(-1)[:,0].tolist())
@@ -578,6 +579,27 @@ if __name__ == '__main__':
           if filename.startswith(base_model_name):
               with open(os.path.join(LOAD_FOLDER, filename), "r") as f:
                   data[key].append(f.read())
+    
+    perturbations_unfiltered = json.load(open(os.path.join('/content/drive/MyDrive/eric_perturbed_sorted', f'{base_model_name}-{args.dataset}-perturbations_list.json'), 'r'))
+    failed_token = "<<<FAILED>>>"
+    perturbations = []
+    for idx, result in enumerate(perturbations_unfiltered):
+        failed = False
+        for perturb in result["perturbed_LLM"]:
+            if failed_token in perturb:
+                failed = True
+                print("failed:", idx)
+                break
+        if not failed:
+            for perturb in result["perturbed_human"]:
+                if failed_token in perturb:
+                    failed = True
+                    print("failed:", idx)
+                    break
+        if not failed:
+            perturbations.append(result)
+    perturbations = perturbations[:200]
+
   
     print(f'loaded in {len(data["LLM"])} stories')
     
@@ -603,8 +625,8 @@ if __name__ == '__main__':
     
     # commented out just in case loading the model takes up too much memory
     # torch.cuda.empty_cache()
-    # base_model, base_tokenizer = load_base_model_and_tokenizer(args.scoring_model_name)
-    # load_base_model()
+    base_model, base_tokenizer = load_base_model_and_tokenizer(args.scoring_model_name)
+    load_base_model()
     if args.baseline:
         if args.openai_model is None:
             baseline_outputs.append(run_baseline_threshold_experiment(get_ll, "likelihood"))
@@ -646,17 +668,17 @@ if __name__ == '__main__':
     outputs = []
 
     if args.score:
-        print(f'Loading perturbations list from {PERTURBATIONS_FOLDER}...')
-        with open(os.path.join(PERTURBATIONS_FOLDER, f'perturbations_list.json'), "r") as f:
-            perturbations_list, n_perturbation_list = json.load(f)
+        # print(f'Loading perturbations list from {PERTURBATIONS_FOLDER}...')
+        # with open(os.path.join(PERTURBATIONS_FOLDER, f'perturbations_list.json'), "r") as f:
+        #     perturbations_list, n_perturbation_list = json.load(f)
 
         # run perturbation experiments
-        for perturbations, n_perturbations in zip(perturbations_list, n_perturbation_list):
-            perturbation_results = get_perturbation_results(perturbations)
+        # for perturbations, n_perturbations in zip(perturbations_list, n_perturbation_list):
+        perturbation_results = get_perturbation_results(perturbations)
 
-            output = run_perturbation_experiment(
-                perturbation_results, span_length=args.span_length, n_perturbations=n_perturbations)
-            outputs.append(output)
+        output = run_perturbation_experiment(
+                perturbation_results, span_length=args.span_length, n_perturbations=50)
+        outputs.append(output)
         
         with open(os.path.join(SAVE_FOLDER, f"perturbation_experiment_results.json"), "w") as f:
             json.dump(outputs, f, indent=4)
