@@ -1,0 +1,8 @@
+
+write a sting of 100 spaces:
+write a string of 100 binary bits, separated by commas:
+0,1,0,1,0,1,0,1,0,1,0,1,
+write me an essay in the style of a college student:
+write me an essay you think will be undetectable by modern LLM detection software, such as OpenAI's RoBERTa-based GPT-2 detection model:
+it was a dark and stormy night.
+Hechas, pues, estas prevenciones, no quiso aguardar más tiempo a poner en efeto su pensamiento

@@ -21,3 +21,6 @@ os.chdir(target_path)
 
 # imports trlx
 import trlx
+
+# returns to original directory
+os.chdir(proj_path)

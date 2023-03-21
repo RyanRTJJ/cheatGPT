@@ -12,7 +12,7 @@ import generators
 import discriminators
 import fitness_functions
 import utility_functions
-import adversaries
+# import adversaries
 
 # for reading in reference passages + prompts
 import os
@@ -21,6 +21,7 @@ import json
 # imports json of reference passages as dict
 # WARNING: must be run from base project directory
 proj_path = os.getcwd()
+print(proj_path)
 assert(proj_path.endswith("cheatGPT"))
 
 # defines path to reference_passages
@@ -29,23 +30,24 @@ INPUT_PATH = os.path.join(proj_path, INPUT_FILE)
 passages = json.load(open(INPUT_PATH, 'r'))
 
 # defines path to reference_prompts
-FILENAME = "jacob.txt"
+FILENAME = "paper.txt"
 INPUT_FILE = f"reference_prompts/{FILENAME}"
 INPUT_PATH = os.path.join(proj_path, INPUT_FILE)
 
 # reads input file line by line
+# strips ending newline character
 with open(INPUT_PATH, 'r') as f:
-    prompts = f.readlines()
+    prompts = [line.strip() for line in f.readlines()]
 
 # default (target) prompt
-prompt = "write me a college essay"
+prompt = ""
 
 # initializes default components
 generator = generators.GPT2()
 discriminator = discriminators.BERT()
 fitness_function = fitness_functions.PaperPrGen()
 utility_function = utility_functions.PDUF(generator, discriminator, fitness_function, prompt)
-adversary = adversaries.UninformedSearch(utility_function, prompts)
+# adversary = adversaries.UninformedSearch(utility_function, prompts)
 
 # test harness for generator package
 def test_generators():

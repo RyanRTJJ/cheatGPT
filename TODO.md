@@ -12,7 +12,14 @@
     - [x] adversaries
         - given a prompt-s/a utility fn
     - it's awful and i hate it
-
+- [ ] get trlx working
+    - [ ] MVP: get PD working in ipynb (produce good prompts)
+    - [ ] store language models for multiple training
+    - [ ] get seq2seq working
+    - [ ] fill in adversary classes
+    - [ ] use trl instead :/
+        - https://github.com/lvwerra/trl
+    
 # Big TODO
 1. set up prebuilt LLM components
     - [x] generator: [GPT-2](https://openai.com/blog/better-language-models/) (1.5B) as language model (specifically [HuggingFace](https://huggingface.co/gpt2))
